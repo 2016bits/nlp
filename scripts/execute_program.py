@@ -284,7 +284,7 @@ if __name__ == '__main__':
     parser.add_argument('--tfidf_model', type=str, default='./data/Wikipedia/data/tfidf.npz')
     # wikipedia arguments
     parser.add_argument('--db_path', type=str, default='./data/Wikipedia/data/wikipedia.db')
-    parser.add_argument('--db_table', type=str, default='wikipedia')
+    parser.add_argument('--db_table', type=str, default='documents')
 
     parser.add_argument('--log_path', type=str, default='./logs/')
     # model arguments
