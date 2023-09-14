@@ -197,7 +197,7 @@ class Program_Execute:
             # for each predict_program, select the most
             for program in programs:
                 try:
-                    verfiable_text, verifiable_probs, pred, pred_probs, evidences = self.parse_program(inst['id'], program, logger)
+                    pred, evidences = self.parse_program(inst['id'], program, logger)
                     pred = pred.lower().strip()
                     label_map = {'true': 1, 'false': 0, 'yes': 1, 'no': 0, "it's impossible to say": 2, 'uninformed': 2, 'un': 2}
                     if pred in label_map:

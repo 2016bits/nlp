@@ -19,7 +19,7 @@ First, create a folder named 'data/FEVER'
 Second, download FEVER dataset from [FEVER](https://fever.ai/dataset/fever.html)
 Third, preprocess data on root directory:
 ```bash
-sh scripts/process.sh
+sh process.sh
 ```
 
 ### 2017 wikipedia dumps
