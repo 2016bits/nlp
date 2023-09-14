@@ -197,7 +197,7 @@ class Program_Execute:
             # for each predict_program, select the most
             for program in programs:
                 try:
-                    verfiable_text, verifiable_probs, pred, pred_probs, evidences = self.parse_program(inst['id'], program, logger)
+                    pred, evidences = self.parse_program(inst['id'], program, logger)
                     pred = pred.lower().strip()
                     label_map = {'true': 1, 'false': 0, 'yes': 1, 'no': 0, "it's impossible to say": 2, 'uninformed': 2, 'un': 2}
                     if pred in label_map:
@@ -284,7 +284,7 @@ if __name__ == '__main__':
     parser.add_argument('--tfidf_model', type=str, default='./data/Wikipedia/data/tfidf.npz')
     # wikipedia arguments
     parser.add_argument('--db_path', type=str, default='./data/Wikipedia/data/wikipedia.db')
-    parser.add_argument('--db_table', type=str, default='wikipedia')
+    parser.add_argument('--db_table', type=str, default='documents')
 
     parser.add_argument('--log_path', type=str, default='./logs/')
     # model arguments
