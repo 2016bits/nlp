@@ -58,25 +58,25 @@ def main(args):
     logger = log.get_logger(args.log_path)
     with open(args.result_path, 'r') as f:
         results = json.load(f)
-    evaluate_with_evidence(results, logger, args.max_evidence)
+    # evaluate_with_evidence(results, logger, args.max_evidence)
 
-    # target_labels = []
-    # prediction_labels = []
-    # count = 0
-    # acc_num = 0
-    # for result in results:
-    #     target = result["label"]
-    #     pred = result["prediction"]
-    #     target_labels.append(target)
-    #     prediction_labels.append(pred)
+    target_labels = []
+    prediction_labels = []
+    count = 0
+    acc_num = 0
+    for result in results:
+        target = result["gold_label"]
+        pred = result["pred_label"]
+        target_labels.append(target)
+        prediction_labels.append(pred)
 
-    #     count += 1
-    #     if target == pred:
-    #         acc_num += 1
+        count += 1
+        if target == pred:
+            acc_num += 1
     
-    # evaluate(prediction_labels, target_labels, logger)
-    # acc = acc_num / count
-    # logger.info("sum: {}, acc_num: {}, acc: {}".format(count, acc_num, acc))
+    evaluate(prediction_labels, target_labels, logger, num_of_classes=3)
+    acc = acc_num / count
+    logger.info("sum: {}, acc_num: {}, acc: {}".format(count, acc_num, acc))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

@@ -6,5 +6,5 @@ mkdir codes
 cp -r scripts execute.sh codes
 mv codes outputs/execute/$cur_time
 
-python scripts/execute_program.py --gpu 4
+python scripts/execute_program.py --gpu 3
 cp -r logs results outputs/execute/$cur_time
