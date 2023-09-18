@@ -199,7 +199,7 @@ class Program_Execute:
                 try:
                     pred, evidences = self.parse_program(inst['id'], program, logger)
                     pred = pred.lower().strip()
-                    label_map = {'true': 1, 'false': 0, 'yes': 1, 'no': 0, "it's impossible to say": 2, 'uninformed': 2, 'un': 2}
+                    label_map = {'true': 1, 'false': 0, 'yes': 1, 'no': 0, "it's impossible to say": 2, 'unknown': 2, 'un': 2}
                     if pred in label_map:
                         pred = label_map[pred]
                     else:

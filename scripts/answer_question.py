@@ -106,7 +106,7 @@ class T5_Question_Answering:
         if claim_only == True or evidence == []:
             return "Not Enough Info"
         else:
-            example = f"{evidence}\nBased on the above information, is it true that {claim}? true, false or uninformed? The answer is: "
+            example = f"{evidence}\nBased on the above information, is it true that {claim}? true, false or unknown? The answer is: "
 
         # answer question with FLAN-T5
         answer_text = self.generate(example, 

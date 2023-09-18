@@ -1,14 +1,1 @@
-[2023-09-15 08:25:25,863][evaluate.py][line:54][INFO]                  precision    recall  f1-score   support
-
-        REFUTES     0.5024    0.8968    0.6440      3333
-       SUPPORTS     0.7376    0.7633    0.7502      3333
-NOT ENOUGH INFO     0.6017    0.1083    0.1836      3333
-
-       accuracy                         0.5895      9999
-      macro avg     0.6139    0.5895    0.5259      9999
-   weighted avg     0.6139    0.5895    0.5259      9999
-
-[2023-09-15 08:25:25,869][evaluate.py][line:55][INFO] [[2989  208  136]
- [ 686 2544  103]
- [2275  697  361]]
-[2023-09-15 08:25:25,869][evaluate.py][line:79][INFO] sum: 9999, acc_num: 5894, acc: 0.5894589458945895
+[2023-09-18 08:27:06,747][evaluate.py][line:38][INFO] FEVER score: 0.3406, Accuracy: 0.6207
