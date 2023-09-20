@@ -36,6 +36,12 @@ Process wikipedia data and store in database:
 sh scripts/process-wiki.sh
 ```
 
+#### generate contriever passage embeddings
+
+```python
+python data/Wikipedia/scripts/generate_contriever_passage_embeddings.py
+```
+
 ### CHEF dataset
 
 First, create a folder named 'data/CHEF'

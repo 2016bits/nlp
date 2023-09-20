@@ -1,0 +1,60 @@
+[2023-09-20 10:36:53,456][verify.py][line:187][INFO] Namespace(batch_size=10, cache_dir='./google/flan-t5-xl', data_path='./results/programs/', dataset_name='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', gpu=4, log_path='./logs/', model_name='google/flan-t5-xl', num_eval_samples=-1, save_path='./results/ablation/')
+[2023-09-20 10:36:53,456][verify.py][line:190][INFO] loading data......
+[2023-09-20 10:36:53,551][verify.py][line:197][INFO] loading model......
+[2023-09-20 10:36:53,551][verify.py][line:22][INFO] Connecting to database...
+[2023-09-20 10:36:53,551][verify.py][line:26][INFO] Loading model google/flan-t5-xl...
+[2023-09-20 10:37:19,635][verify.py][line:30][INFO] Model google/flan-t5-xl loaded.
+[2023-09-20 10:37:19,635][verify.py][line:112][INFO] start verifying......
+[2023-09-20 10:38:19,798][verify.py][line:146][INFO] Alert! verifiable prediction error id:10324, prediction: it is not possible to tell
+[2023-09-20 10:38:19,798][verify.py][line:151][INFO] Alert! check prediction error id:10324, prediction: it is not possible to tell
+[2023-09-20 10:39:17,447][verify.py][line:151][INFO] Alert! check prediction error id:19902, prediction: it is not possible to tell
+[2023-09-20 10:39:23,710][verify.py][line:151][INFO] Alert! check prediction error id:21228, prediction: it is not possible to tell
+[2023-09-20 10:39:28,541][verify.py][line:146][INFO] Alert! verifiable prediction error id:21959, prediction: it is not possible to tell
+[2023-09-20 10:39:28,541][verify.py][line:151][INFO] Alert! check prediction error id:21959, prediction: it is not possible to tell
+[2023-09-20 10:39:38,815][verify.py][line:146][INFO] Alert! verifiable prediction error id:23588, prediction: it is not possible to tell
+[2023-09-20 10:39:38,815][verify.py][line:151][INFO] Alert! check prediction error id:23588, prediction: it is not possible to tell
+[2023-09-20 10:40:52,309][verify.py][line:146][INFO] Alert! verifiable prediction error id:35596, prediction: it is not possible to tell
+[2023-09-20 10:40:52,309][verify.py][line:151][INFO] Alert! check prediction error id:35596, prediction: it is not possible to tell
+[2023-09-20 10:41:24,908][verify.py][line:146][INFO] Alert! verifiable prediction error id:41571, prediction: it is not possible to tell
+[2023-09-20 10:41:24,908][verify.py][line:151][INFO] Alert! check prediction error id:41571, prediction: it is not possible to tell
+[2023-09-20 10:42:06,827][verify.py][line:146][INFO] Alert! verifiable prediction error id:48815, prediction: it is not possible to tell
+[2023-09-20 10:42:06,827][verify.py][line:151][INFO] Alert! check prediction error id:48815, prediction: it is not possible to tell
+[2023-09-20 10:44:24,754][verify.py][line:146][INFO] Alert! verifiable prediction error id:72144, prediction: it is not possible to tell
+[2023-09-20 10:45:32,834][verify.py][line:151][INFO] Alert! check prediction error id:81772, prediction: it is not possible to tell
+[2023-09-20 10:46:08,613][verify.py][line:146][INFO] Alert! verifiable prediction error id:87838, prediction: it is not possible to tell
+[2023-09-20 10:46:08,614][verify.py][line:151][INFO] Alert! check prediction error id:87838, prediction: it is not possible to tell
+[2023-09-20 10:46:17,726][verify.py][line:146][INFO] Alert! verifiable prediction error id:89323, prediction: it is not possible to tell
+[2023-09-20 10:46:17,726][verify.py][line:151][INFO] Alert! check prediction error id:89323, prediction: it is not possible to tell
+[2023-09-20 10:46:27,541][verify.py][line:146][INFO] Alert! verifiable prediction error id:90631, prediction: it is not possible to tell
+[2023-09-20 10:46:27,541][verify.py][line:151][INFO] Alert! check prediction error id:90631, prediction: it is not possible to tell
+[2023-09-20 10:46:46,261][verify.py][line:151][INFO] Alert! check prediction error id:93405, prediction: it is not possible to tell
+[2023-09-20 10:47:41,514][verify.py][line:146][INFO] Alert! verifiable prediction error id:103050, prediction: it is not possible to tell
+[2023-09-20 10:47:41,514][verify.py][line:151][INFO] Alert! check prediction error id:103050, prediction: it is not possible to tell
+[2023-09-20 10:47:53,347][verify.py][line:146][INFO] Alert! verifiable prediction error id:104855, prediction: it is not possible to tell
+[2023-09-20 10:47:53,347][verify.py][line:151][INFO] Alert! check prediction error id:104855, prediction: it is not possible to tell
+[2023-09-20 10:48:58,126][verify.py][line:146][INFO] Alert! verifiable prediction error id:115490, prediction: it is not possible to tell
+[2023-09-20 10:48:58,126][verify.py][line:151][INFO] Alert! check prediction error id:115490, prediction: it is not possible to tell
+[2023-09-20 10:49:41,729][verify.py][line:146][INFO] Alert! verifiable prediction error id:123023, prediction: it is not possible to tell
+[2023-09-20 10:49:41,729][verify.py][line:151][INFO] Alert! check prediction error id:123023, prediction: it is not possible to tell
+[2023-09-20 10:50:33,316][verify.py][line:146][INFO] Alert! verifiable prediction error id:130724, prediction: it is not possible to tell
+[2023-09-20 10:53:03,440][verify.py][line:146][INFO] Alert! verifiable prediction error id:157032, prediction: it is not possible to tell
+[2023-09-20 10:53:03,441][verify.py][line:151][INFO] Alert! check prediction error id:157032, prediction: it is not possible to tell
+[2023-09-20 10:53:31,852][verify.py][line:146][INFO] Alert! verifiable prediction error id:162037, prediction: it is not possible to tell
+[2023-09-20 10:53:35,078][verify.py][line:146][INFO] Alert! verifiable prediction error id:162415, prediction: it is not possible to tell
+[2023-09-20 10:53:44,716][verify.py][line:151][INFO] Alert! check prediction error id:163828, prediction: it is not possible to tell
+[2023-09-20 10:55:55,862][verify.py][line:151][INFO] Alert! check prediction error id:188994, prediction: it is not possible to tell
+[2023-09-20 10:56:26,802][verify.py][line:151][INFO] Alert! check prediction error id:194254, prediction: it is not possible to tell
+[2023-09-20 10:59:20,683][verify.py][line:45][INFO]                  precision    recall  f1-score   support
+
+        REFUTES     0.0638    0.0027    0.0052      3333
+       SUPPORTS     0.6687    0.9394    0.7813      3333
+NOT ENOUGH INFO     0.3468    0.5386    0.4219      3333
+
+       accuracy                         0.4935      9999
+      macro avg     0.3598    0.4935    0.4028      9999
+   weighted avg     0.3598    0.4935    0.4028      9999
+
+[2023-09-20 10:59:20,687][verify.py][line:46][INFO] [[   9  125 3199]
+ [  20 3131  182]
+ [ 112 1426 1795]]
+[2023-09-20 10:59:20,687][verify.py][line:202][INFO] prediction finished...
