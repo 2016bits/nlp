@@ -152,7 +152,11 @@ def main(args):
         dev_macro_f1 = validate(model, args.device, dev_loader, label_id_list, epoch, logger, tokenizer)
         if dev_macro_f1 > best_macro_f1:
             logger.info("save model at epoch {}, macro_f1: {}".format(epoch, dev_macro_f1))
-            save_model_path = args.save_model_path + args.dataset + '.pth'
+            if args.shot == -1:
+                shot_num = "_all_train_data"
+            else:
+                shot_num = "_{}shot_train_data".format(args.shot)
+            save_model_path = args.save_model_path + args.dataset + shot_num + '.pth'
             torch.save(model.state_dict(), save_model_path)
             best_macro_f1 = dev_macro_f1
     
@@ -176,9 +180,9 @@ if __name__ == '__main__':
     parser.add_argument('--gpu', type=int, default=2)
     parser.add_argument('--device', type=str, default="cuda:2")
 
-    parser.add_argument('--batch_size', type=int, default=5)
+    parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--way', type=int, default=3)
-    parser.add_argument('--shot', type=int, default=10)
+    parser.add_argument('--shot', type=int, default=-1)
     parser.add_argument('--epoch', type=int, default=10)
 
     args = parser.parse_args()

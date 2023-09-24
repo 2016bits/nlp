@@ -1,4 +1,5 @@
 import sqlite3
+from tqdm import tqdm
 
 replacements = {
     "-LRB-": "(",
@@ -14,12 +15,19 @@ replacements = {
 def convert_evidence(evidence_list, c):
     evidence_text = ""
     for title, sent_index in evidence_list:
-        sql = """select * from {} where id = "{}" ;""".format("documents", title)
-        cursor = c.execute(sql)
+        try:
+            sql = """select * from {} where id = "{}" ;""".format("documents", title)
+            cursor = c.execute(sql)
+        except:
+            sql = """select * from {} where id = '{}' ;""".format("documents", title)
+            cursor = c.execute(sql)
         for row in cursor:
             lines = row[2].split('\n')
             for line in lines:
-                sent_id = eval(line.split('\t')[0])
+                try:
+                    sent_id = eval(line.split('\t')[0])
+                except:
+                    continue
                 if sent_id == sent_index:
                     sent_text = line.replace('{}\t'.format(sent_id), '')
                     sent_text = sent_text.replace('\t', ' ').replace('\n', ' ')
@@ -41,8 +49,8 @@ def preprocess_dataset(dataset, db_path, sample_num):
     c = conn.cursor()
 
     evidence = ""
-    for data in dataset:
-        if data['label'] == 'SUPPORTS' and sopport_num < sample_num:
+    for data in tqdm(dataset):
+        if data['label'] == 'SUPPORTS' and (sample_num == -1 or sopport_num < sample_num):
             sopport_num += 1
             evidence = convert_evidence(data['evidence'], c)
             texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or uninformed? The answer is: "
@@ -56,7 +64,7 @@ def preprocess_dataset(dataset, db_path, sample_num):
                 'label': 'true'
             })
 
-        elif data['label'] == 'REFUTES' and refute_num < sample_num:
+        elif data['label'] == 'REFUTES' and (sample_num == -1 or refute_num < sample_num):
             refute_num += 1
             evidence = convert_evidence(data['evidence'], c)
             texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or uninformed? The answer is: "
@@ -70,7 +78,7 @@ def preprocess_dataset(dataset, db_path, sample_num):
                 'label': 'false'
             })
 
-        elif data['label'] == 'NOT ENOUGH INFO' and evidence and nei_num < sample_num:
+        elif data['label'] == 'NOT ENOUGH INFO' and evidence and (sample_num == -1 or nei_num < sample_num):
             nei_num += 1
             texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or uninformed? The answer is: "
             text_len = len(texts.split())
@@ -82,7 +90,7 @@ def preprocess_dataset(dataset, db_path, sample_num):
                 'text': texts,
                 'label': 'uninformed'
             })
-        elif sopport_num >= sample_num and refute_num >= sample_num and nei_num >= sample_num:
+        elif sample_num != -1 and sopport_num >= sample_num and refute_num >= sample_num and nei_num >= sample_num:
             break
 
     c.close()

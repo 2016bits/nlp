@@ -1,19 +1,20 @@
-import os
+import sqlite3
 
-def iter_files(path):
-    """Walk through all files located under a root path."""
-    if os.path.isfile(path):
-        yield path
-    elif os.path.isdir(path):
-        for dirpath, _, filenames in os.walk(path):
-            for f in filenames:
-                yield os.path.join(dirpath, f)
-    else:
-        raise RuntimeError('Path %s is invalid' % path)
+conn = sqlite3.connect('./data/Wikipedia/data/wikipedia.db')
+c = conn.cursor()
 
-data_path = "./data/Wikipedia/wiki-pages/"
-files = [f for f in iter_files(data_path)]
+title = "Boston_Celtics"
+line_id = 3
+sql = """select * from documents where id = "{}";""".format(title)
 
-for f in files:
-    wiki_page = f.split('/')[-1]
-    print(wiki_page)
+cursor = c.execute(sql)
+text = ""
+for row in cursor:
+    lines = row[2]
+    lines = row[2].split('\n')
+    for line in lines:
+        sent_id = eval(line.split('\t')[0])
+        if sent_id == line_id:
+            sent_text = line.replace('{}\t'.format(sent_id), '')
+            text += sent_text
+print(text)

@@ -1,0 +1,2123 @@
+[2023-09-22 12:15:14,655][verify_with_aquila.py][line:146][INFO] Namespace(data_path='./data/', dataset_name='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', fp16=True, gpu=0, log_path='./logs/', max_aquila_tokens=2048, max_new_tokens=8, mode='test', model_name='aquilacode-7b-nv', model_path='../checkpoints_in/', num_eval_samples=-1, num_programs_per_example=1, save_path='./results/ablation/', task_name='lm', use_cache=True, use_cuda=True)
+[2023-09-22 12:15:14,655][verify_with_aquila.py][line:149][INFO] loading data......
+[2023-09-22 12:15:14,722][verify_with_aquila.py][line:156][INFO] loading model......
+[2023-09-22 12:15:14,762][verify_with_aquila.py][line:29][INFO] connect to database successfully...
+[2023-09-22 12:19:16,541][verify_with_aquila.py][line:32][INFO] load model successfully...
+[2023-09-22 12:19:16,541][verify_with_aquila.py][line:71][INFO] Start predicting...
+[2023-09-22 12:19:29,895][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57085, prediction: 
+Based on the above information, is it
+[2023-09-22 12:19:37,824][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:100046, prediction: 
+Based on the above information, is it
+[2023-09-22 12:20:13,606][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225798, prediction: 
+Based on the above information, is it
+[2023-09-22 12:20:27,667][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:17915, prediction: 
+Based on the above information, is it
+[2023-09-22 12:20:38,131][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:223218, prediction: 
+Based on the above information, is it
+[2023-09-22 12:20:49,710][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175438, prediction: 	Japanese television drama	Japanese television drama	
+[2023-09-22 12:20:51,546][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164502, prediction: 
+Based on the above information, is it
+[2023-09-22 12:20:53,934][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142793, prediction: 
+Based on the above information, is it
+[2023-09-22 12:21:43,687][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86670, prediction: 
+Ares is a baseball player.
+
+[2023-09-22 12:21:44,606][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192784, prediction: 
+Based on the above information, is it
+[2023-09-22 12:22:35,282][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:198546, prediction: 
+Based on the above information, is it
+[2023-09-22 12:22:49,140][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175450, prediction: 
+Based on the above information, is it
+[2023-09-22 12:22:51,705][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:115065, prediction: 
+Based on the above information, is it
+[2023-09-22 12:23:03,198][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:104562, prediction: 
+Based on the above information, is it
+[2023-09-22 12:23:07,500][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:70280, prediction: 
+Based on the above information, is it
+[2023-09-22 12:23:17,423][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:61233, prediction: 	Half Girlfriend was partially filmed in Delhi
+[2023-09-22 12:23:18,427][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195926, prediction: 
+The Hyksos' chief deity
+[2023-09-22 12:23:22,419][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39959, prediction: 
+Based on the above information, is it
+[2023-09-22 12:23:42,335][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:36954, prediction: 
+Based on the above information, is it
+[2023-09-22 12:23:43,191][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:128180, prediction: 
+Based on the above information, is it
+[2023-09-22 12:23:55,950][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:221137, prediction: 
+Based on the above information, is it
+[2023-09-22 12:24:23,767][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:149016, prediction: 
+Based on the above information, is it
+[2023-09-22 12:24:57,139][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:12952, prediction: 
+Based on the above information, is it
+[2023-09-22 12:25:39,324][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86043, prediction: 
+Based on the above information, is it
+[2023-09-22 12:26:08,751][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:223294, prediction: 
+The Baja 1000 was organized by Vince
+[2023-09-22 12:26:25,028][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81698, prediction: 
+Based on the above information, is it
+[2023-09-22 12:26:48,474][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138328, prediction: 
+Based on the above information, is it
+[2023-09-22 12:27:46,948][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:198553, prediction: 
+Based on the above information, is it
+[2023-09-22 12:27:52,658][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:54930, prediction: 
+Based on the above information, is it
+[2023-09-22 12:28:09,836][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:112307, prediction: 
+Based on the above information, is it
+[2023-09-22 12:28:33,579][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:92673, prediction: 
+Based on the above information, is it
+[2023-09-22 12:29:06,484][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142077, prediction: 
+Based on the above information, is it
+[2023-09-22 12:29:26,903][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:129541, prediction: 
+Based on the above information, is it
+[2023-09-22 12:30:04,967][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:53734, prediction: 
+Based on the above information, is it
+[2023-09-22 12:30:51,402][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177851, prediction: 
+Based on the above information, is it
+[2023-09-22 12:32:03,955][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:188653, prediction: 
+Based on the above information, is it
+[2023-09-22 12:32:11,418][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45310, prediction: 
+The Africa Cup of Nations had its schedule
+[2023-09-22 12:32:55,460][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:156114, prediction: 
+Based on the above information, is it
+[2023-09-22 12:33:16,623][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152165, prediction: 
+Based on the above information, is it
+[2023-09-22 12:33:23,191][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:204576, prediction: 
+Based on the above information, is it
+[2023-09-22 12:34:13,911][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201595, prediction: 
+Based on the above information, is it
+[2023-09-22 12:34:27,625][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:211856, prediction: 
+Based on the above information, is it
+[2023-09-22 12:34:55,667][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:38947, prediction: 
+Based on the above information, is it
+[2023-09-22 12:35:01,905][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:121472, prediction: 	place	golf course
+Based on
+[2023-09-22 12:35:13,036][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:11276, prediction: 
+Based on the above information, is it
+[2023-09-22 12:35:29,403][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:126218, prediction: 
+Based on the above information, is it
+[2023-09-22 12:35:38,016][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:198542, prediction: 
+Catherine Hardwicke is Canadian.
+[2023-09-22 12:35:43,748][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:104930, prediction: 	U.S. Department of the Army
+[2023-09-22 12:35:57,513][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:72574, prediction: 
+Based on the above information, is it
+[2023-09-22 12:36:42,139][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89309, prediction: 
+Based on the above information, is it
+[2023-09-22 12:37:58,780][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:203039, prediction: 
+Based on the above information, is it
+[2023-09-22 12:38:37,431][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:96963, prediction: 	The answer is:	The answer is
+[2023-09-22 12:38:42,645][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:25359, prediction: 	The Beguiled is an original movie
+[2023-09-22 12:38:43,543][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:22624, prediction: 
+Based on the above information, is it
+[2023-09-22 12:38:48,816][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:61564, prediction: 
+Based on the above information, is it
+[2023-09-22 12:38:58,360][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225815, prediction: 
+Based on the above information, is it
+[2023-09-22 12:39:36,261][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:209347, prediction: 
+Based on the above information, is it
+[2023-09-22 12:40:01,036][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162836, prediction: 
+# -
+
+# ### Q
+[2023-09-22 12:40:03,627][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:127626, prediction: 
+Based on the above information, is it
+[2023-09-22 12:40:31,807][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:88508, prediction: 
+Based on the above information, is it
+[2023-09-22 12:40:47,335][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195508, prediction: 
+Based on the above information, is it
+[2023-09-22 12:40:50,458][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:52326, prediction: 
+Based on the above information, is it
+[2023-09-22 12:41:36,772][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:24627, prediction: 
+Based on the above information, is it
+[2023-09-22 12:41:37,566][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192041, prediction: 
+American Library Association is a cult.
+
+[2023-09-22 12:41:43,455][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:34088, prediction: 
+There was a battle in Cyprus.
+
+[2023-09-22 12:41:46,911][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201462, prediction: 
+Based on the above information, is it
+[2023-09-22 12:42:15,981][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80313, prediction: 
+Based on the above information, is it
+[2023-09-22 12:42:31,496][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:104164, prediction: 
+Based on the above information, is it
+[2023-09-22 12:42:33,040][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:85571, prediction: 
+The number of members in 1971 was 3
+[2023-09-22 12:43:01,264][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119857, prediction: 	Issa Rae shows various media created
+[2023-09-22 12:43:05,775][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157602, prediction: 
+Based on the above information, is it
+[2023-09-22 12:43:12,130][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50137, prediction: 
+Based on the above information, is it
+[2023-09-22 12:43:38,914][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:113961, prediction: 
+Based on the above information, is it
+[2023-09-22 12:44:00,797][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170015, prediction: 
+The Brat Pack is a nickname given
+[2023-09-22 12:44:20,866][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:25587, prediction: 
+Based on the above information, is it
+[2023-09-22 12:44:28,212][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138569, prediction: 
+Based on the above information, is it
+[2023-09-22 12:44:37,420][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:118875, prediction: 
+There was a party in Cyprus.
+
+[2023-09-22 12:45:00,645][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57209, prediction: 
+Based on the above information, is it
+[2023-09-22 12:45:03,235][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89637, prediction: 
+Based on the above information, is it
+[2023-09-22 12:45:22,517][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86198, prediction: 
+Based on the above information, is it
+[2023-09-22 12:45:27,737][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201468, prediction: 
+Based on the above information, is it
+[2023-09-22 12:45:56,846][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:54151, prediction: 	The answer is: 	The answer
+[2023-09-22 12:46:48,665][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:167176, prediction: 
+Based on the above information, is it
+[2023-09-22 12:47:34,147][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:8484, prediction: 
+Based on the above information, is it
+[2023-09-22 12:47:46,938][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:52510, prediction: 
+Based on the above information, is it
+[2023-09-22 12:48:25,896][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4778, prediction: 	Betsy Hodges was a candidate
+[2023-09-22 12:48:26,689][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:71096, prediction: 
+The Romani people have settled.
+
+[2023-09-22 12:48:34,740][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:169916, prediction: 
+# -
+
+# ### Q
+[2023-09-22 12:48:35,659][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192781, prediction: 
+Based on the above information, is it
+[2023-09-22 12:48:36,516][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139985, prediction: 
+Based on the above information, is it
+[2023-09-22 12:48:54,021][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:222644, prediction: 
+Based on the above information, is it
+[2023-09-22 12:49:01,894][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170108, prediction: 
+Based on the above information, is it
+[2023-09-22 12:49:53,001][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:9591, prediction: 
+Based on the above information, is it
+[2023-09-22 12:51:53,770][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:14753, prediction: 
+Based on the above information, is it
+[2023-09-22 12:52:30,613][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83173, prediction: 
+Based on the above information, is it
+[2023-09-22 12:53:22,834][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:43668, prediction: 
+Based on the above information, is it
+[2023-09-22 12:53:48,052][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:55422, prediction: 
+Based on the above information, is it
+[2023-09-22 12:53:52,511][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219201, prediction: 
+Based on the above information, is it
+[2023-09-22 12:53:54,582][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107215, prediction: 
+Based on the above information, is it
+[2023-09-22 12:54:13,260][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45638, prediction: 
+<NAME> is the author of the
+[2023-09-22 12:55:01,820][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:47365, prediction: 
+Based on the above information, is it
+[2023-09-22 12:55:13,954][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:130168, prediction: 
+Based on the above information, is it
+[2023-09-22 12:55:32,250][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:75025, prediction: 	Spanish	Spain	Africa	
+[2023-09-22 12:56:00,308][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83927, prediction: 
+Based on the above information, is it
+[2023-09-22 12:56:09,436][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:111030, prediction: 
+Based on the above information, is it
+[2023-09-22 12:56:17,268][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:147707, prediction: 
+Based on the above information, is it
+[2023-09-22 12:56:28,280][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:148559, prediction: 
+Based on the above information, is it
+[2023-09-22 12:56:46,336][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:88851, prediction: 
+Based on the above information, is it
+[2023-09-22 12:57:16,801][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:228072, prediction: 
+Based on the above information, is it
+[2023-09-22 12:57:41,797][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201464, prediction: 
+A static web page is delivered to the
+[2023-09-22 12:58:03,800][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:74960, prediction: 
+Based on the above information, is it
+[2023-09-22 12:58:06,476][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217171, prediction: 
+Based on the above information, is it
+[2023-09-22 12:58:21,965][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202737, prediction: 	The Chaperone is a 2011 American
+[2023-09-22 12:58:26,299][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:146578, prediction: 	dark energy	dark energy	matter	
+[2023-09-22 12:58:27,324][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197664, prediction: 
+Based on the above information, is it
+[2023-09-22 12:59:05,882][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192777, prediction: 
+Based on the above information, is it
+[2023-09-22 12:59:38,986][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:59956, prediction: 
+There are currently 15,882,417
+[2023-09-22 12:59:44,373][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50650, prediction: 	Clueless (film)	Cl
+[2023-09-22 12:59:58,591][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:94476, prediction: 
+Based on the above information, is it
+[2023-09-22 13:00:11,475][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194438, prediction: 
+Based on the above information, is it
+[2023-09-22 13:00:16,271][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201450, prediction: 
+Based on the above information, is it
+[2023-09-22 13:00:24,273][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174901, prediction: 
+Based on the above information, is it
+[2023-09-22 13:01:07,919][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:214984, prediction: 
+Based on the above information, is it
+[2023-09-22 13:01:11,583][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:74488, prediction: 
+The International Tennis Federation is the governing
+[2023-09-22 13:01:25,615][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:188132, prediction: 
+Based on the above information, is it
+[2023-09-22 13:01:29,967][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164101, prediction: 	The answer is: 	The answer
+[2023-09-22 13:02:05,976][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:76543, prediction: 
+Based on the above information, is it
+[2023-09-22 13:02:13,270][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224187, prediction: 	The 66th Primetime Emmy Awards
+[2023-09-22 13:02:39,642][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:97512, prediction: 
+Based on the above information, is it
+[2023-09-22 13:02:49,077][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:24543, prediction: 
+The International Tennis Federation -LRB
+[2023-09-22 13:02:58,429][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90458, prediction: 
+The Incredibles
+
+Based on
+[2023-09-22 13:03:38,269][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174869, prediction: 
+Based on the above information, is it
+[2023-09-22 13:04:07,986][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192752, prediction: 
+The show was taped and broadcast Monday
+[2023-09-22 13:04:43,727][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:35115, prediction: 
+Based on the above information, is it
+[2023-09-22 13:05:21,522][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160589, prediction: 
+Based on the above information, is it
+[2023-09-22 13:05:46,132][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183408, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 13:06:03,350][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:53483, prediction: 
+Based on the above information, is it
+[2023-09-22 13:06:47,892][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:188146, prediction: 
+Based on the above information, is it
+[2023-09-22 13:07:24,876][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:79696, prediction: 
+Based on the above information, is it
+[2023-09-22 13:07:55,228][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:207321, prediction: 
+Based on the above information, is it
+[2023-09-22 13:08:02,892][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150097, prediction: 
+The ovary is a Spanish organ.
+
+[2023-09-22 13:09:07,741][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224195, prediction: 	The 66th Primetime Emmy Awards
+[2023-09-22 13:09:08,534][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171501, prediction: 
+Based on the above information, is it
+[2023-09-22 13:09:35,751][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124042, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:21,427][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50287, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:25,848][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164891, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:32,652][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89323, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:34,511][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:30039, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:36,818][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:184297, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:46,256][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:103410, prediction: 
+Based on the above information, is it
+[2023-09-22 13:10:47,132][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:62817, prediction: 
+Based on the above information, is it
+[2023-09-22 13:11:23,437][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:31422, prediction: 
+Based on the above information, is it
+[2023-09-22 13:11:39,915][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:215270, prediction: 
+Californian
+Based on the above
+[2023-09-22 13:12:16,910][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164901, prediction: 
+Based on the above information, is it
+[2023-09-22 13:12:34,210][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:51263, prediction: 
+James Brolin is an orthodont
+[2023-09-22 13:12:38,433][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:52658, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:04,651][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:191880, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:16,279][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:166923, prediction: 
+Baadshah was dubbed into French
+[2023-09-22 13:13:18,637][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177852, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:23,682][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:74424, prediction: 
+Scandal is from Seattle.
+Based
+[2023-09-22 13:13:26,673][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:156499, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:44,206][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201453, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:46,107][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105195, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:53,871][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:144893, prediction: 
+Based on the above information, is it
+[2023-09-22 13:13:59,901][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:226456, prediction: 
+Based on the above information, is it
+[2023-09-22 13:14:00,778][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:67569, prediction: 
+Based on the above information, is it
+[2023-09-22 13:15:17,559][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:93535, prediction: 
+Based on the above information, is it
+[2023-09-22 13:15:30,543][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:49240, prediction: 
+Based on the above information, is it
+[2023-09-22 13:16:34,253][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170011, prediction: 
+Based on the above information, is it
+[2023-09-22 13:16:48,778][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107212, prediction: 
+Aphrodite is married to H
+[2023-09-22 13:17:12,786][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175455, prediction: 
+Based on the above information, is it
+[2023-09-22 13:19:10,589][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:51973, prediction: 
+Based on the above information, is it
+[2023-09-22 13:19:21,259][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:33231, prediction: 
+Based on the above information, is it
+[2023-09-22 13:19:22,094][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:95194, prediction: 
+Based on the above information, is it
+[2023-09-22 13:20:00,818][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192191, prediction: 
+Based on the above information, is it
+[2023-09-22 13:20:11,374][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164890, prediction: 
+Based on the above information, is it
+[2023-09-22 13:20:43,567][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142098, prediction: 
+Based on the above information, is it
+[2023-09-22 13:21:15,962][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:60816, prediction: 
+Based on the above information, is it
+[2023-09-22 13:22:26,105][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192588, prediction: 
+Based on the above information, is it
+[2023-09-22 13:22:36,519][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:204550, prediction: 
+Based on the above information, is it
+[2023-09-22 13:23:30,383][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:146402, prediction: 
+Based on the above information, is it
+[2023-09-22 13:24:09,531][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157131, prediction: 
+Based on the above information, is it
+[2023-09-22 13:24:20,164][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:12819, prediction: 
+Based on the above information, is it
+[2023-09-22 13:24:58,901][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:176639, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 13:25:54,177][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:99367, prediction: 
+Based on the above information, is it
+[2023-09-22 13:26:14,970][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217104, prediction: 
+Based on the above information, is it
+[2023-09-22 13:27:07,187][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:41368, prediction: 
+Based on the above information, is it
+[2023-09-22 13:27:10,383][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:114247, prediction: 
+Based on the above information, is it
+[2023-09-22 13:27:59,449][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:65925, prediction: 
+<NAME> is a former Catholic.
+[2023-09-22 13:29:04,836][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:110000, prediction: 
+Raven-Symoné is an
+[2023-09-22 13:29:09,722][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175449, prediction: 
+Based on the above information, is it
+[2023-09-22 13:29:54,553][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:173036, prediction: 
+Based on the above information, is it
+[2023-09-22 13:30:01,996][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:1932, prediction: 
+Based on the above information, is it
+[2023-09-22 13:30:37,380][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83624, prediction: 
+Based on the above information, is it
+[2023-09-22 13:31:29,460][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86747, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 13:31:31,349][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142620, prediction: 	state	U.S. state	
+[2023-09-22 13:31:57,010][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192039, prediction: 
+American Library Association is a cult.
+
+[2023-09-22 13:32:25,457][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:5455, prediction: 
+Based on the above information, is it
+[2023-09-22 13:32:33,773][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:159320, prediction: 
+Based on the above information, is it
+[2023-09-22 13:33:20,774][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219170, prediction: 
+Based on the above information, is it
+[2023-09-22 13:33:27,090][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90855, prediction: 
+<br>
+<br>
+
+[2023-09-22 13:33:45,910][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139086, prediction: 
+Based on the above information, is it
+[2023-09-22 13:34:17,901][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:203057, prediction: 
+<br>
+<br>
+
+[2023-09-22 13:34:36,439][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157210, prediction: 
+Based on the above information, is it
+[2023-09-22 13:34:48,803][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177863, prediction: 
+Based on the above information, is it
+[2023-09-22 13:35:13,373][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119992, prediction: 	The Ellen Show began its broadcast in the
+[2023-09-22 13:35:54,686][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174874, prediction: 
+Based on the above information, is it
+[2023-09-22 13:36:04,601][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152389, prediction: 
+Based on the above information, is it
+[2023-09-22 13:36:11,806][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:79157, prediction: 
+Based on the above information, is it
+[2023-09-22 13:36:28,579][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:205094, prediction: 	The Little Prince is a 2015 English-
+[2023-09-22 13:37:11,535][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:120924, prediction: 
+Based on the above information, is it
+[2023-09-22 13:37:25,412][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:46793, prediction: 
+Based on the above information, is it
+[2023-09-22 13:37:44,548][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:40655, prediction: 
+Based on the above information, is it
+[2023-09-22 13:37:56,438][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195229, prediction: 	Kevin Bacon	Kevin Bacon	
+[2023-09-22 13:38:01,393][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:212222, prediction: 
+Based on the above information, is it
+[2023-09-22 13:38:37,230][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101658, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 13:38:54,855][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:3540, prediction: 
+Based on the above information, is it
+[2023-09-22 13:39:46,085][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182692, prediction: 
+Nina Jacobson is an executive.
+[2023-09-22 13:39:48,391][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:188637, prediction: 
+Based on the above information, is it
+[2023-09-22 13:40:08,831][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:3747, prediction: 
+Based on the above information, is it
+[2023-09-22 13:40:12,065][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:25521, prediction: 	The answer is: 	The answer
+[2023-09-22 13:40:40,618][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219198, prediction: 
+Based on the above information, is it
+[2023-09-22 13:40:50,527][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:21547, prediction: 
+Based on the above information, is it
+[2023-09-22 13:41:30,105][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:117960, prediction: 
+Based on the above information, is it
+[2023-09-22 13:41:38,237][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124404, prediction: 
+Based on the above information, is it
+[2023-09-22 13:41:52,862][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:203055, prediction: 
+Based on the above information, is it
+[2023-09-22 13:42:50,159][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139244, prediction: 
+Based on the above information, is it
+[2023-09-22 13:42:55,246][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:17252, prediction: 
+Based on the above information, is it
+[2023-09-22 13:42:58,356][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:113269, prediction: 
+Based on the above information, is it
+[2023-09-22 13:43:52,130][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:96459, prediction: 
+Based on the above information, is it
+[2023-09-22 13:43:55,726][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:97714, prediction: 
+Based on the above information, is it
+[2023-09-22 13:44:11,055][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39455, prediction: 	Claire Danes	Claire Dan
+[2023-09-22 13:44:35,864][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:135627, prediction: 
+Based on the above information, is it
+[2023-09-22 13:45:02,368][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68628, prediction: 
+Based on the above information, is it
+[2023-09-22 13:45:12,173][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:221140, prediction: 
+Based on the above information, is it
+[2023-09-22 13:45:30,414][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90130, prediction: 
+Based on the above information, is it
+[2023-09-22 13:45:40,531][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154746, prediction: 
+Based on the above information, is it
+[2023-09-22 13:47:07,566][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:85724, prediction: 
+<NAME> is a discordian.
+[2023-09-22 13:47:40,980][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195942, prediction: 
+The Hyksos' chief deity
+[2023-09-22 13:48:09,661][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:136282, prediction: 
+Based on the above information, is it
+[2023-09-22 13:48:37,749][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:34343, prediction: 
+<br>
+<br>
+
+[2023-09-22 13:48:38,605][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:206448, prediction: 
+Based on the above information, is it
+[2023-09-22 13:48:50,879][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:48047, prediction: 	Amitabh	Amitab
+[2023-09-22 13:49:26,776][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:76884, prediction: 
+Based on the above information, is it
+[2023-09-22 13:52:03,057][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81496, prediction: 	Claire Danes	Claire Dan
+[2023-09-22 13:52:08,802][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98672, prediction: 	1995	1995	1995	1995	
+[2023-09-22 13:54:19,204][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:100490, prediction: 
+Based on the above information, is it
+[2023-09-22 13:54:31,783][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4658, prediction: 	Betsy Hodges became the mayor
+[2023-09-22 13:54:39,797][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:153477, prediction: 
+Based on the above information, is it
+[2023-09-22 13:56:22,271][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202727, prediction: 
+Based on the above information, is it
+[2023-09-22 13:56:25,340][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124847, prediction: 
+Based on the above information, is it
+[2023-09-22 13:56:26,196][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:31256, prediction: 
+Based on the above information, is it
+[2023-09-22 13:56:32,351][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:118050, prediction: 
+Based on the above information, is it
+[2023-09-22 13:56:33,165][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170090, prediction: 
+Based on the above information, is it
+[2023-09-22 13:57:41,633][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:209346, prediction: 	Alexandria is the largest seap
+[2023-09-22 13:58:18,800][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:61749, prediction: 
+Based on the above information, is it
+[2023-09-22 13:58:50,396][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:148910, prediction: 
+Based on the above information, is it
+[2023-09-22 14:00:05,665][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:103522, prediction: 
+Based on the above information, is it
+[2023-09-22 14:01:01,639][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:27120, prediction: 	The Quiet is a 2005 American drama
+[2023-09-22 14:01:04,789][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217116, prediction: 
+Based on the above information, is it
+[2023-09-22 14:01:54,985][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:220962, prediction: 
+Based on the above information, is it
+[2023-09-22 14:02:18,499][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202322, prediction: 
+Based on the above information, is it
+[2023-09-22 14:02:28,316][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:8824, prediction: 
+Based on the above information, is it
+[2023-09-22 14:02:38,586][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119430, prediction: 
+Based on the above information, is it
+[2023-09-22 14:03:31,522][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:216184, prediction: 
+Based on the above information, is it
+[2023-09-22 14:03:33,256][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:27115, prediction: 
+Based on the above information, is it
+[2023-09-22 14:03:34,112][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:113748, prediction: 
+Amancio Ortega is a
+[2023-09-22 14:03:44,966][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171895, prediction: 
+Based on the above information, is it
+[2023-09-22 14:03:58,845][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:222658, prediction: 
+Based on the above information, is it
+[2023-09-22 14:05:18,397][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:110390, prediction: 
+Based on the above information, is it
+[2023-09-22 14:05:42,874][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:206031, prediction: 	202 episodes	The Office (US)
+[2023-09-22 14:06:09,510][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202748, prediction: 
+Based on the above information, is it
+[2023-09-22 14:06:29,551][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98169, prediction: 
+Based on the above information, is it
+[2023-09-22 14:07:55,734][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:27403, prediction: 
+The Mormon population has been growing rapidly due
+[2023-09-22 14:08:00,235][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101380, prediction: 
+Based on the above information, is it
+[2023-09-22 14:08:49,045][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:110854, prediction: 
+Based on the above information, is it
+[2023-09-22 14:08:52,901][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:122859, prediction: 
+Based on the above information, is it
+[2023-09-22 14:09:17,758][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50781, prediction: 
+Based on the above information, is it
+[2023-09-22 14:09:30,516][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139505, prediction: 
+Based on the above information, is it
+[2023-09-22 14:09:32,249][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:228083, prediction: 
+Based on the above information, is it
+[2023-09-22 14:09:43,758][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151828, prediction: 
+Based on the above information, is it
+[2023-09-22 14:09:53,937][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:203046, prediction: 
+Akon is a lawyer.
+Based
+[2023-09-22 14:10:05,763][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:22638, prediction: 	Spanish	Spain	Africa	
+[2023-09-22 14:10:06,768][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:27363, prediction: 
+Based on the above information, is it
+[2023-09-22 14:10:13,165][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84862, prediction: 
+Based on the above information, is it
+[2023-09-22 14:10:14,084][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80597, prediction: 
+<br>
+<br>
+
+[2023-09-22 14:11:25,784][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:13553, prediction: 
+Based on the above information, is it
+[2023-09-22 14:13:05,695][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:208904, prediction: 
+Based on the above information, is it
+[2023-09-22 14:13:18,852][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151286, prediction: 
+Meghan Markle is an animal
+[2023-09-22 14:13:21,579][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:95159, prediction: 	KSG	Order of St. Gregory
+[2023-09-22 14:13:22,477][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57246, prediction: 
+Based on the above information, is it
+[2023-09-22 14:13:29,967][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101062, prediction: 	Claire Danes	Claire Dan
+[2023-09-22 14:13:30,760][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:96414, prediction: 
+Mandy Moore is a vegetarian.
+
+[2023-09-22 14:13:36,508][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:2220, prediction: 
+Based on the above information, is it
+[2023-09-22 14:13:46,290][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:223283, prediction: 
+Based on the above information, is it
+[2023-09-22 14:14:08,506][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131785, prediction: 
+Based on the above information, is it
+[2023-09-22 14:14:31,210][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124243, prediction: 	Ayananka Bose works on movies in
+[2023-09-22 14:14:37,907][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:109365, prediction: 
+Based on the above information, is it
+[2023-09-22 14:14:46,277][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:118444, prediction: 
+Faye Resnick is a movie
+[2023-09-22 14:14:57,410][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:75939, prediction: 
+Based on the above information, is it
+[2023-09-22 14:14:59,271][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194737, prediction: 
+<br>
+<br>
+
+[2023-09-22 14:15:12,771][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:99833, prediction: 
+Based on the above information, is it
+[2023-09-22 14:15:18,375][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:223492, prediction: 
+Based on the above information, is it
+[2023-09-22 14:16:41,717][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:40987, prediction: 
+Based on the above information, is it
+[2023-09-22 14:17:25,240][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183921, prediction: 
+Based on the above information, is it
+[2023-09-22 14:17:39,185][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162834, prediction: 
+# Q2.2
+# Q
+[2023-09-22 14:17:41,868][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:196171, prediction: 
+Based on the above information, is it
+[2023-09-22 14:17:55,867][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162217, prediction: 
+Based on the above information, is it
+[2023-09-22 14:19:07,205][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:27074, prediction: 
+Based on the above information, is it
+[2023-09-22 14:19:12,050][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:106409, prediction: 
+Based on the above information, is it
+[2023-09-22 14:19:43,532][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:135903, prediction: 
+Based on the above information, is it
+[2023-09-22 14:20:11,019][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:109118, prediction: 
+Based on the above information, is it
+[2023-09-22 14:20:11,834][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219677, prediction: 
+Based on the above information, is it
+[2023-09-22 14:20:28,571][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:123044, prediction: 
+Based on the above information, is it
+[2023-09-22 14:20:53,957][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:47605, prediction: 	Tye Sheridan	Tye Sher
+[2023-09-22 14:20:59,728][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170115, prediction: 
+Based on the above information, is it
+[2023-09-22 14:21:09,762][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:169310, prediction: 
+Based on the above information, is it
+[2023-09-22 14:21:42,137][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86444, prediction: 
+Based on the above information, is it
+[2023-09-22 14:22:33,772][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202744, prediction: 
+Based on the above information, is it
+[2023-09-22 14:23:23,870][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202728, prediction: 
+Based on the above information, is it
+[2023-09-22 14:23:41,185][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:64599, prediction: 
+Babur was from East-Central
+[2023-09-22 14:24:41,741][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194179, prediction: 
+Based on the above information, is it
+[2023-09-22 14:24:57,844][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:79150, prediction: 
+Based on the above information, is it
+[2023-09-22 14:25:15,720][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197648, prediction: 
+Based on the above information, is it
+[2023-09-22 14:26:07,820][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:118943, prediction: 	George Lucas	George Lucas (director)
+[2023-09-22 14:26:08,698][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:6211, prediction: 
+Based on the above information, is it
+[2023-09-22 14:26:11,667][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:141027, prediction: 
+Based on the above information, is it
+[2023-09-22 14:26:16,395][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177849, prediction: 
+Based on the above information, is it
+[2023-09-22 14:26:43,062][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68158, prediction: 
+Based on the above information, is it
+[2023-09-22 14:27:03,809][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:137767, prediction: 
+Based on the above information, is it
+[2023-09-22 14:27:04,667][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:46456, prediction: 
+Based on the above information, is it
+[2023-09-22 14:27:26,621][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:23943, prediction: 
+Based on the above information, is it
+[2023-09-22 14:28:18,154][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219194, prediction: 
+Based on the above information, is it
+[2023-09-22 14:28:22,804][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175453, prediction: 
+Based on the above information, is it
+[2023-09-22 14:28:31,278][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:206022, prediction: 	The Office (US) ran for nine
+[2023-09-22 14:28:34,992][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:120253, prediction: 
+Shomu Mukherjee died in
+[2023-09-22 14:28:57,353][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217382, prediction: 
+Based on the above information, is it
+[2023-09-22 14:29:59,728][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84830, prediction: 
+Based on the above information, is it
+[2023-09-22 14:30:02,322][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:161724, prediction: 
+Based on the above information, is it
+[2023-09-22 14:30:23,729][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:126050, prediction: 
+Based on the above information, is it
+[2023-09-22 14:31:11,010][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:82282, prediction: 
+Based on the above information, is it
+[2023-09-22 14:31:32,331][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157901, prediction: 
+Based on the above information, is it
+[2023-09-22 14:31:46,106][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:140513, prediction: 
+Based on the above information, is it
+[2023-09-22 14:31:54,247][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162629, prediction: 
+Based on the above information, is it
+[2023-09-22 14:32:27,499][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4806, prediction: 	dark energy	dark energy	matter	
+[2023-09-22 14:32:29,088][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:148180, prediction: 
+Kareem Abdul-Jabbar
+[2023-09-22 14:32:44,783][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:32401, prediction: 
+Based on the above information, is it
+[2023-09-22 14:33:35,075][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192018, prediction: 
+Based on the above information, is it
+[2023-09-22 14:33:35,953][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:47680, prediction: 
+James Brolin is an Episc
+[2023-09-22 14:34:29,885][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177841, prediction: 
+Based on the above information, is it
+[2023-09-22 14:34:37,418][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219172, prediction: 
+Based on the above information, is it
+[2023-09-22 14:34:45,825][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177854, prediction: 
+Based on the above information, is it
+[2023-09-22 14:35:15,484][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175452, prediction: 
+Based on the above information, is it
+[2023-09-22 14:36:13,604][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:24677, prediction: 
+Based on the above information, is it
+[2023-09-22 14:36:20,507][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142839, prediction: 	The House of the Spirits	
+[2023-09-22 14:36:24,707][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:46996, prediction: 
+Based on the above information, is it
+[2023-09-22 14:36:31,578][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170095, prediction: 
+Based on the above information, is it
+[2023-09-22 14:36:39,505][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:49512, prediction: 	The Ellen Show was released online only.
+[2023-09-22 14:36:43,565][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:222659, prediction: 
+Based on the above information, is it
+[2023-09-22 14:36:46,636][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:40859, prediction: 	Claire Danes	Claire Dan
+[2023-09-22 14:37:20,620][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98123, prediction: 
+Based on the above information, is it
+[2023-09-22 14:38:38,218][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:221128, prediction: 
+Based on the above information, is it
+[2023-09-22 14:38:45,080][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:31249, prediction: 
+Based on the above information, is it
+[2023-09-22 14:38:47,442][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:136840, prediction: 
+The International Tennis Federation -LRB
+[2023-09-22 14:38:59,099][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:173664, prediction: 
+Based on the above information, is it
+[2023-09-22 14:39:38,141][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:212232, prediction: 
+Based on the above information, is it
+[2023-09-22 14:40:34,409][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86055, prediction: 
+Based on the above information, is it
+[2023-09-22 14:40:55,869][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:72300, prediction: 
+Based on the above information, is it
+[2023-09-22 14:41:28,503][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:96033, prediction: 
+Based on the above information, is it
+[2023-09-22 14:41:33,642][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225866, prediction: 
+Based on the above information, is it
+[2023-09-22 14:41:49,231][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151907, prediction: 
+Based on the above information, is it
+[2023-09-22 14:44:04,564][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:49537, prediction: 
+Based on the above information, is it
+[2023-09-22 14:44:05,378][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:191649, prediction: 
+Based on the above information, is it
+[2023-09-22 14:44:56,347][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:129434, prediction: 
+Based on the above information, is it
+[2023-09-22 14:46:24,597][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:103439, prediction: 
+James Brolin was born in Georgia
+[2023-09-22 14:47:19,075][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182690, prediction: 
+Based on the above information, is it
+[2023-09-22 14:47:26,571][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86552, prediction: 
+Based on the above information, is it
+[2023-09-22 14:48:40,463][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:9672, prediction: 
+Based on the above information, is it
+[2023-09-22 14:49:10,138][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:113487, prediction: 
+Based on the above information, is it
+[2023-09-22 14:49:16,879][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81263, prediction: 
+Based on the above information, is it
+[2023-09-22 14:49:18,705][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:228693, prediction: 	February	February	February	February
+
+[2023-09-22 14:49:41,067][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171495, prediction: 
+Based on the above information, is it
+[2023-09-22 14:49:44,049][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:148701, prediction: 
+Based on the above information, is it
+[2023-09-22 14:50:06,487][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:132703, prediction: 
+Based on the above information, is it
+[2023-09-22 14:50:19,548][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:21565, prediction: 
+Based on the above information, is it
+[2023-09-22 14:50:20,722][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:54055, prediction: 
+Based on the above information, is it
+[2023-09-22 14:50:41,798][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:52887, prediction: 
+Based on the above information, is it
+[2023-09-22 14:50:49,761][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142348, prediction: 
+Ayananka Bose is an actress.
+[2023-09-22 14:51:18,578][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80468, prediction: 
+Based on the above information, is it
+[2023-09-22 14:51:29,072][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:10150, prediction: 
+Based on the above information, is it
+[2023-09-22 14:51:42,982][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:61166, prediction: 
+Based on the above information, is it
+[2023-09-22 14:53:10,144][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:166931, prediction: 	Baadshah -LRB-
+[2023-09-22 14:53:11,148][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:72801, prediction: 
+Based on the above information, is it
+[2023-09-22 14:53:20,964][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:114715, prediction: 
+Based on the above information, is it
+[2023-09-22 14:53:26,178][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152804, prediction: 
+Based on the above information, is it
+[2023-09-22 14:53:33,980][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:30756, prediction: 
+Based on the above information, is it
+[2023-09-22 14:54:20,885][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:209348, prediction: 
+Based on the above information, is it
+[2023-09-22 14:54:52,520][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:102085, prediction: 
+Based on the above information, is it
+[2023-09-22 14:55:05,185][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138995, prediction: 
+Based on the above information, is it
+[2023-09-22 14:55:22,021][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182688, prediction: 
+Based on the above information, is it
+[2023-09-22 14:55:57,655][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84209, prediction: 
+Based on the above information, is it
+[2023-09-22 14:55:58,574][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195510, prediction: 
+Based on the above information, is it
+[2023-09-22 14:56:55,241][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:193830, prediction: 
+Based on the above information, is it
+[2023-09-22 14:57:23,617][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:166918, prediction: 	Baadshah -LRB-
+[2023-09-22 14:57:41,093][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:145944, prediction: 
+Based on the above information, is it
+[2023-09-22 14:57:42,054][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170013, prediction: 
+Based on the above information, is it
+[2023-09-22 14:57:44,644][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:145824, prediction: 
+The Dodo has been depicted with blue
+[2023-09-22 14:59:12,273][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:208922, prediction: 
+Based on the above information, is it
+[2023-09-22 14:59:59,413][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:56545, prediction: 
+Based on the above information, is it
+[2023-09-22 15:00:39,197][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:188642, prediction: 
+Based on the above information, is it
+[2023-09-22 15:00:53,117][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195208, prediction: 	Kevin Bacon was in a 2004 film
+[2023-09-22 15:01:18,401][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107089, prediction: 
+Meghan Markle is a philanth
+[2023-09-22 15:03:19,259][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:79404, prediction: 
+Aubrey Anderson-Emmons
+[2023-09-22 15:03:23,609][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:110357, prediction: 
+<NAME> typically wears a bow tie
+[2023-09-22 15:03:47,346][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:205290, prediction: 
+There was a 1994 parade that took place
+[2023-09-22 15:03:50,819][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202741, prediction: 
+Based on the above information, is it
+[2023-09-22 15:04:17,207][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:185773, prediction: 
+The latest ceremony of the Logie Awards
+[2023-09-22 15:04:49,276][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:206451, prediction: 
+Based on the above information, is it
+[2023-09-22 15:05:36,187][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:163806, prediction: 
+Based on the above information, is it
+[2023-09-22 15:05:38,420][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:60775, prediction: 
+James Brolin is an actor.
+[2023-09-22 15:05:41,665][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68341, prediction: 
+Based on the above information, is it
+[2023-09-22 15:05:51,195][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171905, prediction: 
+Based on the above information, is it
+[2023-09-22 15:05:58,846][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:35271, prediction: 
+The International Tennis Federation is a governing
+[2023-09-22 15:06:13,418][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174899, prediction: 
+Based on the above information, is it
+[2023-09-22 15:06:36,544][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:137384, prediction: 
+# -
+
+# ### Question
+[2023-09-22 15:06:52,189][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:163799, prediction: 
+Based on the above information, is it
+[2023-09-22 15:09:00,929][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89256, prediction: 
+Based on the above information, is it
+[2023-09-22 15:09:03,361][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:99047, prediction: 
+Based on the above information, is it
+[2023-09-22 15:09:30,014][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86172, prediction: 
+Meghan Markle is very selfish
+[2023-09-22 15:09:39,125][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:66348, prediction: 
+Based on the above information, is it
+[2023-09-22 15:10:00,337][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202318, prediction: 
+Based on the above information, is it
+[2023-09-22 15:10:08,530][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:149204, prediction: 
+Based on the above information, is it
+[2023-09-22 15:11:11,043][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:21722, prediction: 
+Based on the above information, is it
+[2023-09-22 15:11:11,879][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:153086, prediction: 
+Based on the above information, is it
+[2023-09-22 15:11:35,319][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139453, prediction: 
+Based on the above information, is it
+[2023-09-22 15:11:40,627][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:33603, prediction: 
+Based on the above information, is it
+[2023-09-22 15:11:46,873][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154984, prediction: 
+Kareem Abdul-Jabbar
+[2023-09-22 15:11:54,890][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:220971, prediction: 
+Based on the above information, is it
+[2023-09-22 15:12:36,444][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:103234, prediction: 	Sherilyn Fenn starred in a film
+[2023-09-22 15:13:16,277][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:187384, prediction: 
+Based on the above information, is it
+[2023-09-22 15:13:18,783][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:121508, prediction: 
+Based on the above information, is it
+[2023-09-22 15:13:24,640][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:22003, prediction: 
+Based on the above information, is it
+[2023-09-22 15:14:07,889][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:94861, prediction: 	The Winds of Winter is the forthcoming
+[2023-09-22 15:14:48,355][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152248, prediction: 
+Based on the above information, is it
+[2023-09-22 15:15:27,008][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:103108, prediction: 
+Based on the above information, is it
+[2023-09-22 15:15:27,781][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57495, prediction: 
+Based on the above information, is it
+[2023-09-22 15:15:58,695][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:205289, prediction: 
+Rwanda is located west of Egypt
+[2023-09-22 15:16:02,494][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:11831, prediction: 
+Based on the above information, is it
+[2023-09-22 15:16:03,455][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:30430, prediction: 
+Based on the above information, is it
+[2023-09-22 15:16:06,308][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86999, prediction: 
+Raven-Symoné is a
+[2023-09-22 15:16:18,246][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:2249, prediction: 
+Based on the above information, is it
+[2023-09-22 15:16:20,022][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131722, prediction: 
+Based on the above information, is it
+[2023-09-22 15:17:58,052][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:41457, prediction: 
+Based on the above information, is it
+[2023-09-22 15:18:21,699][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:69213, prediction: 
+Based on the above information, is it
+[2023-09-22 15:19:16,290][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:172708, prediction: 
+Based on the above information, is it
+[2023-09-22 15:19:30,327][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:158261, prediction: 
+Based on the above information, is it
+[2023-09-22 15:19:39,121][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:3748, prediction: 
+Based on the above information, is it
+[2023-09-22 15:19:48,690][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:122190, prediction: 
+Based on the above information, is it
+[2023-09-22 15:20:18,996][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90971, prediction: 
+Based on the above information, is it
+[2023-09-22 15:20:19,895][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219192, prediction: 
+Based on the above information, is it
+[2023-09-22 15:20:57,828][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:64545, prediction: 
+Based on the above information, is it
+[2023-09-22 15:21:07,148][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:144773, prediction: 
+Based on the above information, is it
+[2023-09-22 15:21:11,139][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39411, prediction: 
+Based on the above information, is it
+[2023-09-22 15:21:23,437][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162418, prediction: 
+Based on the above information, is it
+[2023-09-22 15:21:41,558][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:55157, prediction: 
+Based on the above information, is it
+[2023-09-22 15:22:07,652][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:129683, prediction: 
+Based on the above information, is it
+[2023-09-22 15:22:21,006][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:149780, prediction: 
+Based on the above information, is it
+[2023-09-22 15:22:25,721][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4555, prediction: 
+Based on the above information, is it
+[2023-09-22 15:22:31,745][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:207010, prediction: 	American television studio	American television studio	
+[2023-09-22 15:23:49,714][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:99740, prediction: 
+<NAME> was always disassociated from
+[2023-09-22 15:23:55,195][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192013, prediction: 
+Based on the above information, is it
+[2023-09-22 15:24:41,683][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171533, prediction: 
+Based on the above information, is it
+[2023-09-22 15:24:48,545][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157430, prediction: 
+Based on the above information, is it
+[2023-09-22 15:24:56,802][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:5827, prediction: 
+Based on the above information, is it
+[2023-09-22 15:25:04,304][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154764, prediction: 
+Based on the above information, is it
+[2023-09-22 15:25:05,202][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225813, prediction: 
+Based on the above information, is it
+[2023-09-22 15:25:09,209][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224574, prediction: 
+Based on the above information, is it
+[2023-09-22 15:25:52,090][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:209125, prediction: 
+Based on the above information, is it
+[2023-09-22 15:25:52,989][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:112954, prediction: 
+Based on the above information, is it
+[2023-09-22 15:26:04,066][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:100147, prediction: 
+Based on the above information, is it
+[2023-09-22 15:26:04,921][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:51901, prediction: 
+Based on the above information, is it
+[2023-09-22 15:26:24,652][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39244, prediction: 
+Based on the above information, is it
+[2023-09-22 15:26:44,924][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:10615, prediction: 
+James Spader wrote criticism about Secretary.
+[2023-09-22 15:26:59,993][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202752, prediction: 	The Chaperone is a 2011 American
+[2023-09-22 15:27:44,801][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50235, prediction: 
+Based on the above information, is it
+[2023-09-22 15:27:54,354][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:203060, prediction: 
+Based on the above information, is it
+[2023-09-22 15:27:56,437][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:32146, prediction: 
+The Africa Cup of Nations is held in
+[2023-09-22 15:28:07,114][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:213444, prediction: 	The Originals (TV series) has
+[2023-09-22 15:28:30,252][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138078, prediction: 
+Based on the above information, is it
+[2023-09-22 15:28:45,576][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:187554, prediction: 
+Based on the above information, is it
+[2023-09-22 15:29:07,414][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217114, prediction: 
+Based on the above information, is it
+[2023-09-22 15:29:13,703][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45061, prediction: 
+<NAME> is a Jew.
+
+[2023-09-22 15:29:34,053][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162420, prediction: 
+Based on the above information, is it
+[2023-09-22 15:30:31,639][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:166949, prediction: 
+Baadshah was only dubbed into
+[2023-09-22 15:30:33,456][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:141463, prediction: 
+Based on the above information, is it
+[2023-09-22 15:30:40,699][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:179838, prediction: 
+Based on the above information, is it
+[2023-09-22 15:31:00,978][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:178853, prediction: 
+Based on the above information, is it
+[2023-09-22 15:31:09,367][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:118860, prediction: 
+Based on the above information, is it
+[2023-09-22 15:31:59,973][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192760, prediction: 
+The show was taped and broadcast Monday
+[2023-09-22 15:32:00,871][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:25383, prediction: 
+Based on the above information, is it
+[2023-09-22 15:32:24,225][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90150, prediction: 
+Ayananka Bose is an actress.
+[2023-09-22 15:33:02,355][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174898, prediction: 
+The Alfred P. Murrah Federal Building
+[2023-09-22 15:33:12,017][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:112564, prediction: 
+Based on the above information, is it
+[2023-09-22 15:33:12,852][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224575, prediction: 
+Based on the above information, is it
+[2023-09-22 15:33:17,737][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142602, prediction: 
+Based on the above information, is it
+[2023-09-22 15:33:55,545][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39209, prediction: 
+Based on the above information, is it
+[2023-09-22 15:33:56,507][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:185778, prediction: 
+Based on the above information, is it
+[2023-09-22 15:34:35,398][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:161251, prediction: 
+Based on the above information, is it
+[2023-09-22 15:34:58,282][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84332, prediction: 
+Based on the above information, is it
+[2023-09-22 15:35:18,262][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164902, prediction: 
+Based on the above information, is it
+[2023-09-22 15:35:34,440][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:66575, prediction: 
+Based on the above information, is it
+[2023-09-22 15:35:46,110][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152283, prediction: 
+Based on the above information, is it
+[2023-09-22 15:36:35,181][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:55282, prediction: 	Spanish	Spain	Africa	
+[2023-09-22 15:36:42,473][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:61526, prediction: 
+Maggie Q starred in an anti
+[2023-09-22 15:37:27,795][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154004, prediction: 
+Based on the above information, is it
+[2023-09-22 15:37:32,279][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160364, prediction: 
+Meghan Markle is outspoken
+[2023-09-22 15:37:36,053][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:9943, prediction: 
+Based on the above information, is it
+[2023-09-22 15:38:26,625][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:106494, prediction: 
+Based on the above information, is it
+[2023-09-22 15:38:32,715][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217374, prediction: 
+Based on the above information, is it
+[2023-09-22 15:38:36,480][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:96181, prediction: 
+Scaramouche is a character in theater
+[2023-09-22 15:38:49,007][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:110768, prediction: 
+Based on the above information, is it
+[2023-09-22 15:39:21,350][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:227105, prediction: 
+Based on the above information, is it
+[2023-09-22 15:39:37,097][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:93151, prediction: 
+The Times is a local-interest magazine
+[2023-09-22 15:39:57,754][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131740, prediction: 
+Based on the above information, is it
+[2023-09-22 15:41:21,994][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:94451, prediction: 	large human settlement	large human settlement	
+[2023-09-22 15:41:33,351][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124662, prediction: 	boat	boat	boat	boat	
+[2023-09-22 15:42:09,979][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:136048, prediction: 
+Based on the above information, is it
+[2023-09-22 15:42:41,995][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174629, prediction: 
+Based on the above information, is it
+[2023-09-22 15:44:15,083][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89562, prediction: 
+Based on the above information, is it
+[2023-09-22 15:44:30,275][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:43475, prediction: 	USA	USA Network	USA Network	
+[2023-09-22 15:44:52,471][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131751, prediction: 
+Based on the above information, is it
+[2023-09-22 15:44:53,392][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:85318, prediction: 
+Based on the above information, is it
+[2023-09-22 15:45:13,138][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:122915, prediction: 
+Based on the above information, is it
+[2023-09-22 15:45:28,788][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:12489, prediction: 
+Based on the above information, is it
+[2023-09-22 15:45:47,229][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:108597, prediction: 
+Based on the above information, is it
+[2023-09-22 15:46:09,324][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90447, prediction: 	James Spader	James Spader	
+[2023-09-22 15:46:55,958][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192779, prediction: 
+Based on the above information, is it
+[2023-09-22 15:47:18,489][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:220972, prediction: 
+Based on the above information, is it
+[2023-09-22 15:47:39,298][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4868, prediction: 
+Based on the above information, is it
+[2023-09-22 15:47:41,627][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:114451, prediction: 
+Based on the above information, is it
+[2023-09-22 15:48:05,518][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:49306, prediction: 
+San Francisco Bay Area contains zero cities.
+[2023-09-22 15:48:19,735][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225271, prediction: 
+Based on the above information, is it
+[2023-09-22 15:48:38,133][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175441, prediction: 	Japanese television drama	Japanese television drama	
+[2023-09-22 15:48:52,591][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:54262, prediction: 
+Based on the above information, is it
+[2023-09-22 15:48:53,510][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:205270, prediction: 
+Based on the above information, is it
+[2023-09-22 15:49:59,937][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:109612, prediction: 
+Based on the above information, is it
+[2023-09-22 15:50:23,545][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:168629, prediction: 
+Based on the above information, is it
+[2023-09-22 15:50:33,830][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:103360, prediction: 
+Based on the above information, is it
+[2023-09-22 15:50:36,736][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:59980, prediction: 
+Based on the above information, is it
+[2023-09-22 15:52:17,087][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:87245, prediction: 
+Based on the above information, is it
+[2023-09-22 15:52:24,634][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202734, prediction: 
+The Chaperone (film) is
+[2023-09-22 15:54:03,398][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174621, prediction: 
+Based on the above information, is it
+[2023-09-22 15:54:09,059][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225278, prediction: 	Brian Russell De Palma -LRB
+[2023-09-22 15:54:26,532][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192771, prediction: 
+Based on the above information, is it
+[2023-09-22 15:54:35,501][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45879, prediction: 	The Ellen Show began its broadcast in 2011
+[2023-09-22 15:54:36,482][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:9891, prediction: 
+Based on the above information, is it
+[2023-09-22 15:55:08,166][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:17881, prediction: 
+Based on the above information, is it
+[2023-09-22 15:55:53,949][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119894, prediction: 
+Based on the above information, is it
+[2023-09-22 15:56:12,177][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:214793, prediction: 
+Based on the above information, is it
+[2023-09-22 15:56:13,097][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192780, prediction: 
+Based on the above information, is it
+[2023-09-22 15:56:15,404][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:130680, prediction: 
+Based on the above information, is it
+[2023-09-22 15:58:37,415][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101799, prediction: 
+Based on the above information, is it
+[2023-09-22 15:58:38,398][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:146549, prediction: 
+Based on the above information, is it
+[2023-09-22 15:59:03,429][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105845, prediction: 
+Based on the above information, is it
+[2023-09-22 15:59:13,704][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:173056, prediction: 	The population of Barcelona is 1.6
+[2023-09-22 15:59:19,306][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:22616, prediction: 
+Based on the above information, is it
+[2023-09-22 15:59:25,741][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195941, prediction: 
+The Hyksos' chief deity
+[2023-09-22 15:59:36,142][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:14572, prediction: 
+Based on the above information, is it
+[2023-09-22 15:59:42,622][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107995, prediction: 
+Based on the above information, is it
+[2023-09-22 16:01:00,151][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131819, prediction: 
+Based on the above information, is it
+[2023-09-22 16:01:00,943][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162673, prediction: 
+Based on the above information, is it
+[2023-09-22 16:01:32,739][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:95040, prediction: 
+James Brolin is a Republican.
+[2023-09-22 16:01:35,668][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152198, prediction: 
+Based on the above information, is it
+[2023-09-22 16:01:36,587][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:220986, prediction: 
+Based on the above information, is it
+[2023-09-22 16:01:50,183][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:112185, prediction: 
+Based on the above information, is it
+[2023-09-22 16:02:01,894][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:63786, prediction: 
+Based on the above information, is it
+[2023-09-22 16:02:06,591][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107340, prediction: 
+Based on the above information, is it
+[2023-09-22 16:03:01,962][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:121852, prediction: 
+# -
+
+# ### Q
+[2023-09-22 16:03:27,458][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138683, prediction: 
+Based on the above information, is it
+[2023-09-22 16:03:46,951][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:25760, prediction: 
+Based on the above information, is it
+[2023-09-22 16:04:04,865][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57109, prediction: 
+Based on the above information, is it
+[2023-09-22 16:04:23,981][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174618, prediction: 	The X-Files had only eight seasons
+[2023-09-22 16:04:24,921][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101441, prediction: 
+Based on the above information, is it
+[2023-09-22 16:04:32,861][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160664, prediction: 
+Meghan Markle is a teacher
+[2023-09-22 16:04:53,049][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:35713, prediction: 
+Sierra Morena is a thing.
+[2023-09-22 16:04:57,944][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:207008, prediction: 	Revolution Studios	Revolution Studios	
+[2023-09-22 16:05:05,982][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:53473, prediction: 
+Based on the above information, is it
+[2023-09-22 16:05:42,930][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:198891, prediction: 
+Based on the above information, is it
+[2023-09-22 16:05:46,588][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:137203, prediction: 
+Based on the above information, is it
+[2023-09-22 16:05:53,448][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:213432, prediction: 
+Based on the above information, is it
+[2023-09-22 16:06:12,493][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197665, prediction: 
+Based on the above information, is it
+[2023-09-22 16:06:14,736][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105065, prediction: 
+Exotic Birds achieved worldwide success despite being
+[2023-09-22 16:06:15,698][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162415, prediction: 
+The Suite Life of Zack & C
+[2023-09-22 16:06:46,231][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:148929, prediction: 	The answer is: 	The answer
+[2023-09-22 16:06:52,310][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:149697, prediction: 
+Based on the above information, is it
+[2023-09-22 16:08:15,721][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:132932, prediction: 
+Based on the above information, is it
+[2023-09-22 16:08:41,708][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:63090, prediction: 
+Based on the above information, is it
+[2023-09-22 16:09:11,788][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182699, prediction: 
+Based on the above information, is it
+[2023-09-22 16:09:21,252][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:28400, prediction: 
+Based on the above information, is it
+[2023-09-22 16:09:34,306][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162414, prediction: 
+Based on the above information, is it
+[2023-09-22 16:10:54,572][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50889, prediction: 
+Based on the above information, is it
+[2023-09-22 16:11:03,224][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192787, prediction: 
+Based on the above information, is it
+[2023-09-22 16:12:10,588][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45124, prediction: 	Dharmesh Darshan	Dharm
+[2023-09-22 16:12:59,213][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:65830, prediction: 
+Based on the above information, is it
+[2023-09-22 16:13:16,480][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80504, prediction: 
+Based on the above information, is it
+[2023-09-22 16:13:31,118][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:173916, prediction: 
+Based on the above information, is it
+[2023-09-22 16:14:07,752][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:22267, prediction: 
+Based on the above information, is it
+[2023-09-22 16:15:15,572][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:179822, prediction: 
+Based on the above information, is it
+[2023-09-22 16:16:13,068][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:91843, prediction: 
+# # # # # # # #
+[2023-09-22 16:16:25,483][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150839, prediction: 
+Based on the above information, is it
+[2023-09-22 16:16:35,840][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:42112, prediction: 
+Based on the above information, is it
+[2023-09-22 16:16:40,255][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175447, prediction: 
+Based on the above information, is it
+[2023-09-22 16:17:12,970][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81160, prediction: 
+Based on the above information, is it
+[2023-09-22 16:17:17,452][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:104535, prediction: 
+Based on the above information, is it
+[2023-09-22 16:17:27,290][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:132221, prediction: 
+Based on the above information, is it
+[2023-09-22 16:17:32,294][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:106023, prediction: 
+The Boeing 787 Dreamliner is a
+[2023-09-22 16:17:38,612][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219187, prediction: 
+Based on the above information, is it
+[2023-09-22 16:19:47,590][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:137122, prediction: 
+Based on the above information, is it
+[2023-09-22 16:20:25,209][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:54008, prediction: 
+Based on the above information, is it
+[2023-09-22 16:20:48,612][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:111563, prediction: 
+Babur was a vegetarian.
+
+[2023-09-22 16:21:00,668][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:13282, prediction: 
+Based on the above information, is it
+[2023-09-22 16:21:13,100][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:156013, prediction: 
+Based on the above information, is it
+[2023-09-22 16:21:23,283][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:26181, prediction: 
+Based on the above information, is it
+[2023-09-22 16:21:29,347][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:130592, prediction: 
+Based on the above information, is it
+[2023-09-22 16:21:30,202][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:20192, prediction: 
+The Dodo has been depicted with yellow
+[2023-09-22 16:21:53,367][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:55987, prediction: 
+Based on the above information, is it
+[2023-09-22 16:22:30,916][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:228573, prediction: 
+Based on the above information, is it
+[2023-09-22 16:22:39,976][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:117278, prediction: 
+Based on the above information, is it
+[2023-09-22 16:23:25,618][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50527, prediction: 
+Based on the above information, is it
+[2023-09-22 16:25:20,854][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:62053, prediction: 	The Ellen Show	The Ellen Show	
+[2023-09-22 16:26:01,221][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:140967, prediction: 	The Ellen Show is a television sitcom
+[2023-09-22 16:26:11,679][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:44686, prediction: 
+Based on the above information, is it
+[2023-09-22 16:26:14,726][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150268, prediction: 
+Based on the above information, is it
+[2023-09-22 16:26:21,868][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:37997, prediction: 	Kate Walsh was only ever on CBS shows
+[2023-09-22 16:26:37,126][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:29582, prediction: 
+Based on the above information, is it
+[2023-09-22 16:26:38,129][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:23647, prediction: 
+Based on the above information, is it
+[2023-09-22 16:26:45,614][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:2076, prediction: 
+Based on the above information, is it
+[2023-09-22 16:27:34,769][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:95373, prediction: 
+Based on the above information, is it
+[2023-09-22 16:28:06,337][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:43681, prediction: 
+Based on the above information, is it
+[2023-09-22 16:28:07,235][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:12970, prediction: 
+Morgan Fairchild has appeared on a
+[2023-09-22 16:28:28,108][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:29368, prediction: 
+Based on the above information, is it
+[2023-09-22 16:28:35,609][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197647, prediction: 
+Based on the above information, is it
+[2023-09-22 16:28:49,486][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174623, prediction: 
+Based on the above information, is it
+[2023-09-22 16:29:35,742][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:38383, prediction: 
+Aphrodite is beautiful.
+
+[2023-09-22 16:29:36,682][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217026, prediction: 
+Based on the above information, is it
+[2023-09-22 16:29:53,395][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:128902, prediction: 
+Based on the above information, is it
+[2023-09-22 16:29:54,356][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150453, prediction: 
+Based on the above information, is it
+[2023-09-22 16:30:43,678][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201434, prediction: 
+Based on the above information, is it
+[2023-09-22 16:31:17,278][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:158219, prediction: 
+Based on the above information, is it
+[2023-09-22 16:31:37,504][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:36122, prediction: 
+Based on the above information, is it
+[2023-09-22 16:31:38,549][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:19593, prediction: 
+Based on the above information, is it
+[2023-09-22 16:31:42,726][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68468, prediction: 
+Uranium is a chemical element with
+[2023-09-22 16:32:21,809][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160890, prediction: 
+Meghan Markle is a prot
+[2023-09-22 16:32:26,811][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107554, prediction: 
+Based on the above information, is it
+[2023-09-22 16:32:37,452][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98811, prediction: 
+Based on the above information, is it
+[2023-09-22 16:33:25,190][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80336, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 16:33:47,106][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:214791, prediction: 
+Based on the above information, is it
+[2023-09-22 16:33:57,354][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151455, prediction: 
+Based on the above information, is it
+[2023-09-22 16:34:00,974][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154514, prediction: 
+Based on the above information, is it
+[2023-09-22 16:34:03,421][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98380, prediction: 	The Quiet was released in 2005.
+[2023-09-22 16:34:24,826][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171483, prediction: 
+Based on the above information, is it
+[2023-09-22 16:34:53,147][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:51154, prediction: 
+Kareena Kapoor had some failures
+[2023-09-22 16:35:11,764][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4807, prediction: 	dark energy	dark energy	matter	
+[2023-09-22 16:35:21,264][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:226457, prediction: 	Chadwick Boseman refused to ever
+[2023-09-22 16:35:37,729][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219169, prediction: 
+Based on the above information, is it
+[2023-09-22 16:36:45,791][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177861, prediction: 
+Based on the above information, is it
+[2023-09-22 16:36:50,977][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:93077, prediction: 
+Based on the above information, is it
+[2023-09-22 16:36:56,368][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:114000, prediction: 	Half Girlfriend was partially filmed in 2008
+[2023-09-22 16:37:51,380][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:42399, prediction: 
+Based on the above information, is it
+[2023-09-22 16:37:59,978][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:122745, prediction: 	The Ellen Show	The Ellen Show	
+[2023-09-22 16:38:03,022][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:64308, prediction: 
+Based on the above information, is it
+[2023-09-22 16:38:58,467][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:207325, prediction: 
+Based on the above information, is it
+[2023-09-22 16:39:37,720][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171482, prediction: 
+Based on the above information, is it
+[2023-09-22 16:39:44,226][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:168932, prediction: 
+The Boeing 767 became the most frequently
+[2023-09-22 16:39:46,950][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:172327, prediction: 
+Based on the above information, is it
+[2023-09-22 16:40:25,283][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50038, prediction: 
+Based on the above information, is it
+[2023-09-22 16:40:36,914][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:7614, prediction: 
+Based on the above information, is it
+[2023-09-22 16:40:53,972][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86109, prediction: 	The Beguiled is based on a
+[2023-09-22 16:40:59,873][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:71700, prediction: 	The film is set in the 1990s
+[2023-09-22 16:41:03,206][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:115164, prediction: 
+Based on the above information, is it
+[2023-09-22 16:41:14,724][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:13981, prediction: 
+Based on the above information, is it
+[2023-09-22 16:41:24,732][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:88047, prediction: 
+Based on the above information, is it
+[2023-09-22 16:41:25,587][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105932, prediction: 
+Based on the above information, is it
+[2023-09-22 16:41:43,532][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81045, prediction: 	Hinduism	Hinduism	
+[2023-09-22 16:41:44,451][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164500, prediction: 
+Based on the above information, is it
+[2023-09-22 16:42:51,038][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:208920, prediction: 
+The Monster appears in the restaurant The Marshall
+[2023-09-22 16:42:51,936][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:172712, prediction: 
+Based on the above information, is it
+[2023-09-22 16:43:55,139][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:95094, prediction: 
+The above information is correct.
+
+
+[2023-09-22 16:44:11,410][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:223690, prediction: 
+Based on the above information, is it
+[2023-09-22 16:44:27,600][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:63867, prediction: 
+Based on the above information, is it
+[2023-09-22 16:44:51,074][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98588, prediction: 
+Based on the above information, is it
+[2023-09-22 16:45:22,492][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219186, prediction: 
+Based on the above information, is it
+[2023-09-22 16:45:55,933][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192764, prediction: 
+Based on the above information, is it
+[2023-09-22 16:46:35,765][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:49348, prediction: 
+Based on the above information, is it
+[2023-09-22 16:47:24,687][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197658, prediction: 
+Based on the above information, is it
+[2023-09-22 16:47:59,698][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:29470, prediction: 
+Based on the above information, is it
+[2023-09-22 16:48:06,031][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197651, prediction: 
+Based on the above information, is it
+[2023-09-22 16:48:45,098][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:93726, prediction: 	The answer is:	The answer is
+[2023-09-22 16:49:00,993][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50703, prediction: 
+Based on the above information, is it
+[2023-09-22 16:49:31,562][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:114175, prediction: 
+The Icelandic Coast Guard is a corrupt
+[2023-09-22 16:49:43,734][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:136658, prediction: 
+The International Tennis Federation -LRB
+[2023-09-22 16:49:44,505][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:191657, prediction: 
+Based on the above information, is it
+[2023-09-22 16:49:47,972][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:8551, prediction: 
+Based on the above information, is it
+[2023-09-22 16:49:54,260][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50536, prediction: 
+Based on the above information, is it
+[2023-09-22 16:49:57,092][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50508, prediction: 
+Based on the above information, is it
+[2023-09-22 16:50:00,113][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:31331, prediction: 
+Based on the above information, is it
+[2023-09-22 16:50:21,939][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:14124, prediction: 
+Based on the above information, is it
+[2023-09-22 16:50:28,201][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:62485, prediction: 
+Based on the above information, is it
+[2023-09-22 16:51:13,933][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:13923, prediction: 
+Based on the above information, is it
+[2023-09-22 16:51:19,387][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:69173, prediction: 
+Based on the above information, is it
+[2023-09-22 16:51:37,099][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194752, prediction: 
+Based on the above information, is it
+[2023-09-22 16:52:06,318][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:64504, prediction: 
+Based on the above information, is it
+[2023-09-22 16:52:18,091][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119993, prediction: 	The Nice Guys is a 2018 film
+[2023-09-22 16:52:18,969][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:37272, prediction: 
+Based on the above information, is it
+[2023-09-22 16:53:01,538][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183412, prediction: 
+Based on the above information, is it
+[2023-09-22 16:53:27,974][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39514, prediction: 
+Based on the above information, is it
+[2023-09-22 16:53:29,791][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:216194, prediction: 
+Based on the above information, is it
+[2023-09-22 16:54:17,885][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219167, prediction: 
+Based on the above information, is it
+[2023-09-22 16:54:22,870][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:121152, prediction: 
+Based on the above information, is it
+[2023-09-22 16:54:43,931][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:33695, prediction: 
+Based on the above information, is it
+[2023-09-22 16:54:46,614][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142854, prediction: 	Carl Franklin	Carl Franklin	Carl Franklin
+[2023-09-22 16:54:47,534][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39159, prediction: 
+Based on the above information, is it
+[2023-09-22 16:55:02,739][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:146897, prediction: 
+Based on the above information, is it
+[2023-09-22 16:55:17,182][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:161796, prediction: 
+Based on the above information, is it
+[2023-09-22 16:55:19,063][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162207, prediction: 
+Based on the above information, is it
+[2023-09-22 16:55:20,902][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:102113, prediction: 
+Based on the above information, is it
+[2023-09-22 16:55:28,001][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:137980, prediction: 
+James Brolin is French.
+
+[2023-09-22 16:55:38,765][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:26298, prediction: 
+Based on the above information, is it
+[2023-09-22 16:55:51,584][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90164, prediction: 
+Based on the above information, is it
+[2023-09-22 16:56:08,146][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:102951, prediction: 
+Based on the above information, is it
+[2023-09-22 16:56:18,596][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138431, prediction: 
+Faye Resnick has written three
+[2023-09-22 16:56:35,623][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:129074, prediction: 
+Based on the above information, is it
+[2023-09-22 16:56:40,827][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81121, prediction: 
+The Africa Cup of Nations is held every
+[2023-09-22 16:57:00,173][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:126955, prediction: 
+Based on the above information, is it
+[2023-09-22 16:57:41,099][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:137972, prediction: 
+Based on the above information, is it
+[2023-09-22 16:58:13,565][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80103, prediction: 
+Based on the above information, is it
+[2023-09-22 16:58:32,044][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:5151, prediction: 
+The Dodo has been depicted with a
+[2023-09-22 16:59:20,807][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:203064, prediction: 
+Akon has had four songs certified by
+[2023-09-22 17:00:09,404][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:227100, prediction: 
+Based on the above information, is it
+[2023-09-22 17:00:35,931][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:17182, prediction: 
+Based on the above information, is it
+[2023-09-22 17:00:45,736][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:14385, prediction: 
+Based on the above information, is it
+[2023-09-22 17:00:46,571][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:18630, prediction: 
+Based on the above information, is it
+[2023-09-22 17:00:58,470][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192759, prediction: 
+The show was taped and broadcast Monday
+[2023-09-22 17:01:09,254][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225260, prediction: 
+Based on the above information, is it
+[2023-09-22 17:02:21,545][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:145779, prediction: 
+Based on the above information, is it
+[2023-09-22 17:02:23,259][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:79343, prediction: 
+Based on the above information, is it
+[2023-09-22 17:02:33,342][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:129640, prediction: 
+Based on the above information, is it
+[2023-09-22 17:02:48,257][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131967, prediction: 
+Based on the above information, is it
+[2023-09-22 17:03:47,643][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164097, prediction: 	The answer is: 	The answer
+[2023-09-22 17:03:58,273][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192194, prediction: 
+Based on the above information, is it
+[2023-09-22 17:04:01,705][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160681, prediction: 
+Based on the above information, is it
+[2023-09-22 17:04:14,035][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:207342, prediction: 
+Based on the above information, is it
+[2023-09-22 17:04:15,750][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157818, prediction: 
+Based on the above information, is it
+[2023-09-22 17:04:35,653][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:73282, prediction: 
+Exotic Birds opened for a British music
+[2023-09-22 17:04:43,608][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:31864, prediction: 
+Based on the above information, is it
+[2023-09-22 17:05:18,007][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225876, prediction: 
+Revolver has topped American charts.
+
+[2023-09-22 17:05:30,699][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:88853, prediction: 
+Based on the above information, is it
+[2023-09-22 17:05:49,025][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119422, prediction: 
+#Answer to question 2
+#Question
+[2023-09-22 17:06:17,837][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:136505, prediction: 
+Based on the above information, is it
+[2023-09-22 17:06:22,229][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:192770, prediction: 
+Based on the above information, is it
+[2023-09-22 17:07:11,227][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170111, prediction: 
+Based on the above information, is it
+[2023-09-22 17:08:22,238][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90639, prediction: 
+Macklemore is a baseball fan
+[2023-09-22 17:09:10,450][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:53336, prediction: 
+Based on the above information, is it
+[2023-09-22 17:09:35,175][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138691, prediction: 
+Based on the above information, is it
+[2023-09-22 17:09:58,025][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107064, prediction: 	The scriptwriter for The Beguiled
+[2023-09-22 17:11:43,432][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:135295, prediction: 
+Based on the above information, is it
+[2023-09-22 17:11:49,634][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:168933, prediction: 
+The Boeing 767 became the most frequently
+[2023-09-22 17:12:22,780][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:32984, prediction: 
+Based on the above information, is it
+[2023-09-22 17:12:25,084][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57071, prediction: 
+Based on the above information, is it
+[2023-09-22 17:12:28,066][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:73345, prediction: 
+Based on the above information, is it
+[2023-09-22 17:13:17,530][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154691, prediction: 	John DiMaggio	John DiM
+[2023-09-22 17:14:20,057][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:145139, prediction: 
+Based on the above information, is it
+[2023-09-22 17:15:11,194][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50424, prediction: 
+Based on the above information, is it
+[2023-09-22 17:15:26,904][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:106719, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 17:15:28,752][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:185786, prediction: 	The latest ceremony , the Logie Awards
+[2023-09-22 17:15:44,711][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:24098, prediction: 
+Based on the above information, is it
+[2023-09-22 17:16:19,198][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:14946, prediction: 
+Based on the above information, is it
+[2023-09-22 17:16:24,849][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164523, prediction: 
+Based on the above information, is it
+[2023-09-22 17:17:28,859][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:82954, prediction: 
+Based on the above information, is it
+[2023-09-22 17:17:31,734][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183410, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 17:17:42,701][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:111976, prediction: 	Yvonne Strahovski	Y
+[2023-09-22 17:18:21,987][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:19324, prediction: 
+Based on the above information, is it
+[2023-09-22 17:18:27,066][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194570, prediction: 
+Based on the above information, is it
+[2023-09-22 17:18:40,804][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84016, prediction: 
+Based on the above information, is it
+[2023-09-22 17:19:06,782][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:205281, prediction: 
+Based on the above information, is it
+[2023-09-22 17:19:07,680][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:214983, prediction: 
+Based on the above information, is it
+[2023-09-22 17:19:45,653][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:133141, prediction: 
+Based on the above information, is it
+[2023-09-22 17:19:53,203][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202746, prediction: 
+Based on the above information, is it
+[2023-09-22 17:20:04,821][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170102, prediction: 
+Based on the above information, is it
+[2023-09-22 17:20:05,740][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:204320, prediction: 
+Based on the above information, is it
+[2023-09-22 17:20:20,433][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:47172, prediction: 
+Based on the above information, is it
+[2023-09-22 17:21:01,484][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183483, prediction: 
+Based on the above information, is it
+[2023-09-22 17:21:10,192][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154534, prediction: 
+Based on the above information, is it
+[2023-09-22 17:21:17,669][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151919, prediction: 
+Based on the above information, is it
+[2023-09-22 17:21:24,727][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:112273, prediction: 
+Based on the above information, is it
+[2023-09-22 17:22:25,659][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:92750, prediction: 
+Based on the above information, is it
+[2023-09-22 17:22:52,870][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177857, prediction: 
+Based on the above information, is it
+[2023-09-22 17:23:10,504][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:153240, prediction: 
+Based on the above information, is it
+[2023-09-22 17:23:11,297][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105509, prediction: 
+Nate Diaz competed in Venice.
+[2023-09-22 17:23:31,549][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131362, prediction: 
+Based on the above information, is it
+[2023-09-22 17:23:37,148][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:11083, prediction: 
+Based on the above information, is it
+[2023-09-22 17:23:40,468][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:87651, prediction: 
+Aphrodite is a Greek God
+[2023-09-22 17:23:57,088][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:39560, prediction: 
+Based on the above information, is it
+[2023-09-22 17:25:05,847][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224191, prediction: 	The 66th Primetime Emmy Awards
+[2023-09-22 17:25:06,788][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:77175, prediction: 
+Based on the above information, is it
+[2023-09-22 17:25:22,207][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:62639, prediction: 
+Based on the above information, is it
+[2023-09-22 17:25:29,183][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:15756, prediction: 
+Maria Theresa's father died in Spain
+[2023-09-22 17:25:56,801][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:200050, prediction: 	March	March
+Based on the above
+[2023-09-22 17:26:00,913][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:54427, prediction: 
+Based on the above information, is it
+[2023-09-22 17:26:54,803][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:94168, prediction: 	The answer is: 	The answer
+[2023-09-22 17:27:09,409][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:87578, prediction: 
+Based on the above information, is it
+[2023-09-22 17:27:27,513][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:204574, prediction: 
+Based on the above information, is it
+[2023-09-22 17:27:32,192][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:193838, prediction: 
+Based on the above information, is it
+[2023-09-22 17:27:57,388][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:112701, prediction: 
+The series ended in 2015.
+
+
+[2023-09-22 17:29:34,792][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217178, prediction: 
+Based on the above information, is it
+[2023-09-22 17:29:35,966][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:23956, prediction: 
+Based on the above information, is it
+[2023-09-22 17:30:12,496][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:113231, prediction: 
+Based on the above information, is it
+[2023-09-22 17:30:15,862][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80676, prediction: 
+The answer is: 
+The answer
+[2023-09-22 17:30:34,904][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:146333, prediction: 
+Based on the above information, is it
+[2023-09-22 17:30:47,939][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:36400, prediction: 
+Based on the above information, is it
+[2023-09-22 17:31:02,633][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4801, prediction: 
+Based on the above information, is it
+[2023-09-22 17:31:39,534][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:172329, prediction: 
+Based on the above information, is it
+[2023-09-22 17:32:03,554][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124463, prediction: 
+Based on the above information, is it
+[2023-09-22 17:32:17,433][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:135781, prediction: 
+Based on the above information, is it
+[2023-09-22 17:32:30,456][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:26094, prediction: 
+Based on the above information, is it
+[2023-09-22 17:33:38,742][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:24557, prediction: 
+Based on the above information, is it
+[2023-09-22 17:33:52,071][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101505, prediction: 
+Based on the above information, is it
+[2023-09-22 17:34:31,289][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164892, prediction: 
+Based on the above information, is it
+[2023-09-22 17:34:40,970][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151633, prediction: 
+Based on the above information, is it
+[2023-09-22 17:35:05,255][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:6219, prediction: 
+Based on the above information, is it
+[2023-09-22 17:35:36,631][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139551, prediction: 
+Based on the above information, is it
+[2023-09-22 17:35:39,419][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:17721, prediction: 
+Based on the above information, is it
+[2023-09-22 17:36:00,514][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:101991, prediction: 
+Anne Boleyn is an influential
+[2023-09-22 17:36:10,090][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:133434, prediction: 
+Based on the above information, is it
+[2023-09-22 17:36:38,408][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68113, prediction: 
+<NAME> has a father named Mic
+[2023-09-22 17:36:48,530][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:171489, prediction: 
+Based on the above information, is it
+[2023-09-22 17:37:38,556][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182706, prediction: 
+Based on the above information, is it
+[2023-09-22 17:38:42,566][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194435, prediction: 
+Based on the above information, is it
+[2023-09-22 17:39:03,416][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:116675, prediction: 
+Based on the above information, is it
+[2023-09-22 17:39:21,290][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:108814, prediction: 	Issa Rae has developed her own
+[2023-09-22 17:39:32,895][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:213443, prediction: 
+Based on the above information, is it
+[2023-09-22 17:39:47,112][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194224, prediction: 
+Based on the above information, is it
+[2023-09-22 17:40:01,896][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57892, prediction: 
+Based on the above information, is it
+[2023-09-22 17:40:08,609][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:169996, prediction: 
+Based on the above information, is it
+[2023-09-22 17:40:29,620][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:104758, prediction: 
+Based on the above information, is it
+[2023-09-22 17:40:31,271][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:82825, prediction: 
+Based on the above information, is it
+[2023-09-22 17:40:37,834][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:87768, prediction: 
+Based on the above information, is it
+[2023-09-22 17:40:44,016][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98187, prediction: 
+Based on the above information, is it
+[2023-09-22 17:41:11,688][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:73503, prediction: 
+Based on the above information, is it
+[2023-09-22 17:41:38,794][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:108755, prediction: 	The SpongeBob SquarePants Movie
+[2023-09-22 17:41:53,784][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:53005, prediction: 
+Based on the above information, is it
+[2023-09-22 17:42:05,080][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195477, prediction: 
+Based on the above information, is it
+[2023-09-22 17:42:12,700][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:153811, prediction: 
+Based on the above information, is it
+[2023-09-22 17:42:23,249][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68632, prediction: 
+#2.	The following table shows
+[2023-09-22 17:43:01,671][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162651, prediction: 
+Based on the above information, is it
+[2023-09-22 17:44:45,413][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131138, prediction: 
+Based on the above information, is it
+[2023-09-22 17:45:43,591][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174884, prediction: 
+Based on the above information, is it
+[2023-09-22 17:46:20,985][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:209356, prediction: 	Alexandria is Egypt 's largest
+[2023-09-22 17:47:01,658][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:196173, prediction: 
+<br>
+<br>
+
+[2023-09-22 17:47:02,536][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157631, prediction: 
+Based on the above information, is it
+[2023-09-22 17:47:03,391][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:193847, prediction: 
+Based on the above information, is it
+[2023-09-22 17:47:06,932][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119189, prediction: 
+Based on the above information, is it
+[2023-09-22 17:47:32,834][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:130836, prediction: 
+The last windstorm in Stanley Park was
+[2023-09-22 17:48:03,605][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:189881, prediction: 
+Based on the above information, is it
+[2023-09-22 17:48:53,200][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:78857, prediction: 
+Based on the above information, is it
+[2023-09-22 17:49:42,011][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:36952, prediction: 
+Ares is a religious figure of Greek
+[2023-09-22 17:50:12,766][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:100345, prediction: 
+Based on the above information, is it
+[2023-09-22 17:50:47,902][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183414, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 17:51:34,111][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:28370, prediction: 
+Based on the above information, is it
+[2023-09-22 17:51:39,859][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90932, prediction: 
+James Brolin is from Arkansas.
+[2023-09-22 17:51:40,821][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224555, prediction: 
+Based on the above information, is it
+[2023-09-22 17:51:50,928][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:226441, prediction: 	Chadwick Boseman was in the
+[2023-09-22 17:51:53,976][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:14669, prediction: 
+Based on the above information, is it
+[2023-09-22 17:52:22,902][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:7287, prediction: 
+The Beverly Hillbillies ranked among the
+[2023-09-22 17:52:31,914][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:98365, prediction: 
+Based on the above information, is it
+[2023-09-22 17:53:15,851][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183490, prediction: 
+Based on the above information, is it
+[2023-09-22 17:53:16,770][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:80268, prediction: 
+Based on the above information, is it
+[2023-09-22 17:53:19,535][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:147844, prediction: 
+Based on the above information, is it
+[2023-09-22 17:54:07,546][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138265, prediction: 
+Based on the above information, is it
+[2023-09-22 17:54:15,778][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:99039, prediction: 	The Ellen Show	The Ellen Show	
+[2023-09-22 17:54:41,305][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:143007, prediction: 
+Based on the above information, is it
+[2023-09-22 17:54:58,365][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194225, prediction: 
+Based on the above information, is it
+[2023-09-22 17:55:35,678][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:193842, prediction: 
+Based on the above information, is it
+[2023-09-22 17:55:42,246][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:4800, prediction: 
+Based on the above information, is it
+[2023-09-22 17:55:47,010][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:8190, prediction: 
+Based on the above information, is it
+[2023-09-22 17:55:50,224][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:123023, prediction: 	Issa Rae features various content created
+[2023-09-22 17:55:57,659][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:228087, prediction: 
+Based on the above information, is it
+[2023-09-22 17:56:20,729][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160062, prediction: 
+Based on the above information, is it
+[2023-09-22 17:56:21,690][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:156928, prediction: 
+Based on the above information, is it
+[2023-09-22 17:57:45,343][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84188, prediction: 
+Based on the above information, is it
+[2023-09-22 17:58:20,728][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224197, prediction: 	James Corden	James Corden	
+[2023-09-22 17:58:30,618][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:3586, prediction: 
+Based on the above information, is it
+[2023-09-22 17:58:39,237][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:118708, prediction: 	Claire Danes	Claire Dan
+[2023-09-22 17:58:49,644][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:148173, prediction: 
+The Mormon population has been growing rapidly due
+[2023-09-22 17:58:52,283][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105540, prediction: 
+The film was originally supposed to be only
+[2023-09-22 17:58:59,234][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:57637, prediction: 
+The Battle of the Trebia took place
+[2023-09-22 17:59:54,907][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83490, prediction: 
+There are currently 15,882,417
+[2023-09-22 18:00:11,159][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:154404, prediction: 
+Based on the above information, is it
+[2023-09-22 18:00:28,082][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:34942, prediction: 
+Based on the above information, is it
+[2023-09-22 18:04:19,467][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:145241, prediction: 
+The SpongeBob SquarePants Movie
+[2023-09-22 18:04:22,494][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:119080, prediction: 
+Aphrodite is the daughter of
+[2023-09-22 18:05:13,395][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:185770, prediction: 
+Based on the above information, is it
+[2023-09-22 18:05:24,184][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:162215, prediction: 
+Based on the above information, is it
+[2023-09-22 18:05:28,594][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:185787, prediction: 
+Based on the above information, is it
+[2023-09-22 18:06:29,876][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:67878, prediction: 
+Based on the above information, is it
+[2023-09-22 18:06:36,315][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:173042, prediction: 
+Based on the above information, is it
+[2023-09-22 18:07:53,366][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:181273, prediction: 	The answer is: 	The answer
+[2023-09-22 18:08:02,382][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151572, prediction: 
+Based on the above information, is it
+[2023-09-22 18:08:04,032][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:117919, prediction: 
+Based on the above information, is it
+[2023-09-22 18:08:05,681][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150125, prediction: 
+Based on the above information, is it
+[2023-09-22 18:08:10,582][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:2342, prediction: 
+Based on the above information, is it
+[2023-09-22 18:08:31,777][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:206024, prediction: 	The Office (US) ran for ten
+[2023-09-22 18:08:51,563][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:121818, prediction: 
+Based on the above information, is it
+[2023-09-22 18:08:58,487][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:107000, prediction: 
+Based on the above information, is it
+[2023-09-22 18:09:21,655][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45143, prediction: 	Ram Charan	Ram Charan	
+[2023-09-22 18:10:14,840][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:176640, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 18:10:49,764][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83367, prediction: 
+Based on the above information, is it
+[2023-09-22 18:11:02,441][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:153139, prediction: 
+Based on the above information, is it
+[2023-09-22 18:11:19,710][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:221256, prediction: 
+The Block (album) was released by
+[2023-09-22 18:11:20,545][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:198536, prediction: 
+Based on the above information, is it
+[2023-09-22 18:11:58,985][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:127490, prediction: 	Brian Fee	Brian Fee	
+[2023-09-22 18:13:05,143][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84405, prediction: 
+Based on the above information, is it
+[2023-09-22 18:13:06,041][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219204, prediction: 
+Based on the above information, is it
+[2023-09-22 18:13:30,114][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:51655, prediction: 
+Based on the above information, is it
+[2023-09-22 18:13:38,039][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:87371, prediction: 
+Based on the above information, is it
+[2023-09-22 18:13:38,917][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:151012, prediction: 
+The population of The Mormon population has shr
+[2023-09-22 18:13:58,441][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:76775, prediction: 	The answer is: 	The answer
+[2023-09-22 18:15:27,140][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:133037, prediction: 
+Based on the above information, is it
+[2023-09-22 18:15:39,855][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:152694, prediction: 	KSG	Order of St. Gregory
+[2023-09-22 18:16:04,673][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:35494, prediction: 
+Veep is a show.
+Based
+[2023-09-22 18:16:15,996][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:136270, prediction: 
+Based on the above information, is it
+[2023-09-22 18:16:45,054][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:166939, prediction: 
+Baadshah was dubbed into a
+[2023-09-22 18:17:03,751][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:108405, prediction: 
+Based on the above information, is it
+[2023-09-22 18:17:14,814][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45763, prediction: 
+Based on the above information, is it
+[2023-09-22 18:17:20,897][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177862, prediction: 
+Based on the above information, is it
+[2023-09-22 18:17:57,917][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:62332, prediction: 
+Based on the above information, is it
+[2023-09-22 18:18:24,457][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:178897, prediction: 
+Based on the above information, is it
+[2023-09-22 18:18:32,782][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160591, prediction: 
+Based on the above information, is it
+[2023-09-22 18:18:51,882][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:75437, prediction: 
+Based on the above information, is it
+[2023-09-22 18:18:55,228][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:179090, prediction: 
+Based on the above information, is it
+[2023-09-22 18:18:56,168][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:50644, prediction: 
+Based on the above information, is it
+[2023-09-22 18:18:57,129][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217186, prediction: 
+The Pakistan Movement was the cause of social
+[2023-09-22 18:19:34,567][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:174886, prediction: 
+Based on the above information, is it
+[2023-09-22 18:19:50,340][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:19921, prediction: 
+Based on the above information, is it
+[2023-09-22 18:20:42,556][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:121898, prediction: 
+Based on the above information, is it
+[2023-09-22 18:20:49,227][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:201612, prediction: 
+Based on the above information, is it
+[2023-09-22 18:21:12,969][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:134459, prediction: 
+Based on the above information, is it
+[2023-09-22 18:21:22,704][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:88366, prediction: 
+The Dodo has been depicted with a
+[2023-09-22 18:22:06,365][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:18452, prediction: 
+Based on the above information, is it
+[2023-09-22 18:22:39,057][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:28332, prediction: 
+Based on the above information, is it
+[2023-09-22 18:23:01,599][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:19242, prediction: 
+Based on the above information, is it
+[2023-09-22 18:23:44,321][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:116734, prediction: 
+Based on the above information, is it
+[2023-09-22 18:23:46,985][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131153, prediction: 
+Based on the above information, is it
+[2023-09-22 18:23:49,882][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150425, prediction: 
+Based on the above information, is it
+[2023-09-22 18:24:04,029][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:97002, prediction: 
+Based on the above information, is it
+[2023-09-22 18:25:39,203][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:81146, prediction: 
+Exotic Birds opened for a Canadian music
+[2023-09-22 18:26:31,444][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:16881, prediction: 
+The Romani people have nationalized.
+[2023-09-22 18:26:32,447][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182678, prediction: 
+Based on the above information, is it
+[2023-09-22 18:27:07,740][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83632, prediction: 
+Based on the above information, is it
+[2023-09-22 18:28:04,748][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:213440, prediction: 
+Based on the above information, is it
+[2023-09-22 18:28:08,480][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:175446, prediction: 
+Based on the above information, is it
+[2023-09-22 18:28:27,670][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:183413, prediction: 
+#
+#
+#
+#
+
+[2023-09-22 18:28:53,824][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:105642, prediction: 
+Based on the above information, is it
+[2023-09-22 18:29:08,865][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:142802, prediction: 	Christianity	Christianity
+The location
+[2023-09-22 18:29:24,529][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:36232, prediction: 
+Based on the above information, is it
+[2023-09-22 18:29:40,291][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177868, prediction: 
+Based on the above information, is it
+[2023-09-22 18:29:41,126][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:212230, prediction: 
+Based on the above information, is it
+[2023-09-22 18:30:30,982][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:150168, prediction: 
+Meghan Markle was born in
+[2023-09-22 18:30:39,547][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:130532, prediction: 
+Based on the above information, is it
+[2023-09-22 18:30:40,700][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89009, prediction: 
+Based on the above information, is it
+[2023-09-22 18:31:44,060][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:40293, prediction: 
+Based on the above information, is it
+[2023-09-22 18:31:54,285][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:8906, prediction: 
+Based on the above information, is it
+[2023-09-22 18:32:58,944][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:62697, prediction: 
+Based on the above information, is it
+[2023-09-22 18:33:57,693][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:9590, prediction: 
+Based on the above information, is it
+[2023-09-22 18:35:24,537][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202311, prediction: 
+Based on the above information, is it
+[2023-09-22 18:35:25,395][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:219701, prediction: 
+Based on the above information, is it
+[2023-09-22 18:35:27,211][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:127756, prediction: 
+Based on the above information, is it
+[2023-09-22 18:35:28,046][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:197659, prediction: 
+Based on the above information, is it
+[2023-09-22 18:36:02,078][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:147784, prediction: 
+Based on the above information, is it
+[2023-09-22 18:36:30,065][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:185783, prediction: 	The latest ceremony , the Logie Awards
+[2023-09-22 18:37:16,963][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:12173, prediction: 
+Based on the above information, is it
+[2023-09-22 18:37:35,037][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:122706, prediction: 
+Based on the above information, is it
+[2023-09-22 18:38:04,690][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:224193, prediction: 
+The 66th Primetime Emmy Awards
+[2023-09-22 18:38:58,317][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:94896, prediction: 
+Based on the above information, is it
+[2023-09-22 18:39:00,561][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:194239, prediction: 
+Based on the above information, is it
+[2023-09-22 18:39:53,451][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:23251, prediction: 
+Based on the above information, is it
+[2023-09-22 18:40:11,860][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:177844, prediction: 
+Based on the above information, is it
+[2023-09-22 18:41:50,912][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68675, prediction: 
+The population of The Mormon has grown significantly
+[2023-09-22 18:41:54,919][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:68454, prediction: 
+Based on the above information, is it
+[2023-09-22 18:42:02,716][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:130724, prediction: 
+Based on the above information, is it
+[2023-09-22 18:42:07,710][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:111473, prediction: 
+Based on the above information, is it
+[2023-09-22 18:42:12,752][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:30960, prediction: 
+Faye Resnick is an architect
+[2023-09-22 18:42:15,442][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:217027, prediction: 
+'''
+
+# + colab=
+[2023-09-22 18:42:49,075][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202733, prediction: 	The Chaperone (film) is
+[2023-09-22 18:43:04,548][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:86438, prediction: 
+Based on the above information, is it
+[2023-09-22 18:43:17,676][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160960, prediction: 
+Based on the above information, is it
+[2023-09-22 18:43:54,486][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:181264, prediction: 	The answer is: 	The answer
+[2023-09-22 18:44:09,957][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225801, prediction: 
+Based on the above information, is it
+[2023-09-22 18:44:10,878][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:117914, prediction: 
+Based on the above information, is it
+[2023-09-22 18:44:21,513][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:63987, prediction: 
+Based on the above information, is it
+[2023-09-22 18:44:25,542][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:77657, prediction: 
+Based on the above information, is it
+[2023-09-22 18:44:30,450][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:147497, prediction: 
+Based on the above information, is it
+[2023-09-22 18:44:48,505][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:83116, prediction: 
+Fraud can be used for monetary loss
+[2023-09-22 18:45:14,551][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:223688, prediction: 
+Based on the above information, is it
+[2023-09-22 18:45:17,058][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:188638, prediction: 
+Based on the above information, is it
+[2023-09-22 18:45:58,183][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:195230, prediction: 	Kevin Bacon was in a film.
+[2023-09-22 18:46:56,872][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:220243, prediction: 	Greek	Greek language	boat
+[2023-09-22 18:47:00,276][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84200, prediction: 
+Based on the above information, is it
+[2023-09-22 18:47:05,661][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:74174, prediction: 
+Based on the above information, is it
+[2023-09-22 18:47:18,680][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:102189, prediction: 
+Based on the above information, is it
+[2023-09-22 18:47:21,812][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:157557, prediction: 
+Based on the above information, is it
+[2023-09-22 18:47:26,003][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:44899, prediction: 	The Ellen Show	The Ellen Show	
+[2023-09-22 18:47:54,041][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:42260, prediction: 
+Based on the above information, is it
+[2023-09-22 18:48:33,308][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:77883, prediction: 
+Based on the above information, is it
+[2023-09-22 18:48:53,641][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:7041, prediction: 
+Kareem Abdul-Jabbar
+[2023-09-22 18:49:00,592][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:72426, prediction: 
+Based on the above information, is it
+[2023-09-22 18:49:09,270][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:129270, prediction: 
+Based on the above information, is it
+[2023-09-22 18:49:14,699][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:74467, prediction: 
+Based on the above information, is it
+[2023-09-22 18:49:15,535][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:22451, prediction: 
+Based on the above information, is it
+[2023-09-22 18:49:53,026][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:149729, prediction: 
+Based on the above information, is it
+[2023-09-22 18:50:04,089][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:220984, prediction: 
+Based on the above information, is it
+[2023-09-22 18:50:16,601][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:15504, prediction: 
+Based on the above information, is it
+[2023-09-22 18:50:18,313][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:156195, prediction: 
+Based on the above information, is it
+[2023-09-22 18:50:22,482][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:82345, prediction: 
+Cordilleran Ice Sheet was a
+[2023-09-22 18:50:25,764][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:32499, prediction: 
+Ayananka Bose is a Gemini
+[2023-09-22 18:50:35,845][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:191644, prediction: 
+Based on the above information, is it
+[2023-09-22 18:51:49,277][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:164096, prediction: 	The answer is: 	The answer
+[2023-09-22 18:52:21,864][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:49543, prediction: 
+Based on the above information, is it
+[2023-09-22 18:53:53,164][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:120716, prediction: 
+Pink is a vegetarian.
+Based
+[2023-09-22 18:53:54,062][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:159314, prediction: 
+Based on the above information, is it
+[2023-09-22 18:54:45,681][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:160972, prediction: 
+Meghan Markle is a Liberal
+[2023-09-22 18:54:50,680][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:193846, prediction: 
+Based on the above information, is it
+[2023-09-22 18:55:26,262][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139701, prediction: 
+Based on the above information, is it
+[2023-09-22 18:55:33,836][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:117283, prediction: 
+Ayananka Bose is a Gemini
+[2023-09-22 18:56:18,867][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:84382, prediction: 
+Based on the above information, is it
+[2023-09-22 18:57:56,859][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:202305, prediction: 
+Based on the above information, is it
+[2023-09-22 18:58:49,741][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:179098, prediction: 
+Based on the above information, is it
+[2023-09-22 18:58:54,066][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:85800, prediction: 
+The current Duke of York has remar
+[2023-09-22 18:58:54,901][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:43006, prediction: 
+Based on the above information, is it
+[2023-09-22 18:58:59,057][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:17720, prediction: 
+Based on the above information, is it
+[2023-09-22 18:59:13,200][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:20502, prediction: 
+Based on the above information, is it
+[2023-09-22 18:59:41,117][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89674, prediction: 
+Based on the above information, is it
+[2023-09-22 18:59:42,035][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:144066, prediction: 
+Based on the above information, is it
+[2023-09-22 18:59:44,762][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:97183, prediction: 	Heather Graham	Heather Graham	
+[2023-09-22 19:00:18,451][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:225806, prediction: 
+Based on the above information, is it
+[2023-09-22 19:00:23,259][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:182696, prediction: 
+Based on the above information, is it
+[2023-09-22 19:00:30,946][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:45545, prediction: 
+Based on the above information, is it
+[2023-09-22 19:00:38,768][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:90175, prediction: 
+Based on the above information, is it
+[2023-09-22 19:00:57,373][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:42840, prediction: 
+Based on the above information, is it
+[2023-09-22 19:01:17,723][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:5544, prediction: 
+Based on the above information, is it
+[2023-09-22 19:01:32,707][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:63983, prediction: 
+Based on the above information, is it
+[2023-09-22 19:02:00,705][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:72168, prediction: 
+Based on the above information, is it
+[2023-09-22 19:02:18,252][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:205086, prediction: 	The Little Prince is a 2015 American film
+[2023-09-22 19:02:19,047][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:138052, prediction: 
+Based on the above information, is it
+[2023-09-22 19:02:32,144][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:170017, prediction: 
+Based on the above information, is it
+[2023-09-22 19:02:36,135][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:89150, prediction: 	The Winds of Winter is the forthcoming
+[2023-09-22 19:03:06,053][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:124462, prediction: 
+Mandy Moore is a vegetarian.
+
+[2023-09-22 19:03:06,931][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:131661, prediction: 
+Based on the above information, is it
+[2023-09-22 19:04:15,639][verify_with_aquila.py][line:105][INFO] Alert! prediction error id:139535, prediction: 
+Based on the above information, is it
+[2023-09-22 19:04:44,044][verify_with_aquila.py][line:61][INFO]                  precision    recall  f1-score   support
+
+        REFUTES     0.4240    0.4341    0.4290      3333
+       SUPPORTS     0.1700    0.1596    0.1646      3333
+NOT ENOUGH INFO     0.1285    0.1332    0.1308      3333
+
+       accuracy                         0.2423      9999
+      macro avg     0.2408    0.2423    0.2415      9999
+   weighted avg     0.2408    0.2423    0.2415      9999
+
+[2023-09-22 19:04:44,048][verify_with_aquila.py][line:62][INFO] [[1447  410 1476]
+ [1265  532 1536]
+ [ 701 2188  444]]
+[2023-09-22 19:04:44,110][verify_with_aquila.py][line:164][INFO] Finished!
