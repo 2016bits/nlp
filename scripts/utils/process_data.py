@@ -37,7 +37,7 @@ def convert_evidence(evidence_list, c):
                     evidence_text += " " + sent_text
     return evidence_text
 
-def preprocess_dataset(dataset, db_path, sample_num):
+def preprocess_dataset(dataset, db_path, max_t5_tokens, sample_num):
     train_data = []
     max_len = 0
     
@@ -53,10 +53,16 @@ def preprocess_dataset(dataset, db_path, sample_num):
         if data['label'] == 'SUPPORTS' and (sample_num == -1 or sopport_num < sample_num):
             sopport_num += 1
             evidence = convert_evidence(data['evidence'], c)
-            texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or uninformed? The answer is: "
+            texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
             text_len = len(texts.split())
-            if text_len > max_len:
+            if text_len > max_t5_tokens:
                 max_len = text_len
+                evidence_len = max_t5_tokens - len(data['claim']) - 25
+                texts = f"{evidence[:evidence_len]}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
+            elif text_len > max_len:
+                max_len = text_len
+                evidence_len = max_t5_tokens - len(data['claim']) - 25
+                texts = f"{evidence[:evidence_len]}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
 
             train_data.append({
                 'id': data['id'],
@@ -67,10 +73,16 @@ def preprocess_dataset(dataset, db_path, sample_num):
         elif data['label'] == 'REFUTES' and (sample_num == -1 or refute_num < sample_num):
             refute_num += 1
             evidence = convert_evidence(data['evidence'], c)
-            texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or uninformed? The answer is: "
+            texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
             text_len = len(texts.split())
-            if text_len > max_len:
+            if text_len > max_t5_tokens:
                 max_len = text_len
+                evidence_len = max_t5_tokens - len(data['claim']) - 25
+                texts = f"{evidence[:evidence_len]}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
+            elif text_len > max_len:
+                max_len = text_len
+                evidence_len = max_t5_tokens - len(data['claim']) - 25
+                texts = f"{evidence[:evidence_len]}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
 
             train_data.append({
                 'id': data['id'],
@@ -80,15 +92,21 @@ def preprocess_dataset(dataset, db_path, sample_num):
 
         elif data['label'] == 'NOT ENOUGH INFO' and evidence and (sample_num == -1 or nei_num < sample_num):
             nei_num += 1
-            texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or uninformed? The answer is: "
+            texts = f"{evidence}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
             text_len = len(texts.split())
-            if text_len > max_len:
+            if text_len > max_t5_tokens:
                 max_len = text_len
+                evidence_len = max_t5_tokens - len(data['claim']) - 25
+                texts = f"{evidence[:evidence_len]}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
+            elif text_len > max_len:
+                max_len = text_len
+                evidence_len = max_t5_tokens - len(data['claim']) - 25
+                texts = f"{evidence[:evidence_len]}\nBased on the above information, is it true that {data['claim']}? true, false or unknown? The answer is: "
 
             train_data.append({
                 'id': data['id'],
                 'text': texts,
-                'label': 'uninformed'
+                'label': 'unknown'
             })
         elif sample_num != -1 and sopport_num >= sample_num and refute_num >= sample_num and nei_num >= sample_num:
             break

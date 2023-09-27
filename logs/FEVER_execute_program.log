@@ -1,84 +1,82 @@
-[2023-09-17 09:14:52,329][execute_program.py][line:252][INFO] Namespace(cache_dir='./google/flan-t5-xl', dataset_name='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', gpu=3, log_path='./logs/', max_evidence_length=4096, max_page=3, max_sent=5, mode='test', model_name='google/flan-t5-xl', num_eval_samples=-1, num_retrieved=5, output_path='./results/fact_checking/', program_file='_N1_aquilacode-7b-nv_programs_with_evidence.json', program_path='./results/programs/', raw_data_path='./data/', tfidf_model='./data/Wikipedia/data/tfidf.npz', use_cuda=True)
-[2023-09-17 09:14:52,329][execute_program.py][line:255][INFO] loading generated programs......
-[2023-09-17 09:14:52,506][execute_program.py][line:263][INFO] loading model......
-[2023-09-17 09:14:52,506][execute_program.py][line:21][INFO] Loading model google/flan-t5-xl...
-[2023-09-17 09:16:26,204][execute_program.py][line:25][INFO] Model google/flan-t5-xl loaded.
-[2023-09-17 09:16:26,251][tfidf_doc_ranker.py][line:38][INFO] Loading ./data/Wikipedia/data/tfidf.npz
-[2023-09-17 09:16:51,723][execute_program.py][line:182][INFO] start executing programs......
-[2023-09-17 09:17:46,357][execute_program.py][line:157][INFO] Alert!!! parsing error: 1160
-[2023-09-17 09:17:46,358][execute_program.py][line:211][INFO] Alert! execution error 1160
-[2023-09-17 09:20:31,403][execute_program.py][line:211][INFO] Alert! execution error 4328
-[2023-09-17 09:20:52,998][execute_program.py][line:211][INFO] Alert! execution error 4737
-[2023-09-17 09:21:48,932][execute_program.py][line:211][INFO] Alert! execution error 5745
-[2023-09-17 09:21:59,468][execute_program.py][line:211][INFO] Alert! execution error 5950
-[2023-09-17 09:26:19,651][execute_program.py][line:211][INFO] Alert! execution error 11418
-[2023-09-17 09:27:40,569][execute_program.py][line:211][INFO] Alert! execution error 12939
-[2023-09-17 09:37:47,659][execute_program.py][line:211][INFO] Alert! execution error 24677
-[2023-09-17 09:38:59,695][execute_program.py][line:211][INFO] Alert! execution error 25842
-[2023-09-17 09:46:42,424][execute_program.py][line:211][INFO] Alert! execution error 34823
-[2023-09-17 09:47:30,128][execute_program.py][line:211][INFO] Alert! execution error 35804
-[2023-09-17 09:50:13,076][execute_program.py][line:211][INFO] Alert! execution error 39377
-[2023-09-17 09:52:51,258][execute_program.py][line:211][INFO] Alert! execution error 42406
-[2023-09-17 09:56:28,523][execute_program.py][line:157][INFO] Alert!!! parsing error: 46858
-[2023-09-17 09:56:28,524][execute_program.py][line:211][INFO] Alert! execution error 46858
-[2023-09-17 09:56:44,260][execute_program.py][line:211][INFO] Alert! execution error 47228
-[2023-09-17 10:06:02,334][execute_program.py][line:211][INFO] Alert! execution error 57027
-[2023-09-17 10:08:30,258][execute_program.py][line:157][INFO] Alert!!! parsing error: 59903
-[2023-09-17 10:08:30,259][execute_program.py][line:211][INFO] Alert! execution error 59903
-[2023-09-17 10:09:52,822][execute_program.py][line:157][INFO] Alert!!! parsing error: 61565
-[2023-09-17 10:09:52,822][execute_program.py][line:211][INFO] Alert! execution error 61565
-[2023-09-17 10:11:54,306][execute_program.py][line:157][INFO] Alert!!! parsing error: 63806
-[2023-09-17 10:11:54,307][execute_program.py][line:211][INFO] Alert! execution error 63806
-[2023-09-17 10:18:07,147][execute_program.py][line:211][INFO] Alert! execution error 70421
-[2023-09-17 10:22:30,077][execute_program.py][line:211][INFO] Alert! execution error 74488
-[2023-09-17 10:29:27,257][execute_program.py][line:157][INFO] Alert!!! parsing error: 80676
-[2023-09-17 10:29:27,258][execute_program.py][line:211][INFO] Alert! execution error 80676
-[2023-09-17 10:29:50,997][execute_program.py][line:211][INFO] Alert! execution error 81119
-[2023-09-17 10:36:37,574][execute_program.py][line:211][INFO] Alert! execution error 87782
-[2023-09-17 10:41:26,025][execute_program.py][line:211][INFO] Alert! execution error 92447
-[2023-09-17 10:44:32,703][execute_program.py][line:157][INFO] Alert!!! parsing error: 95212
-[2023-09-17 10:44:32,703][execute_program.py][line:211][INFO] Alert! execution error 95212
-[2023-09-17 10:47:09,234][execute_program.py][line:211][INFO] Alert! execution error 98264
-[2023-09-17 10:48:20,276][execute_program.py][line:211][INFO] Alert! execution error 99395
-[2023-09-17 10:57:40,138][execute_program.py][line:211][INFO] Alert! execution error 108598
-[2023-09-17 11:06:07,677][execute_program.py][line:211][INFO] Alert! execution error 117010
-[2023-09-17 11:07:43,046][execute_program.py][line:211][INFO] Alert! execution error 118603
-[2023-09-17 11:09:50,134][execute_program.py][line:211][INFO] Alert! execution error 120781
-[2023-09-17 11:10:43,935][execute_program.py][line:211][INFO] Alert! execution error 121636
-[2023-09-17 11:14:57,734][execute_program.py][line:211][INFO] Alert! execution error 125449
-[2023-09-17 11:20:17,980][execute_program.py][line:211][INFO] Alert! execution error 130289
-[2023-09-17 11:27:34,955][execute_program.py][line:157][INFO] Alert!!! parsing error: 138159
-[2023-09-17 11:27:34,955][execute_program.py][line:211][INFO] Alert! execution error 138159
-[2023-09-17 11:30:17,275][execute_program.py][line:211][INFO] Alert! execution error 140750
-[2023-09-17 11:40:41,150][execute_program.py][line:157][INFO] Alert!!! parsing error: 151428
-[2023-09-17 11:40:41,150][execute_program.py][line:211][INFO] Alert! execution error 151428
-[2023-09-17 11:40:47,190][execute_program.py][line:211][INFO] Alert! execution error 151484
-[2023-09-17 11:48:25,718][execute_program.py][line:211][INFO] Alert! execution error 160593
-[2023-09-17 11:55:25,912][execute_program.py][line:211][INFO] Alert! execution error 168082
-[2023-09-17 12:01:27,889][execute_program.py][line:211][INFO] Alert! execution error 174882
-[2023-09-17 12:02:10,484][execute_program.py][line:211][INFO] Alert! execution error 175437
-[2023-09-17 12:02:12,041][execute_program.py][line:211][INFO] Alert! execution error 175441
-[2023-09-17 12:21:25,190][execute_program.py][line:157][INFO] Alert!!! parsing error: 195221
-[2023-09-17 12:21:25,191][execute_program.py][line:211][INFO] Alert! execution error 195221
-[2023-09-17 12:25:02,741][execute_program.py][line:211][INFO] Alert! execution error 199803
-[2023-09-17 12:25:07,209][execute_program.py][line:211][INFO] Alert! execution error 199809
-[2023-09-17 12:28:35,855][execute_program.py][line:211][INFO] Alert! execution error 204979
-[2023-09-17 12:28:41,704][execute_program.py][line:211][INFO] Alert! execution error 204992
-[2023-09-17 12:34:17,907][execute_program.py][line:211][INFO] Alert! execution error 211865
-[2023-09-17 12:36:42,137][execute_program.py][line:157][INFO] Alert!!! parsing error: 215865
-[2023-09-17 12:36:42,138][execute_program.py][line:211][INFO] Alert! execution error 215865
-[2023-09-17 12:38:13,971][execute_program.py][line:211][INFO] Alert! execution error 217381
-[2023-09-17 12:48:41,109][execute_program.py][line:177][INFO]                  precision    recall  f1-score   support
+[2023-09-25 09:14:57,750][execute_program.py][line:252][INFO] Namespace(cache_dir='./google/flan-t5-xl', dataset_name='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', gpu=3, log_path='./logs/', max_evidence_length=4096, max_page=3, max_sent=5, mode='test', model_name='google/flan-t5-xl', num_eval_samples=-1, num_retrieved=5, output_path='./results/fact_checking/', program_file='_N1_aquilacode-7b-nv_programs_with_evidence.json', program_path='./results/programs/', raw_data_path='./data/', t5_model_path='./model/finetuned_t5_FEVER_100shot_train_data.pth', tfidf_model='./data/Wikipedia/data/tfidf.npz', use_cuda=True)
+[2023-09-25 09:14:57,750][execute_program.py][line:255][INFO] loading generated programs......
+[2023-09-25 09:14:57,898][execute_program.py][line:263][INFO] loading model......
+[2023-09-25 09:14:57,898][execute_program.py][line:21][INFO] Loading model google/flan-t5-xl...
+[2023-09-25 09:15:24,991][execute_program.py][line:25][INFO] Model google/flan-t5-xl loaded.
+[2023-09-25 09:15:24,991][tfidf_doc_ranker.py][line:38][INFO] Loading ./data/Wikipedia/data/tfidf.npz
+[2023-09-25 09:15:49,090][execute_program.py][line:182][INFO] start executing programs......
+[2023-09-25 09:16:38,219][execute_program.py][line:157][INFO] Alert!!! parsing error: 1160
+[2023-09-25 09:16:38,220][execute_program.py][line:211][INFO] Alert! execution error 1160
+[2023-09-25 09:19:16,264][execute_program.py][line:211][INFO] Alert! execution error 4328
+[2023-09-25 09:19:37,203][execute_program.py][line:211][INFO] Alert! execution error 4737
+[2023-09-25 09:20:31,798][execute_program.py][line:211][INFO] Alert! execution error 5745
+[2023-09-25 09:20:42,028][execute_program.py][line:211][INFO] Alert! execution error 5950
+[2023-09-25 09:24:56,918][execute_program.py][line:211][INFO] Alert! execution error 11418
+[2023-09-25 09:26:16,909][execute_program.py][line:211][INFO] Alert! execution error 12939
+[2023-09-25 09:36:27,763][execute_program.py][line:211][INFO] Alert! execution error 24677
+[2023-09-25 09:37:40,663][execute_program.py][line:211][INFO] Alert! execution error 25842
+[2023-09-25 09:45:24,212][execute_program.py][line:211][INFO] Alert! execution error 34823
+[2023-09-25 09:46:12,052][execute_program.py][line:211][INFO] Alert! execution error 35804
+[2023-09-25 09:48:54,947][execute_program.py][line:211][INFO] Alert! execution error 39377
+[2023-09-25 09:51:33,061][execute_program.py][line:211][INFO] Alert! execution error 42406
+[2023-09-25 09:55:10,533][execute_program.py][line:157][INFO] Alert!!! parsing error: 46858
+[2023-09-25 09:55:10,534][execute_program.py][line:211][INFO] Alert! execution error 46858
+[2023-09-25 09:55:26,259][execute_program.py][line:211][INFO] Alert! execution error 47228
+[2023-09-25 10:04:49,295][execute_program.py][line:211][INFO] Alert! execution error 57027
+[2023-09-25 10:07:18,896][execute_program.py][line:157][INFO] Alert!!! parsing error: 59903
+[2023-09-25 10:07:18,897][execute_program.py][line:211][INFO] Alert! execution error 59903
+[2023-09-25 10:08:42,800][execute_program.py][line:157][INFO] Alert!!! parsing error: 61565
+[2023-09-25 10:08:42,801][execute_program.py][line:211][INFO] Alert! execution error 61565
+[2023-09-25 10:10:47,164][execute_program.py][line:157][INFO] Alert!!! parsing error: 63806
+[2023-09-25 10:10:47,165][execute_program.py][line:211][INFO] Alert! execution error 63806
+[2023-09-25 10:16:59,779][execute_program.py][line:211][INFO] Alert! execution error 70421
+[2023-09-25 10:21:20,551][execute_program.py][line:211][INFO] Alert! execution error 74488
+[2023-09-25 10:28:10,448][execute_program.py][line:157][INFO] Alert!!! parsing error: 80676
+[2023-09-25 10:28:10,448][execute_program.py][line:211][INFO] Alert! execution error 80676
+[2023-09-25 10:28:33,749][execute_program.py][line:211][INFO] Alert! execution error 81119
+[2023-09-25 10:35:07,661][execute_program.py][line:211][INFO] Alert! execution error 87782
+[2023-09-25 10:40:00,008][execute_program.py][line:211][INFO] Alert! execution error 92447
+[2023-09-25 10:43:06,330][execute_program.py][line:157][INFO] Alert!!! parsing error: 95212
+[2023-09-25 10:43:06,331][execute_program.py][line:211][INFO] Alert! execution error 95212
+[2023-09-25 10:45:54,785][execute_program.py][line:211][INFO] Alert! execution error 98264
+[2023-09-25 10:47:09,768][execute_program.py][line:211][INFO] Alert! execution error 99395
+[2023-09-25 10:56:58,113][execute_program.py][line:211][INFO] Alert! execution error 108598
+[2023-09-25 11:05:53,596][execute_program.py][line:211][INFO] Alert! execution error 117010
+[2023-09-25 11:07:32,901][execute_program.py][line:211][INFO] Alert! execution error 118603
+[2023-09-25 11:09:45,918][execute_program.py][line:211][INFO] Alert! execution error 120781
+[2023-09-25 11:10:42,337][execute_program.py][line:211][INFO] Alert! execution error 121636
+[2023-09-25 11:15:07,706][execute_program.py][line:211][INFO] Alert! execution error 125449
+[2023-09-25 11:20:48,781][execute_program.py][line:211][INFO] Alert! execution error 130289
+[2023-09-25 11:28:35,030][execute_program.py][line:157][INFO] Alert!!! parsing error: 138159
+[2023-09-25 11:28:35,031][execute_program.py][line:211][INFO] Alert! execution error 138159
+[2023-09-25 11:31:26,870][execute_program.py][line:211][INFO] Alert! execution error 140750
+[2023-09-25 11:42:32,427][execute_program.py][line:157][INFO] Alert!!! parsing error: 151428
+[2023-09-25 11:42:32,428][execute_program.py][line:211][INFO] Alert! execution error 151428
+[2023-09-25 11:42:38,765][execute_program.py][line:211][INFO] Alert! execution error 151484
+[2023-09-25 11:50:40,890][execute_program.py][line:211][INFO] Alert! execution error 160593
+[2023-09-25 11:57:51,090][execute_program.py][line:211][INFO] Alert! execution error 168082
+[2023-09-25 12:03:55,582][execute_program.py][line:211][INFO] Alert! execution error 174882
+[2023-09-25 12:04:37,868][execute_program.py][line:211][INFO] Alert! execution error 175437
+[2023-09-25 12:04:39,430][execute_program.py][line:211][INFO] Alert! execution error 175441
+[2023-09-25 12:23:56,035][execute_program.py][line:157][INFO] Alert!!! parsing error: 195221
+[2023-09-25 12:23:56,035][execute_program.py][line:211][INFO] Alert! execution error 195221
+[2023-09-25 12:27:33,979][execute_program.py][line:211][INFO] Alert! execution error 199803
+[2023-09-25 12:27:38,493][execute_program.py][line:211][INFO] Alert! execution error 199809
+[2023-09-25 12:31:10,525][execute_program.py][line:211][INFO] Alert! execution error 204979
+[2023-09-25 12:31:16,536][execute_program.py][line:211][INFO] Alert! execution error 204992
+[2023-09-25 12:36:54,177][execute_program.py][line:211][INFO] Alert! execution error 211865
+[2023-09-25 12:41:02,309][execute_program.py][line:211][INFO] Alert! execution error 217381
+[2023-09-25 12:51:35,381][execute_program.py][line:177][INFO]                  precision    recall  f1-score   support
 
-        REFUTES     0.5519    0.8509    0.6695      3333
-       SUPPORTS     0.7094    0.7924    0.7486      3333
-NOT ENOUGH INFO     0.6412    0.2187    0.3262      3333
+        REFUTES     0.5515    0.8500    0.6689      3333
+       SUPPORTS     0.7088    0.7924    0.7483      3333
+NOT ENOUGH INFO     0.6444    0.2196    0.3276      3333
 
        accuracy                         0.6207      9999
-      macro avg     0.6341    0.6207    0.5814      9999
-   weighted avg     0.6341    0.6207    0.5814      9999
+      macro avg     0.6349    0.6207    0.5816      9999
+   weighted avg     0.6349    0.6207    0.5816      9999
 
-[2023-09-17 12:48:41,112][execute_program.py][line:178][INFO] [[2836  261  236]
- [ 520 2641  172]
- [1783  821  729]]
-[2023-09-17 12:48:41,113][execute_program.py][line:268][INFO] prediction finished...
+[2023-09-25 12:51:35,385][execute_program.py][line:178][INFO] [[2833  267  233]
+ [ 521 2641  171]
+ [1783  818  732]]
+[2023-09-25 12:51:35,385][execute_program.py][line:268][INFO] prediction finished...

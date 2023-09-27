@@ -20,7 +20,7 @@ class Program_Execute:
 
         logger.info(f"Loading model {self.model_name}...")
         self.tokenizer = T5Tokenizer.from_pretrained(args.model_name, cache_dir=args.cache_dir)
-        self.model = T5ForConditionalGeneration.from_pretrained(args.model_name, cache_dir=args.cache_dir).to("cuda:{}".format(args.gpu))
+        self.model = T5ForConditionalGeneration.from_pretrained(args.model_name, cache_dir=args.t5_model_path).to("cuda:{}".format(args.gpu))
         # self.model.parallelize()
         logger.info(f"Model {self.model_name} loaded.")
 
@@ -292,6 +292,7 @@ if __name__ == '__main__':
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'dev'])
     parser.add_argument('--output_path', type=str, default='./results/fact_checking/')
     parser.add_argument('--cache_dir', type=str, default="./google/flan-t5-xl")
+    parser.add_argument('--t5_model_path', type=str, default='./model/finetuned_t5_FEVER_100shot_train_data.pth')
     # training arguments
     parser.add_argument('--num_retrieved', type=int, default=5)
     parser.add_argument('--max_evidence_length', type=int, default=4096)

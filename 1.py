@@ -3,8 +3,8 @@ import sqlite3
 conn = sqlite3.connect('./data/Wikipedia/data/wikipedia.db')
 c = conn.cursor()
 
-title = "Boston_Celtics"
-line_id = 3
+title = "Soul_Food_-LRB-film-RRB-"
+line_id = 0
 sql = """select * from documents where id = "{}";""".format(title)
 
 cursor = c.execute(sql)

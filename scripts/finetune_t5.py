@@ -15,7 +15,7 @@ from utils.data import MyDataset
 label_map = {
     "true": 0,
     "false": 1,
-    "uninformed": 2
+    "unknown": 2
 }
 
 def validate(model, device, data_loader, label_id_list, epoch, logger, tokenizer):
@@ -69,7 +69,7 @@ def main(args):
     dev_data_path = args.data_path + args.dataset + "/processed/dev.json"
     with open(train_data_path, 'r') as f:
         train_dataset = json.load(f)
-    train_data, max_len = preprocess_dataset(train_dataset, args.db_path, args.shot)
+    train_data, max_len = preprocess_dataset(train_dataset, args.db_path, args.max_t5_tokens, args.shot)
     train_set = MyDataset(train_data, tokenizer, max_len)
     train_loader = DataLoader(train_set, batch_size=args.batch_size, collate_fn=train_set.collate_fn)
 
@@ -81,7 +81,7 @@ def main(args):
 
     with open(dev_data_path, 'r') as f:
         dev_dataset = json.load(f)
-    dev_data, max_len = preprocess_dataset(dev_dataset, args.db_path, args.shot)
+    dev_data, max_len = preprocess_dataset(dev_dataset, args.db_path, args.max_t5_tokens, args.shot)
     dev_set = MyDataset(dev_data, tokenizer, max_len)
     dev_loader = DataLoader(dev_set, batch_size=1, collate_fn=dev_set.collate_fn)
     
@@ -181,8 +181,9 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, default="cuda:2")
 
     parser.add_argument('--batch_size', type=int, default=1)
+    parser.add_argument('--max_t5_tokens', type=int, default=1024)
     parser.add_argument('--way', type=int, default=3)
-    parser.add_argument('--shot', type=int, default=-1)
+    parser.add_argument('--shot', type=int, default=100)
     parser.add_argument('--epoch', type=int, default=10)
 
     args = parser.parse_args()
