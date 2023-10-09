@@ -75,7 +75,7 @@
     "id": 54298,
     "claim": "In states still employing the electric chair to execute people, the prisoner is allowed the choice of lethal injection as an alternative method.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 222749,
@@ -1707,7 +1707,7 @@
     "id": 130978,
     "claim": "Kaya Scodelario was nominated for two BAFTA.",
     "label": "REFUTES",
-    "prediction": "NOT ENOUGH INFO"
+    "prediction": "REFUTES"
   },
   {
     "id": 33782,
@@ -1719,7 +1719,7 @@
     "id": 93878,
     "claim": "Warren Beatty was the co-writer, producer, and director of an epic drama movie.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 118195,
@@ -2991,7 +2991,7 @@
     "id": 40086,
     "claim": "Ed Decter produced the film Fargo.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 131969,
@@ -4413,7 +4413,7 @@
     "id": 3661,
     "claim": "Riz Ahmed acted in an American miniseries based on a British television series.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 111363,
@@ -4449,7 +4449,7 @@
     "id": 111938,
     "claim": "There are 30 knockouts part of the career boxing record of Floyd Mayweather Jr.",
     "label": "SUPPORTS",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 174870,
@@ -5169,7 +5169,7 @@
     "id": 182041,
     "claim": "The Fly is a science fiction character.",
     "label": "REFUTES",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 161101,
@@ -5445,7 +5445,7 @@
     "id": 116502,
     "claim": "Cthulhu is a gigantic Lovecraftian entity worshipped by cultists.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 16604,
@@ -6531,7 +6531,7 @@
     "id": 58449,
     "claim": "The MP for Maidenhead was once Theresa May.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 90509,
@@ -6573,7 +6573,7 @@
     "id": 84710,
     "claim": "Buffy the Vampire Slayer is created by Joss Whedon in 1990.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 2147,
@@ -7221,7 +7221,7 @@
     "id": 52509,
     "claim": "Stomp the Yard stars an American actor born in 1982.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 77673,
@@ -7539,7 +7539,7 @@
     "id": 9642,
     "claim": "Sledgehammer was first performed live in Scotland.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 158217,
@@ -9375,7 +9375,7 @@
     "id": 24273,
     "claim": "LinkedIn has been available in the Turkish language since July 2015.",
     "label": "REFUTES",
-    "prediction": "NOT ENOUGH INFO"
+    "prediction": "REFUTES"
   },
   {
     "id": 49168,
@@ -10209,7 +10209,7 @@
     "id": 157460,
     "claim": "The Burj Khalifa is in Asia.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 90427,
@@ -11271,7 +11271,7 @@
     "id": 160825,
     "claim": "One of the co-executive producers of Buffy the Vampire Slayer was Korean.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 24045,
@@ -11661,7 +11661,7 @@
     "id": 168622,
     "claim": "The Thin Red Line (1998 film) features a performance by an American actor born in the 1960s.",
     "label": "SUPPORTS",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 129820,
@@ -12177,7 +12177,7 @@
     "id": 206993,
     "claim": "Punch-Drunk Love was distributed by a thirty-year-old film studio.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 102135,
@@ -12237,7 +12237,7 @@
     "id": 110274,
     "claim": "Balibo (film) involves an Australian journalist.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 9692,
@@ -13983,7 +13983,7 @@
     "id": 51355,
     "claim": "Balibo (film) is about an investigation of crimes.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 217179,
@@ -16743,7 +16743,7 @@
     "id": 69139,
     "claim": "Ice-T signed to Sire Records in 1987 when he was 18 years old.",
     "label": "REFUTES",
-    "prediction": "SUPPORTS"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 151286,
@@ -17769,7 +17769,7 @@
     "id": 107287,
     "claim": "Port of Spain is a retail center.",
     "label": "REFUTES",
-    "prediction": "SUPPORTS"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 47605,
@@ -19419,7 +19419,7 @@
     "id": 192193,
     "claim": "Sacre-Coeur, Paris is an embodiment of conservative ethical order.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 156102,
@@ -21531,7 +21531,7 @@
     "id": 58585,
     "claim": "Floyd Mayweather Jr. is a professional beat boxer.",
     "label": "REFUTES",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 188576,
@@ -23961,7 +23961,7 @@
     "id": 106498,
     "claim": "Watertown, Massachusetts is a city.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 66406,
@@ -26253,7 +26253,7 @@
     "id": 14431,
     "claim": "Pocahontas was not the daughter of the paramount chief of Wahunsenacah.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 65007,
@@ -26577,7 +26577,7 @@
     "id": 101017,
     "claim": "The Punisher stars Americans.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 102015,
@@ -27777,7 +27777,7 @@
     "id": 185180,
     "claim": "You Only Live Twice is the first James Bond film directed by Lewis Gilbert in 1970.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 50235,
@@ -28233,7 +28233,7 @@
     "id": 48658,
     "claim": "The Danish language is spoken in Sweden.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 85266,
@@ -30729,7 +30729,7 @@
     "id": 25147,
     "claim": "Sledgehammer was first performed live in the summer of 2014.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 160795,
@@ -32403,7 +32403,7 @@
     "id": 192203,
     "claim": "Sacre-Coeur, Paris is publicly dedicated to a cult.",
     "label": "REFUTES",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 173056,
@@ -32697,7 +32697,7 @@
     "id": 99911,
     "claim": "Kojol received an award in 2010.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 73491,
@@ -32799,7 +32799,7 @@
     "id": 51472,
     "claim": "Brown University's main campus is located in the third smallest city in New England.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 25289,
@@ -36243,7 +36243,7 @@
     "id": 24095,
     "claim": "Stomp the Yard stars an American choreographer and actor.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 132789,
@@ -38097,7 +38097,7 @@
     "id": 5744,
     "claim": "One Flew Over the Cuckoo's Nest won Best Actor at the Academy Awards.",
     "label": "SUPPORTS",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 25520,
@@ -38373,7 +38373,7 @@
     "id": 87161,
     "claim": "Andrew Moray led an uprising against occupation in 1397.",
     "label": "REFUTES",
-    "prediction": "NOT ENOUGH INFO"
+    "prediction": "REFUTES"
   },
   {
     "id": 57129,
@@ -38499,7 +38499,7 @@
     "id": 18079,
     "claim": "Scandinavia includes the three kingdoms of Denmark, Norway, and Sweden as of 1902.",
     "label": "SUPPORTS",
-    "prediction": "NOT ENOUGH INFO"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 134670,
@@ -39837,7 +39837,7 @@
     "id": 127128,
     "claim": "B. R. Ambedkar was born in the 20th century.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 96723,
@@ -41013,7 +41013,7 @@
     "id": 1423,
     "claim": "Roberto Orci wrote Star Trek.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 92419,
@@ -41631,7 +41631,7 @@
     "id": 71570,
     "claim": "Roberto Orci wrote Star Trek Into Darkness.",
     "label": "SUPPORTS",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 194450,
@@ -44421,7 +44421,7 @@
     "id": 71269,
     "claim": "A member of the Grateful Dead was John Perry Barlow.",
     "label": "REFUTES",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 16056,
@@ -47049,7 +47049,7 @@
     "id": 117038,
     "claim": "NXT Tag Team Championship was created by WWE in 2002.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 129558,
@@ -47655,7 +47655,7 @@
     "id": 13829,
     "claim": "Balibo (film) starts in the year 1975.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 194742,
@@ -47757,7 +47757,7 @@
     "id": 61401,
     "claim": "Stomp the Yard stars an American actor born in October of 1982.",
     "label": "SUPPORTS",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 53005,
@@ -48273,7 +48273,7 @@
     "id": 122657,
     "claim": "Brown University's main campus is located in the second most populous city in Rhode Island.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 219690,
@@ -48777,7 +48777,7 @@
     "id": 197645,
     "claim": "The University of Leicester discovered and identified the remains of a king in 1955.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 36952,
@@ -49269,7 +49269,7 @@
     "id": 135340,
     "claim": "Moves Like Jagger is on Overexposed.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 193554,
@@ -50343,7 +50343,7 @@
     "id": 63907,
     "claim": "Kaya Scodelario was nominated for two awards.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "REFUTES"
   },
   {
     "id": 177972,
@@ -52023,7 +52023,7 @@
     "id": 177867,
     "claim": "Milk is based on the life of Harvey Milk and stars Sean Penn.",
     "label": "SUPPORTS",
-    "prediction": "SUPPORTS"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 74588,
@@ -53523,7 +53523,7 @@
     "id": 118117,
     "claim": "Color of Night won an award for an Olympic Event.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "NOT ENOUGH INFO"
   },
   {
     "id": 51421,
@@ -55881,7 +55881,7 @@
     "id": 107585,
     "claim": "Two and a Half Men starred Charlie Sheen in 1998.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 12173,
@@ -57309,7 +57309,7 @@
     "id": 136914,
     "claim": "Rick Ross released less than nine studio albums.",
     "label": "REFUTES",
-    "prediction": "REFUTES"
+    "prediction": "SUPPORTS"
   },
   {
     "id": 90022,

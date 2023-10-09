@@ -160,10 +160,10 @@ if __name__ == "__main__":
     parser.add_argument('--db_table', type=str, default='documents')
 
     # model
-    parser.add_argument('--max_t5_tokens', type=int, default=1024)
+    parser.add_argument('--max_t5_tokens', type=int, default=500)
     parser.add_argument('--model_name', type=str, default='google/flan-t5-xl')
     parser.add_argument('--cache_dir', type=str, default='./google/flan-t5-xl')
-    parser.add_argument('--model_path', type=str, default='./model/finetuned_t5_FEVER_100shot_train_data.pth')
+    parser.add_argument('--model_path', type=str, default='./model/finetuned_t5_FEVER_all_train_data.pth')
     
     args = parser.parse_args()
 
