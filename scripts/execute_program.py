@@ -5,28 +5,28 @@ import json
 import random
 import os
 from tqdm import tqdm
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from sklearn.metrics import classification_report, confusion_matrix
 
 from utils import log, data
 from search_module import Search_Wiki, Search_Tfidf
-from answer_question import T5_Question_Answering
 
 
 class Program_Execute:
     def __init__(self, args, logger):
         self.dataset_name = args.dataset_name
         self.model_name = args.model_name
+        self.max_deberta_tokens = args.max_deberta_tokens
+        self.device = args.device
 
         logger.info(f"Loading model {self.model_name}...")
-        self.tokenizer = T5Tokenizer.from_pretrained(args.model_name, cache_dir=args.cache_dir)
-        self.model = T5ForConditionalGeneration.from_pretrained(args.model_name, cache_dir=args.t5_model_path).to("cuda:{}".format(args.gpu))
+        self.tokenizer = AutoTokenizer.from_pretrained(args.model_name, cache_dir=args.cache_dir)
+        self.model = AutoModelForSequenceClassification.from_pretrained(args.model_name, cache_dir=args.cache_dir).to(args.device)
         # self.model.parallelize()
         logger.info(f"Model {self.model_name} loaded.")
 
         self.tfidf = Search_Tfidf(args.db_path, args.max_page, args.max_sent, args.tfidf_model)
         self.wiki = Search_Wiki(args.db_path, args.db_table, args.num_retrieved)
-        self.QA_module = T5_Question_Answering(self.model, self.tokenizer, args.gpu)
     
     # parse command to get command type
     def get_command_type(self, command):
@@ -117,7 +117,6 @@ class Program_Execute:
         # parse command line by line
         for command in program:
             cmd_type = self.get_command_type(command)
-            final_answer = None
 
             # definite variable
             if cmd_type == "DEFINITE":
@@ -146,20 +145,30 @@ class Program_Execute:
             elif cmd_type == "VERIFY":
                 try:
                     return_var, claim, evidence_dict, flag = self.parse_verify_command(command, variable_map, logger)
+                    evidence = " ".join(evidence_dict['evidence_texts'])
                     if flag:
-                        final_answer = self.QA_module.answer_verify_question(claim, evidence_dict['evidence_texts'])
+                        if len(evidence.split()) + len(claim.split()) > self.max_deberta_tokens:
+                            evidence_len = self.max_deberta_tokens - len(claim.split())
+                            evidence = " ".join(evidence.split()[:evidence_len])
+                        
+                        input_ids = self.tokenizer(claim, evidence, return_tensors="pt").to(self.device)
+                        output = self.model(input_ids['input_ids'])
+                        prediction = torch.softmax(output["logits"][0], -1)
+                        prob, pred = torch.max(prediction, dim=-1)
+                        prob = prob.item()
+                        
                         evidences = evidence_dict['evidence_ids']
                     else:
-                        final_answer = random.sample([0, 1, 2], 1)[0]
-                        # final_answer = 2
+                        pred = random.sample([0, 1, 2], 1)[0]
+                        prob = 0.3333
                         evidences = []
                 except:
                     logger.info(f"Alert!!! parsing error: {id}")
-                    final_answer = random.sample([0, 1, 2], 1)[0]
-                    # final_answer = 2
+                    pred = random.sample([0, 1, 2], 1)[0]
+                    prob = 0.3333
                     evidences = []
         
-        return final_answer, evidences
+        return prob, pred, evidences
     
     def evaluate(self, predictions, ground_truth, logger, num_of_classes=2):
         if num_of_classes == 2:
@@ -197,27 +206,18 @@ class Program_Execute:
             # for each predict_program, select the most
             for program in programs:
                 try:
-                    pred, evidences = self.parse_program(inst['id'], program, logger)
-                    pred = pred.lower().strip()
-                    label_map = {'true': 1, 'false': 0, 'yes': 1, 'no': 0, "it's impossible to say": 2, 'unknown': 2, 'un': 2}
-                    if pred in label_map:
-                        pred = label_map[pred]
-                    else:
-                        logger.info("Alert! prediction error id:{}, prediction: {}".format(inst['id'], pred))
-                        pred = random.sample([0, 1, 2], 1)[0]
-                        # pred = 2
-                        evidences = []
+                    prob, pred, evidences = self.parse_program(inst['id'], program, logger)
                 except:
                     logger.info("Alert! execution error {}".format(inst['id']))
                     # randomly select True or False
                     pred = random.sample([0, 1, 2], 1)[0]
-                    # pred = 2
+                    prob = 0.3333
                     evidences = []
                 predicted_inst_labels.append(pred)
             
-            true_count = len([pred for pred in predicted_inst_labels if pred == 1])
-            false_count = len([pred for pred in predicted_inst_labels if pred == 0])
-            nei_count = len([pred for pred in predicted_inst_labels if pred == 2])
+            true_count = len([pred for pred in predicted_inst_labels if pred == 0])
+            false_count = len([pred for pred in predicted_inst_labels if pred == 2])
+            nei_count = len([pred for pred in predicted_inst_labels if pred == 1])
             counts = [false_count, true_count, nei_count]
             max_count = max(counts)
             max_index = counts.index(max_count)
@@ -235,6 +235,7 @@ class Program_Execute:
                 'gold_label': inst['label'],
                 'gold_evidence': inst['evidence'],
                 'pred_label': final_label,
+                'pred_probability': prob,
                 'pred_evidence': evidences
             })
         
@@ -246,7 +247,7 @@ class Program_Execute:
 
 def main(args):
     # init log
-    log_path = args.log_path + args.dataset_name + "_execute_program.log"
+    log_path = args.log_path + args.dataset_name + "_execute_program_with_deberta.log"
     # log_path = args.log_path + "debug.log"
     logger = log.get_logger(log_path)
     logger.info(args)
@@ -288,23 +289,26 @@ if __name__ == '__main__':
 
     parser.add_argument('--log_path', type=str, default='./logs/')
     # model arguments
-    parser.add_argument('--model_name', type=str, default='google/flan-t5-xl')
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'dev'])
     parser.add_argument('--output_path', type=str, default='./results/fact_checking/')
-    parser.add_argument('--cache_dir', type=str, default="./google/flan-t5-xl")
-    parser.add_argument('--t5_model_path', type=str, default='./model/finetuned_t5_FEVER_100shot_train_data.pth')
+    parser.add_argument('--max_deberta_tokens', type=int, default=512)
+    # parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli")
+    # parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli')
+    parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli")
+    parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli')
     # training arguments
     parser.add_argument('--num_retrieved', type=int, default=5)
-    parser.add_argument('--max_evidence_length', type=int, default=4096)
     parser.add_argument('--num_eval_samples', type=int, default=-1)
 
-    parser.add_argument('--use_cuda', type=bool, default=True)
-    parser.add_argument('--gpu', type=int, default=4)
+    parser.add_argument('--gpu', type=int, default=0)
+    parser.add_argument('--device', type=str, default="cuda:0")
 
     args = parser.parse_args()
 
-    # os.environ["CUDA_VISIBLE_DEVICES"] = "{}".format(args.gpu)
-    if torch.cuda.is_available() and args.use_cuda:
+    if torch.cuda.is_available() and args.gpu >= 0:
         torch.cuda.set_device(int(args.gpu))
+        args.device = "cuda:{}".format(args.gpu)
+    else:
+        args.device = "cpu"
     
     main(args)
