@@ -137,8 +137,8 @@ class Program_Execute:
                 return_var, param1, key_words = self.parse_find_command(command, variable_map)
                 # evidence dict: {'evidence_ids': _, 'evidence_texts': _}
                 evidence_dict = self.wiki.find_evidences(param1, key_words)
-                if not evidence_dict['evidence_ids']:
-                    evidence_dict = self.tfidf.search_sents(variable_map['claim'])
+                # if not evidence_dict['evidence_ids']:
+                #     evidence_dict = self.tfidf.search_sents(variable_map['claim'])
                 variable_map[return_var] = evidence_dict
 
             # verify the claim
