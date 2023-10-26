@@ -6,5 +6,5 @@ mkdir codes
 cp -r scripts generate.sh codes
 mv codes outputs/generate/$cur_time
 
-python scripts/generate_program.py --gpu 3 --num_programs_per_example 3
+python scripts/generate_program.py --gpu 5 --num_programs_per_example 3
 cp -r logs results outputs/generate/$cur_time

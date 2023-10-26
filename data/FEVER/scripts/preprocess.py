@@ -4,11 +4,13 @@ import argparse
 def process_evidence(evidences):
     evidence_list = []
     for evidence_group in evidences:
+        evi_list = []
         for evidence in evidence_group:
             evi = [evidence[2], evidence[3]]
-            if evi not in evidence_list:
-                evidence_list.append(evi)
-    return evidence_list
+            evi_list.append(evi)
+        if evi_list not in evidence_list:
+            evidence_list.append(evi_list)
+    return list(evidence_list)
 
 def main(args):
     data_list = []
