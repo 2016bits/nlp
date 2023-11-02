@@ -1,0 +1,43 @@
+# @package _group_
+
+nq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-test
+  #query_special_suffix: '?'
+
+nq_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-train
+
+nq_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-dev
+
+trivia_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-test
+
+trivia_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-train
+
+trivia_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-dev
+
+webq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.webq-test
+
+curatedtrec_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.curatedtrec-test
+
+policy_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  # file: /home/zhouyc912/DPR-main/downloads/data/retriever/policy_8_7/policy_test_qa.csv
+  file: /home/zhouyc912/Policy_Retrive/DPR-main/downloads/data/retriever/policy_8_15/policy_test_qa.csv
+
+fever_test:
+  _target_: scripts.data.retriever_data.JsonCtxSrc
+  file: /data/yangjun/fact/wikifact/data/FEVER/processed/test.json

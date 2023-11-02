@@ -1,0 +1,17 @@
+# @package _group_
+
+dpr_wiki:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: data.wikipedia_split.psgs_w100
+  id_prefix: 'wiki:'
+
+policy:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: /home/zhouyc912/Policy_Retrive/DPR-main/downloads/data/policy_split/policy_ctx_70000_title.tsv
+  # file: /home/zhouyc912/Policy_Retrive/DPR-main/downloads/data/policy_split/data_9.10
+  id_prefix: 'policy:'
+
+wiki_pages:
+  _target_: scripts.data.retriever_data.JsonlCtxSrc
+  file: /data/yangjun/fact/wikifact/data/Wikipedia/wiki-pages
+  id_prefix: 'wiki_pages:'

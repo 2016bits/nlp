@@ -8,6 +8,9 @@ It is recommended to install Python 3.8.0
 
 Install all required Python packages using:
 ```bash
+conda create -n tor18 python=3.8
+conda activate tor18
+pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 pip install -r requirements.txt
 ```
 
