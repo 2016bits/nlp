@@ -32,7 +32,7 @@ encoded_ctx_files: ["/data/yangjun/fact/wikifact/data/Wikipedia/dpr/data/wikipag
 # default nq context: [/share/DPR-main/downloads/data/retriever_results/nq/single/wikipedia_passages_*.pkl]
 # policy test: ["/share/DPR-main/downloads/data/retriever_results/policy/*.pkl"]
 
-out_file: ./data/results.json
+out_file: results.json
 # "regex" or "string"
 match: string
 n_docs: 20
