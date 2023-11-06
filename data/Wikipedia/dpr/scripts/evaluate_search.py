@@ -84,7 +84,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', type=str, default='./data/results.json')
+    parser.add_argument('--data_path', type=str, default='./data/results_100.json')
     
     args = parser.parse_args()
     main(args)

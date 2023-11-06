@@ -12,7 +12,7 @@ def get_hop(evidence):
 
 def main(args):
     in_path = args.data_path + args.dataset_name + "/processed/" + args.mode + ".json"
-    out_path = args.output_path + args.dataset_name + "_multi_hop.json"
+    out_path = args.output_path + args.dataset_name + "_" + args.mode + "_multi_hop.json"
 
     with open(in_path, 'r') as f:
         dataset = json.load(f)
