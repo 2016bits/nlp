@@ -15,7 +15,7 @@ indexers:
 
 # the name of the queries dataset from the 'datasets' config group
 # qa_dataset: policy_test
-claim_dataset: fever_test
+fc_dataset: fever_test
 # nq_test, policy_test
 
 # a list of names of the passages datasets from the 'ctx_sources' config group
@@ -35,7 +35,7 @@ encoded_ctx_files: ["/data/yangjun/fact/wikifact/data/Wikipedia/dpr/data/wikipag
 out_file: results.json
 # "regex" or "string"
 match: string
-n_docs: 100
+n_docs: 10
 # n_docs: top_k returned passages
 validation_workers: 16
 

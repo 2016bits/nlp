@@ -507,13 +507,13 @@ def main(cfg: DictConfig):
     claims = []
     documents = []
     
-    if not cfg.claim_dataset:
-        print("Please specify claim_dataset to use")
+    if not cfg.fc_dataset:
+        print("Please specify fc_dataset to use")
         return
     
     # load claim test dataset
-    ds_key = cfg.claim_dataset  # eg: fever_test
-    print("claim_dataset: {}".format(ds_key))
+    ds_key = cfg.fc_dataset  # eg: fever_test
+    print("fc_dataset: {}".format(ds_key))
 
     fc_src = hydra.utils.instantiate(cfg.datasets[ds_key])   # map fever_test to scripts.data.retriever_data.JsonCtxSrc
     fc_src.load_data()
