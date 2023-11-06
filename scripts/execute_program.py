@@ -125,20 +125,31 @@ class Program_Execute:
 
             # search relevant wikipedia pages
             elif cmd_type == "SEARCH":
+                # complete ) and "
+                quote_num = len(re.findall(r'"', command))
+                if quote_num % 2:
+                    command += '"'
+                if command[-1] != ')':
+                    command += ')'
+
                 return_var, text = self.parse_search_command(command, variable_map)
                 wikipages = self.wiki.search_wikipages(text)
-                # if wikipages == {}:
-                #     titles = self.tfidf.search_pages(variable_map['claim'])
-                #     wikipages = self.wiki.search_wikipages(titles)
+                
                 variable_map[return_var] = wikipages
 
             # find relevant evidences
             elif cmd_type == "FIND":
+                # complete ) and "
+                quote_num = len(re.findall(r'"', command))
+                if quote_num % 2:
+                    command += '"'
+                if command[-1] != ')':
+                    command += ')'
+
                 return_var, param1, key_words = self.parse_find_command(command, variable_map)
                 # evidence dict: {'evidence_ids': _, 'evidence_texts': _}
                 evidence_dict = self.wiki.find_evidences(param1, key_words)
-                # if not evidence_dict['evidence_ids']:
-                #     evidence_dict = self.tfidf.search_sents(variable_map['claim'])
+                
                 variable_map[return_var] = evidence_dict
 
             # verify the claim
@@ -167,7 +178,28 @@ class Program_Execute:
                     pred = random.sample([0, 1, 2], 1)[0]
                     prob = 0.3333
                     evidences = []
-        
+        if variable_map['claim'] and evidence_dict:
+            try:
+                evidence = " ".join(evidence_dict['evidence_texts'])
+                
+                if len(evidence.split()) + len(claim.split()) > self.max_deberta_tokens:
+                    evidence_len = self.max_deberta_tokens - len(claim.split())
+                    evidence = " ".join(evidence.split()[:evidence_len])
+                
+                input_ids = self.tokenizer(claim, evidence, return_tensors="pt").to(self.device)
+                output = self.model(input_ids['input_ids'])
+                prediction = torch.softmax(output["logits"][0], -1)
+                prob, pred = torch.max(prediction, dim=-1)
+                prob = prob.item()
+                
+                evidences = evidence_dict['evidence_ids']
+                
+            except:
+                logger.info(f"Alert!!! parsing error: {id}")
+                pred = random.sample([0, 1, 2], 1)[0]
+                prob = 0.3333
+                evidences = []
+
         return prob, pred, evidences
     
     def evaluate(self, predictions, ground_truth, logger, num_of_classes=2):

@@ -35,7 +35,7 @@ encoded_ctx_files: ["/data/yangjun/fact/wikifact/data/Wikipedia/dpr/data/wikipag
 out_file: results.json
 # "regex" or "string"
 match: string
-n_docs: 20
+n_docs: 100
 # n_docs: top_k returned passages
 validation_workers: 16
 
