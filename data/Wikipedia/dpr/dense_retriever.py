@@ -456,9 +456,14 @@ def validate_tables(
     return match_stats.top_k_chunk_hits
 
 
-def get_all_passages(ctx_sources):
+def get_all_passages(cfg):
+    data_dir = '/data/yangjun/fact/wikifact/data/Wikipedia/outputs'
+    tsvs = os.listdir(data_dir)
     all_passages = {} # ctx_sources: dpr.data.retriever_data.CsvCtxSrc
-    for ctx_src in ctx_sources:
+    for tsvname in tsvs:
+        tsvpath=os.path.join(data_dir, tsvname)
+        cfg.ctx_sources[cfg.ctx_datasets[0]]['file']=tsvpath
+        ctx_src = hydra.utils.instantiate(cfg.ctx_sources[cfg.ctx_datasets[0]])
         ctx_src.load_data_to(all_passages)
         print("Loaded ctx data: {}".format(len(all_passages)))
 
@@ -504,28 +509,29 @@ def main(cfg: DictConfig):
     print("Encoder vector_size={}".format(vector_size))
 
     # get claim and searched documents
-    claims = []
-    documents = []
+    questions = []
+    questions_text = []
+    question_answers = []
     
-    if not cfg.fc_dataset:
+    if not cfg.qa_dataset:
         print("Please specify fc_dataset to use")
         return
     
     # load claim test dataset
-    ds_key = cfg.fc_dataset  # eg: fever_test
+    ds_key = cfg.qa_dataset  # eg: fever_test
     print("fc_dataset: {}".format(ds_key))
 
-    fc_src = hydra.utils.instantiate(cfg.datasets[ds_key])   # map fever_test to scripts.data.retriever_data.JsonCtxSrc
-    fc_src.load_data()
+    qa_src = hydra.utils.instantiate(cfg.datasets[ds_key])   # map fever_test to scripts.data.retriever_data.JsonCtxSrc
+    qa_src.load_data()
 
-    total_claims = len(fc_src)
-    for i in range(total_claims):
-        fc_sample = fc_src[i]
-        claim, document = fc_sample.claim, fc_sample.document
-        claims.append(claim)
-        documents.append(document)
+    total_queries = len(qa_src)
+    for i in range(total_queries): # 3610;
+        qa_sample = qa_src[i]
+        question, answers = qa_sample.query, qa_sample.answers
+        questions.append(question)
+        question_answers.append(answers) # answers is acutally no use here
     
-    print("claim num: {}, document num: {}".format(len(claims), len(documents)))
+    print("claim num: {}, document num: {}".format(len(questions), len(questions_text)))
 
     # 看不懂，似乎也不影响
     if cfg.rpc_retriever_cfg_file:
@@ -545,10 +551,10 @@ def main(cfg: DictConfig):
         index.init_index(vector_size) # vector_size:768
         retriever = LocalFaissRetriever(encoder, cfg.batch_size, tensorizer, index)
 
-    claims_tensor = retriever.generate_question_vectors(claims)
-    if fc_src.selector:
+    questions_tensor = retriever.generate_question_vectors(questions, query_token=qa_src.special_query_token)
+    if qa_src.selector:
         print("Using custom representation token selector")
-        retriever.selector = fc_src.selector
+        retriever.selector = qa_src.selector
     
     # if there is no index at the specific location, the index will be created from encoded_ctx_files
     index_path = cfg.index_path
@@ -599,12 +605,12 @@ def main(cfg: DictConfig):
         
     # get top k results
     starttime=time.time()
-    top_results_and_scores = retriever.get_top_docs(claims_tensor.numpy(), cfg.n_docs) # default is 100
+    top_results_and_scores = retriever.get_top_docs(questions_tensor.numpy(), cfg.n_docs) # default is 100
     endtime=time.time()
     
     if cfg.use_rpc_meta:
-        claims_doc_hits = validate_from_meta(
-            documents,
+        questions_doc_hits = validate_from_meta(
+            question_answers,
             top_results_and_scores,
             cfg.validation_workers,
             cfg.match,
@@ -612,29 +618,29 @@ def main(cfg: DictConfig):
         )
         if cfg.out_file:
             save_results_from_meta(
-                claims,
-                documents,
+                questions,
+                question_answers,
                 top_results_and_scores,
-                claims_doc_hits,
+                questions_doc_hits,
                 cfg.out_file,
                 cfg.rpc_meta_compressed,
             )
     else:
-        all_passages = get_all_passages(ctx_sources)
+        all_passages = get_all_passages(cfg)
         if cfg.validate_as_tables:
             # deafault is False
-            claims_doc_hits = validate_tables(
+            questions_doc_hits = validate_tables(
                 all_passages,
-                documents,
+                question_answers,
                 top_results_and_scores,
                 cfg.validation_workers,
                 cfg.match,
             )
 
         else:
-            claims_doc_hits = validate(
+            questions_doc_hits = validate(
                 all_passages,
-                documents,
+                question_answers,
                 top_results_and_scores,
                 cfg.validation_workers,
                 cfg.match,
@@ -643,20 +649,20 @@ def main(cfg: DictConfig):
         if cfg.out_file:
             save_results(
                 all_passages,
-                claims,
-                documents,
+                questions_text if questions_text else questions,
+                question_answers,
                 top_results_and_scores,
-                claims_doc_hits,
+                questions_doc_hits,
                 cfg.out_file,
             )
-        print("querys:{},contexts:{},total_time:{},ave_time:{}".format(len(claims),len(all_passages),round(endtime-starttime,3),round(endtime-starttime)/len(claims),3))
+        print("querys:{},contexts:{},total_time:{},ave_time:{}".format(len(questions),len(all_passages),round(endtime-starttime,3),round(endtime-starttime)/len(questions),3))
     
     if cfg.kilt_out_file:
         kilt_ctx = next(iter([ctx for ctx in ctx_sources if isinstance(ctx, KiltCsvCtxSrc)]), None)
         if not kilt_ctx:
             raise RuntimeError("No Kilt compatible context file provided")
         assert hasattr(cfg, "kilt_out_file")
-        kilt_ctx.convert_to_kilt(fc_src.kilt_gold_file, cfg.out_file, cfg.kilt_out_file)
+        kilt_ctx.convert_to_kilt(qa_src.kilt_gold_file, cfg.out_file, cfg.kilt_out_file)
 
 
 if __name__ == "__main__":

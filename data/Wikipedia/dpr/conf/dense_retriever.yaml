@@ -15,17 +15,17 @@ indexers:
 
 # the name of the queries dataset from the 'datasets' config group
 # qa_dataset: policy_test
-fc_dataset: fever_test
+qa_dataset: fever_test
 # nq_test, policy_test
 
 # a list of names of the passages datasets from the 'ctx_sources' config group
 # ctx_datatsets: [policy]
-ctx_datasets: [wiki_pages]
+ctx_datasets: [wikipage]
 # dpr_wiki or policy_test,look for default
 
 #Glob paths to encoded passages (from generate_dense_embeddings tool)
 # encoded_ctx_files: ["/home/zhouyc912/Policy_Retrive/DPR-main/outputs/2023-08-16/01-49-35/_*"]
-encoded_ctx_files: ["/data/yangjun/fact/wikifact/data/Wikipedia/dpr/data/wikipages"]
+encoded_ctx_files: ["/data/yangjun/fact/wikifact/data/Wikipedia/dpr/data1/_*"]
 
 # ["/home/zhouyc912/DPR-main/outputs/2023-08-10/15-32-21/_*"]
 # 用绝对路径!
@@ -35,7 +35,7 @@ encoded_ctx_files: ["/data/yangjun/fact/wikifact/data/Wikipedia/dpr/data/wikipag
 out_file: results.json
 # "regex" or "string"
 match: string
-n_docs: 10
+n_docs: 100
 # n_docs: top_k returned passages
 validation_workers: 16
 
@@ -48,7 +48,7 @@ do_lower_case: True
 # The attribute name of encoder to use for queries. Options for the BiEncoder model: question_model, ctx_model
 # question_model is used if this param is empty
 # encoder_path:
-encoder_path: ctx_model
+encoder_path:
 
 # path to the FAISS index location - it is only needed if you want to serialize faiss index to files or read from them
 # (instead of using encoded_ctx_files)

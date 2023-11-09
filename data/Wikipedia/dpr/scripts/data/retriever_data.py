@@ -108,10 +108,10 @@ class CsvQASrc(QASrc):
         samples_count = 0
         # TODO: optimize
         with open(self.file) as ifile:
-            reader = csv.reader(ifile, delimiter="\t")
+            reader = csv.reader(ifile, delimiter=",")
             for row in reader:
                 question = row[self.question_col]
-                answers = eval(row[self.answers_col])
+                answers = row[self.answers_col]
                 id = None
                 if self.id_col >= 0:
                     id = row[self.id_col] # default is -1
@@ -275,7 +275,7 @@ class CsvCtxSrc(RetrieverData):
         super().load_data()
         logger.info("Reading file %s", self.file)
         with open(self.file) as ifile:
-            reader = csv.reader(ifile, delimiter="\t")
+            reader = csv.reader(ifile, delimiter=",")
             for row in reader:
                 # for row in ifile:
                 # row = row.strip().split("\t")

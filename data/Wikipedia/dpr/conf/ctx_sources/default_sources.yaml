@@ -15,3 +15,7 @@ wiki_pages:
   _target_: scripts.data.retriever_data.JsonlCtxSrc
   file: /data/yangjun/fact/wikifact/data/Wikipedia/wiki-pages
   id_prefix: 'wiki_pages:'
+
+wikipage:
+  _target_: scripts.data.retriever_data.CsvCtxSrc
+  file: /data/yangjun/fact/wikifact/data/Wikipedia/outputs/wiki-001.csv

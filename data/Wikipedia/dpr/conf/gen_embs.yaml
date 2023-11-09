@@ -6,13 +6,13 @@ defaults:
 model_file: /data/yangjun/fact/wikifact/data/Wikipedia/dpr/weights/dpr_biencoder.10
 
 # Name of the all-passages resource
-ctx_src: wiki_pages
+ctx_src: wikipage
 
 # which (ctx or query) encoder to be used for embedding generation
 encoder_type: ctx
 
 # output .tsv file path to write results to
-out_file: ./data/
+out_file: ./data1/
 
 # Whether to lower case the input text. Set True for uncased models, False for the cased ones.
 do_lower_case: True

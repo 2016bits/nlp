@@ -127,31 +127,38 @@ def main(cfg: DictConfig):
 
     print("reading data source: {}".format(cfg.ctx_src))
 
-    ctx_src = hydra.utils.instantiate(cfg.ctx_sources[cfg.ctx_src]) # an instance of dpr-data.retriever_data.CsvCtxSrc
-    all_passages_dict = {}
-    ctx_src.load_data_to(all_passages_dict) 
-    # notice if the dataset is original,can write in the form of original,if is by ourselves,should write in glob expression
-    all_passages = [(k, v) for k, v in all_passages_dict.items()]
+    data_dir = '/data/yangjun/fact/wikifact/data/Wikipedia/outputs'
+    tsvs = os.listdir(data_dir)
+    # 遍历outputs中所有的wiki-pages
+    for tsvname in tsvs:
+        tsvpath = os.path.join(data_dir, tsvname)
+        cfg.ctx_sources[cfg.ctx_src]["file"]=tsvpath
 
-    shard_size = math.ceil(len(all_passages) / cfg.num_shards)
-    start_idx = cfg.shard_id * shard_size
-    end_idx = start_idx + shard_size
+        ctx_src = hydra.utils.instantiate(cfg.ctx_sources[cfg.ctx_src]) # an instance of dpr-data.retriever_data.CsvCtxSrc
+        all_passages_dict = {}
+        ctx_src.load_data_to(all_passages_dict) 
+        # notice if the dataset is original,can write in the form of original,if is by ourselves,should write in glob expression
+        all_passages = [(k, v) for k, v in all_passages_dict.items()]
 
-    print(
-        "Producing encodings for passages range: {} to {} (out of total {})".format(
-        start_idx,
-        end_idx,
-        len(all_passages))
-    )
-    shard_passages = all_passages[start_idx:end_idx]
+        shard_size = math.ceil(len(all_passages) / cfg.num_shards)
+        start_idx = cfg.shard_id * shard_size
+        end_idx = start_idx + shard_size
 
-    data = gen_ctx_vectors(cfg, shard_passages, encoder, tensorizer, only_title=True, insert_title=False)
+        print(
+            "Producing encodings for passages range: {} to {} (out of total {})".format(
+            start_idx,
+            end_idx,
+            len(all_passages))
+        )
+        shard_passages = all_passages[start_idx:end_idx]
 
-    file = cfg.out_file + "wikipages"
-    pathlib.Path(os.path.dirname(file)).mkdir(parents=True, exist_ok=True)
-    print("Writing results to {}".format(file))
-    with open(file, mode="wb") as f:
-        pickle.dump(data, f)
+        data = gen_ctx_vectors(cfg, shard_passages, encoder, tensorizer, only_title=True, insert_title=False)
+
+        file = cfg.out_file+"_"+tsvname[:-4]
+        pathlib.Path(os.path.dirname(file)).mkdir(parents=True, exist_ok=True)
+        print("Writing results to {}".format(file))
+        with open(file, mode="wb") as f:
+            pickle.dump(data, f)
 
     print("Total passages processed {}. Written to {}".format(len(data), file))
 

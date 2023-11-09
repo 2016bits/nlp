@@ -38,6 +38,9 @@ policy_test:
   # file: /home/zhouyc912/DPR-main/downloads/data/retriever/policy_8_7/policy_test_qa.csv
   file: /home/zhouyc912/Policy_Retrive/DPR-main/downloads/data/retriever/policy_8_15/policy_test_qa.csv
 
+# fever_test:
+#   _target_: scripts.data.retriever_data.JsonCtxSrc
+#   file: /data/yangjun/fact/wikifact/data/FEVER/processed/test.json
 fever_test:
-  _target_: scripts.data.retriever_data.JsonCtxSrc
-  file: /data/yangjun/fact/wikifact/data/FEVER/processed/test.json
+  _target_: scripts.data.retriever_data.CsvQASrc
+  file: /data/yangjun/fact/wikifact/data/FEVER/processed/test.csv

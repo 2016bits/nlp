@@ -1,8 +1,8 @@
 import re
 
-s = "evidences = Find_evidences(wiki_pages, \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT\", \"NXT"
-num = len(re.findall(r'"', s))
-print(num)
-if num % 2:
-    s += '"'
-print(s)
+s = "2_Hearts_-LRB-Kylie_Minogue_song-RRB-"
+
+# 使用正则表达式去除-LRB-和-RRB-之间的所有元素
+s_cleaned = re.sub(r'_-LRB-.*?-RRB-', '', s)
+
+print(s_cleaned)
