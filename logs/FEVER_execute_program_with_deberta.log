@@ -1,64 +1,22 @@
-[2023-11-05 11:24:34,966][execute_program.py][line:285][INFO] Namespace(cache_dir='./MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli', dataset_name='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', device='cuda:0', gpu=0, log_path='./logs/', max_deberta_tokens=512, max_page=3, max_sent=5, mode='test', model_name='MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli', num_eval_samples=-1, num_retrieved=5, output_path='./results/fact_checking/', program_file='_N1_aquilacode-7b-nv_programs_with_evidence.json', program_path='./results/programs/', raw_data_path='./data/', tfidf_model='./data/Wikipedia/data/tfidf.npz')
-[2023-11-05 11:24:34,966][execute_program.py][line:288][INFO] loading generated programs......
-[2023-11-05 11:24:35,075][execute_program.py][line:296][INFO] loading model......
-[2023-11-05 11:24:35,075][execute_program.py][line:22][INFO] Loading model MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli...
-[2023-11-05 11:24:40,533][execute_program.py][line:26][INFO] Model MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli loaded.
-[2023-11-05 11:24:40,534][tfidf_doc_ranker.py][line:38][INFO] Loading ./data/Wikipedia/data/tfidf.npz
-[2023-11-05 11:24:51,080][execute_program.py][line:223][INFO] start executing programs......
-[2023-11-05 11:25:03,671][execute_program.py][line:198][INFO] Alert!!! parsing error: 4328
-[2023-11-05 11:25:04,863][execute_program.py][line:198][INFO] Alert!!! parsing error: 4737
-[2023-11-05 11:25:07,547][execute_program.py][line:198][INFO] Alert!!! parsing error: 5745
-[2023-11-05 11:25:08,017][execute_program.py][line:198][INFO] Alert!!! parsing error: 5950
-[2023-11-05 11:25:21,604][execute_program.py][line:198][INFO] Alert!!! parsing error: 11418
-[2023-11-05 11:25:26,050][execute_program.py][line:198][INFO] Alert!!! parsing error: 12939
-[2023-11-05 11:25:58,054][execute_program.py][line:198][INFO] Alert!!! parsing error: 24677
-[2023-11-05 11:26:01,476][execute_program.py][line:198][INFO] Alert!!! parsing error: 25842
-[2023-11-05 11:26:25,486][execute_program.py][line:198][INFO] Alert!!! parsing error: 34823
-[2023-11-05 11:26:27,865][execute_program.py][line:198][INFO] Alert!!! parsing error: 35804
-[2023-11-05 11:26:36,319][execute_program.py][line:198][INFO] Alert!!! parsing error: 39377
-[2023-11-05 11:26:44,443][execute_program.py][line:198][INFO] Alert!!! parsing error: 42406
-[2023-11-05 11:26:56,238][execute_program.py][line:198][INFO] Alert!!! parsing error: 47228
-[2023-11-05 11:27:24,416][execute_program.py][line:198][INFO] Alert!!! parsing error: 57027
-[2023-11-05 11:27:59,216][execute_program.py][line:198][INFO] Alert!!! parsing error: 70421
-[2023-11-05 11:28:11,829][execute_program.py][line:198][INFO] Alert!!! parsing error: 74488
-[2023-11-05 11:28:30,464][execute_program.py][line:177][INFO] Alert!!! parsing error: 80676
-[2023-11-05 11:28:30,464][execute_program.py][line:198][INFO] Alert!!! parsing error: 80676
-[2023-11-05 11:28:31,454][execute_program.py][line:198][INFO] Alert!!! parsing error: 81119
-[2023-11-05 11:28:49,733][execute_program.py][line:198][INFO] Alert!!! parsing error: 87782
-[2023-11-05 11:29:03,696][execute_program.py][line:198][INFO] Alert!!! parsing error: 92447
-[2023-11-05 11:29:20,381][execute_program.py][line:198][INFO] Alert!!! parsing error: 98264
-[2023-11-05 11:29:23,453][execute_program.py][line:198][INFO] Alert!!! parsing error: 99395
-[2023-11-05 11:29:48,898][execute_program.py][line:198][INFO] Alert!!! parsing error: 108598
-[2023-11-05 11:30:11,966][execute_program.py][line:198][INFO] Alert!!! parsing error: 117010
-[2023-11-05 11:30:16,397][execute_program.py][line:198][INFO] Alert!!! parsing error: 118603
-[2023-11-05 11:30:21,859][execute_program.py][line:198][INFO] Alert!!! parsing error: 120781
-[2023-11-05 11:30:23,909][execute_program.py][line:198][INFO] Alert!!! parsing error: 121636
-[2023-11-05 11:30:35,170][execute_program.py][line:198][INFO] Alert!!! parsing error: 125449
-[2023-11-05 11:30:50,455][execute_program.py][line:198][INFO] Alert!!! parsing error: 130289
-[2023-11-05 11:31:18,898][execute_program.py][line:198][INFO] Alert!!! parsing error: 140750
-[2023-11-05 11:31:46,528][execute_program.py][line:198][INFO] Alert!!! parsing error: 151484
-[2023-11-05 11:32:08,183][execute_program.py][line:198][INFO] Alert!!! parsing error: 160593
-[2023-11-05 11:32:27,510][execute_program.py][line:198][INFO] Alert!!! parsing error: 168082
-[2023-11-05 11:32:44,217][execute_program.py][line:198][INFO] Alert!!! parsing error: 174882
-[2023-11-05 11:32:45,847][execute_program.py][line:198][INFO] Alert!!! parsing error: 175437
-[2023-11-05 11:32:45,904][execute_program.py][line:198][INFO] Alert!!! parsing error: 175441
-[2023-11-05 11:33:47,586][execute_program.py][line:198][INFO] Alert!!! parsing error: 199803
-[2023-11-05 11:33:47,761][execute_program.py][line:198][INFO] Alert!!! parsing error: 199809
-[2023-11-05 11:33:57,297][execute_program.py][line:198][INFO] Alert!!! parsing error: 204979
-[2023-11-05 11:33:57,646][execute_program.py][line:198][INFO] Alert!!! parsing error: 204992
-[2023-11-05 11:34:11,599][execute_program.py][line:198][INFO] Alert!!! parsing error: 211865
-[2023-11-05 11:34:22,292][execute_program.py][line:198][INFO] Alert!!! parsing error: 217381
-[2023-11-05 11:34:53,100][execute_program.py][line:218][INFO]                  precision    recall  f1-score   support
+[2023-11-10 10:25:41,282][execute_program.py][line:281][INFO] Namespace(cache_dir='./MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli', dataset_name='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', device='cuda:0', gpu=0, log_path='./logs/', max_deberta_tokens=512, max_page=3, max_sent=5, mode='test', model_name='MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli', num_eval_samples=-1, num_retrieved=5, output_path='./results/fact_checking/', program_file='_N1_aquilacode-7b-nv_programs_with_evidence.json', program_path='./results/programs/', raw_data_path='./data/', tfidf_model='./data/Wikipedia/data/tfidf.npz')
+[2023-11-10 10:25:41,282][execute_program.py][line:284][INFO] loading generated programs......
+[2023-11-10 10:25:41,380][execute_program.py][line:292][INFO] loading model......
+[2023-11-10 10:25:41,380][execute_program.py][line:22][INFO] Loading model MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli...
+[2023-11-10 10:25:46,750][execute_program.py][line:26][INFO] Model MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli loaded.
+[2023-11-10 10:25:46,750][tfidf_doc_ranker.py][line:38][INFO] Loading ./data/Wikipedia/data/tfidf.npz
+[2023-11-10 10:25:58,127][execute_program.py][line:219][INFO] start executing programs......
+[2023-11-10 10:29:58,931][execute_program.py][line:176][INFO] Alert!!! parsing error: 80676
+[2023-11-10 10:36:46,205][execute_program.py][line:214][INFO]                  precision    recall  f1-score   support
 
-        REFUTES     0.7955    0.1995    0.3190      3333
-       SUPPORTS     0.8158    0.2763    0.4128      3333
-NOT ENOUGH INFO     0.3851    0.9283    0.5444      3333
+        REFUTES     0.7969    0.1989    0.3184      3333
+       SUPPORTS     0.8140    0.2901    0.4278      3333
+NOT ENOUGH INFO     0.3870    0.9265    0.5460      3333
 
-       accuracy                         0.4680      9999
-      macro avg     0.6654    0.4680    0.4254      9999
-   weighted avg     0.6654    0.4680    0.4254      9999
+       accuracy                         0.4718      9999
+      macro avg     0.6660    0.4718    0.4307      9999
+   weighted avg     0.6660    0.4718    0.4307      9999
 
-[2023-11-05 11:34:53,104][execute_program.py][line:219][INFO] [[ 665   78 2590]
- [  62  921 2350]
- [ 109  130 3094]]
-[2023-11-05 11:34:53,105][execute_program.py][line:301][INFO] prediction finished...
+[2023-11-10 10:36:46,210][execute_program.py][line:215][INFO] [[ 663   86 2584]
+ [  59  967 2307]
+ [ 110  135 3088]]
+[2023-11-10 10:36:46,211][execute_program.py][line:297][INFO] prediction finished...

@@ -1879,7 +1879,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.937131941318512,
+    "pred_probability": 0.8899848461151123,
     "pred_evidence": [
       [
         "The_Times",
@@ -2757,8 +2757,17 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.998786985874176,
-    "pred_evidence": []
+    "pred_probability": 0.9536930918693542,
+    "pred_evidence": [
+      [
+        "Danish",
+        8
+      ],
+      [
+        "Danish",
+        16
+      ]
+    ]
   },
   {
     "id": 3761,
@@ -3098,9 +3107,14 @@
     "claim": "NXT Tag Team Championship is an athletic competition.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8982975482940674,
+    "pred_evidence": [
+      [
+        "NXT_Tag_Team_Championship",
+        0
+      ]
+    ]
   },
   {
     "id": 4423,
@@ -3441,9 +3455,14 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9867167472839355,
+    "pred_evidence": [
+      [
+        "Sausage_Party",
+        0
+      ]
+    ]
   },
   {
     "id": 4738,
@@ -3455,9 +3474,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9972506165504456,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9869877099990845,
+    "pred_evidence": [
+      [
+        "Sausage_Party",
+        0
+      ]
+    ]
   },
   {
     "id": 4742,
@@ -4170,7 +4194,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9988262057304382,
     "pred_evidence": []
   },
   {
@@ -4308,9 +4332,14 @@
         6
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8998692631721497,
+    "pred_evidence": [
+      [
+        "Sands_Hotel_and_Casino",
+        0
+      ]
+    ]
   },
   {
     "id": 5951,
@@ -4336,9 +4365,18 @@
     "claim": "Deepika Padukone has acted in tragedies, horrors, and thrillers.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9987001419067383,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.7002838850021362,
+    "pred_evidence": [
+      [
+        "Deepika_Padukone",
+        0
+      ],
+      [
+        "Deepika_Padukone",
+        1
+      ]
+    ]
   },
   {
     "id": 6032,
@@ -5286,8 +5324,17 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9984867572784424,
-    "pred_evidence": []
+    "pred_probability": 0.8168687224388123,
+    "pred_evidence": [
+      [
+        "Jenny_McCarthy",
+        1
+      ],
+      [
+        "Playboy",
+        2
+      ]
+    ]
   },
   {
     "id": 7430,
@@ -6011,14 +6058,9 @@
         0
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.9132363200187683,
-    "pred_evidence": [
-      [
-        "James,_Viscount_Severn",
-        0
-      ]
-    ]
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9948737025260925,
+    "pred_evidence": []
   },
   {
     "id": 8219,
@@ -6030,9 +6072,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9988847374916077,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.7420856356620789,
+    "pred_evidence": [
+      [
+        "Spain",
+        14
+      ]
+    ]
   },
   {
     "id": 8290,
@@ -8186,9 +8233,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9949434399604797,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.962236762046814,
+    "pred_evidence": [
+      [
+        "Talulah_Riley",
+        1
+      ]
+    ]
   },
   {
     "id": 11315,
@@ -8247,8 +8299,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_probability": 0.6986103653907776,
+    "pred_evidence": [
+      [
+        "Natasha_Lyonne",
+        0
+      ]
+    ]
   },
   {
     "id": 11443,
@@ -8260,9 +8317,14 @@
         4
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9867390394210815,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8695883750915527,
+    "pred_evidence": [
+      [
+        "David_Attenborough",
+        4
+      ]
+    ]
   },
   {
     "id": 11449,
@@ -9451,8 +9513,8 @@
     "claim": "Goldie Hawn had a career that lasted more than three centuries.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_label": "REFUTES",
+    "pred_probability": 0.944983184337616,
     "pred_evidence": []
   },
   {
@@ -9477,9 +9539,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9976160526275635,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8782253265380859,
+    "pred_evidence": [
+      [
+        "Kaya_Scodelario",
+        1
+      ]
+    ]
   },
   {
     "id": 12952,
@@ -9830,9 +9897,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9897676110267639,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9791704416275024,
+    "pred_evidence": [
+      [
+        "Marvel_Comics",
+        0
+      ]
+    ]
   },
   {
     "id": 13239,
@@ -11234,11 +11306,15 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9877288341522217,
+    "pred_probability": 0.9974308609962463,
     "pred_evidence": [
       [
-        "Phoenix,_Arizona",
-        0
+        "Arizona",
+        3
+      ],
+      [
+        "Phoenix",
+        5
       ]
     ]
   },
@@ -11770,9 +11846,14 @@
         16
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9992421865463257,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9049715995788574,
+    "pred_evidence": [
+      [
+        "Prague",
+        16
+      ]
+    ]
   },
   {
     "id": 16056,
@@ -11784,9 +11865,14 @@
         16
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9986442923545837,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9438095688819885,
+    "pred_evidence": [
+      [
+        "Prague",
+        16
+      ]
+    ]
   },
   {
     "id": 16079,
@@ -12955,9 +13041,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9988252520561218,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9013809561729431,
+    "pred_evidence": [
+      [
+        "John_DiMaggio",
+        1
+      ]
+    ]
   },
   {
     "id": 17376,
@@ -13908,9 +13999,14 @@
         5
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9838786125183105,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9674859046936035,
+    "pred_evidence": [
+      [
+        "Freddie_Highmore",
+        5
+      ]
+    ]
   },
   {
     "id": 19068,
@@ -14047,9 +14143,14 @@
         9
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.996938943862915,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8914604187011719,
+    "pred_evidence": [
+      [
+        "Love_Aaj_Kal",
+        0
+      ]
+    ]
   },
   {
     "id": 19184,
@@ -16943,8 +17044,13 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "REFUTES",
-    "pred_probability": 0.9456078410148621,
-    "pred_evidence": []
+    "pred_probability": 0.7018097043037415,
+    "pred_evidence": [
+      [
+        "Adobe_Photoshop",
+        0
+      ]
+    ]
   },
   {
     "id": 23446,
@@ -17224,14 +17330,9 @@
         0
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.9871391654014587,
-    "pred_evidence": [
-      [
-        "Phoenix,_Arizona",
-        0
-      ]
-    ]
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9951438903808594,
+    "pred_evidence": []
   },
   {
     "id": 23607,
@@ -17364,8 +17465,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9981259703636169,
-    "pred_evidence": []
+    "pred_probability": 0.9421269297599792,
+    "pred_evidence": [
+      [
+        "New_England_Patriots",
+        16
+      ]
+    ]
   },
   {
     "id": 23796,
@@ -18199,9 +18305,22 @@
     "claim": "Jason Bourne has two trained cats as part of the cast.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.7917351126670837,
+    "pred_evidence": [
+      [
+        "Jason_Bourne",
+        0
+      ],
+      [
+        "Jason_Bourne",
+        7
+      ],
+      [
+        "Jason_Bourne",
+        10
+      ]
+    ]
   },
   {
     "id": 24689,
@@ -19071,8 +19190,8 @@
         20
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9993840456008911,
     "pred_evidence": []
   },
   {
@@ -19553,8 +19672,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9969043135643005,
-    "pred_evidence": []
+    "pred_probability": 0.933751106262207,
+    "pred_evidence": [
+      [
+        "Uganda",
+        11
+      ]
+    ]
   },
   {
     "id": 26549,
@@ -19566,9 +19690,14 @@
         11
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.996970534324646,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.950692355632782,
+    "pred_evidence": [
+      [
+        "Uganda",
+        11
+      ]
+    ]
   },
   {
     "id": 26550,
@@ -19581,8 +19710,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9985331296920776,
-    "pred_evidence": []
+    "pred_probability": 0.5629401803016663,
+    "pred_evidence": [
+      [
+        "Johnny_Van_Zant",
+        5
+      ]
+    ]
   },
   {
     "id": 26556,
@@ -20372,9 +20506,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.6729404926300049,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9322003126144409,
+    "pred_evidence": [
+      [
+        "Arizona",
+        0
+      ]
+    ]
   },
   {
     "id": 27702,
@@ -20628,9 +20767,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9505040645599365,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.643059253692627,
+    "pred_evidence": [
+      [
+        "Donna_Noble",
+        2
+      ]
+    ]
   },
   {
     "id": 28246,
@@ -21782,8 +21926,17 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.7099012732505798,
-    "pred_evidence": []
+    "pred_probability": 0.9740310907363892,
+    "pred_evidence": [
+      [
+        "Ellen_DeGeneres",
+        1
+      ],
+      [
+        "The_Ellen_Show",
+        0
+      ]
+    ]
   },
   {
     "id": 29544,
@@ -23356,8 +23509,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9985576272010803,
-    "pred_evidence": []
+    "pred_probability": 0.8121156096458435,
+    "pred_evidence": [
+      [
+        "Bonaire",
+        9
+      ]
+    ]
   },
   {
     "id": 32092,
@@ -23688,9 +23846,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.8151441216468811,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9810237884521484,
+    "pred_evidence": [
+      [
+        "Castlevania",
+        0
+      ]
+    ]
   },
   {
     "id": 32596,
@@ -25520,9 +25683,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9971304535865784,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9797342419624329,
+    "pred_evidence": [
+      [
+        "Johnny_Van_Zant",
+        10
+      ]
+    ]
   },
   {
     "id": 34696,
@@ -25672,7 +25840,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9985585808753967,
     "pred_evidence": []
   },
   {
@@ -26307,9 +26475,26 @@
         16
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9767563343048096,
+    "pred_evidence": [
+      [
+        "Cyprus",
+        1
+      ],
+      [
+        "Cyprus",
+        6
+      ],
+      [
+        "Cyprus",
+        13
+      ],
+      [
+        "Cyprus",
+        16
+      ]
+    ]
   },
   {
     "id": 35822,
@@ -26964,7 +27149,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9359333515167236,
+    "pred_probability": 0.948789656162262,
     "pred_evidence": [
       [
         "Dark_matter",
@@ -28504,9 +28689,14 @@
     "claim": "Zoe Saldana has an award-winning acting career.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.7691454291343689,
+    "pred_evidence": [
+      [
+        "Zoe_Saldana",
+        0
+      ]
+    ]
   },
   {
     "id": 39381,
@@ -30701,7 +30891,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9983624815940857,
     "pred_evidence": []
   },
   {
@@ -30800,9 +30990,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9924213290214539,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9715572595596313,
+    "pred_evidence": [
+      [
+        "Johnny_Van_Zant",
+        10
+      ]
+    ]
   },
   {
     "id": 42620,
@@ -31081,9 +31276,14 @@
         3
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9972103238105774,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9860401153564453,
+    "pred_evidence": [
+      [
+        "Argentina",
+        3
+      ]
+    ]
   },
   {
     "id": 43011,
@@ -33265,9 +33465,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.997554361820221,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.5493063926696777,
+    "pred_evidence": [
+      [
+        "Ron_Dennis",
+        1
+      ]
+    ]
   },
   {
     "id": 46641,
@@ -33745,8 +33950,8 @@
         0
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9944334626197815,
     "pred_evidence": []
   },
   {
@@ -36040,9 +36245,14 @@
         20
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9977303147315979,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9521253705024719,
+    "pred_evidence": [
+      [
+        "George_Harrison",
+        20
+      ]
+    ]
   },
   {
     "id": 50197,
@@ -39742,9 +39952,14 @@
     "claim": "Kate Walsh was on the Netflix series Sense8.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9990792274475098,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9616569876670837,
+    "pred_evidence": [
+      [
+        "Sense8",
+        0
+      ]
+    ]
   },
   {
     "id": 55193,
@@ -40976,7 +41191,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9939101934432983,
     "pred_evidence": []
   },
   {
@@ -46057,11 +46272,31 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9174859523773193,
+    "pred_probability": 0.881633996963501,
     "pred_evidence": [
       [
-        "Phoenix,_Arizona",
+        "Arizona",
         0
+      ],
+      [
+        "Arizona",
+        2
+      ],
+      [
+        "Arizona",
+        9
+      ],
+      [
+        "Arizona",
+        12
+      ],
+      [
+        "Arizona",
+        21
+      ],
+      [
+        "Arizona",
+        22
       ]
     ]
   },
@@ -46584,8 +46819,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9979720711708069,
-    "pred_evidence": []
+    "pred_probability": 0.9862592220306396,
+    "pred_evidence": [
+      [
+        "Uganda",
+        11
+      ]
+    ]
   },
   {
     "id": 65598,
@@ -48853,9 +49093,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9805651307106018,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9836618304252625,
+    "pred_evidence": [
+      [
+        "Maltese",
+        11
+      ]
+    ]
   },
   {
     "id": 68983,
@@ -49832,7 +50077,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9887505173683167,
     "pred_evidence": []
   },
   {
@@ -51637,9 +51882,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9985809326171875,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9876664876937866,
+    "pred_evidence": [
+      [
+        "Sarah_Hyland",
+        1
+      ]
+    ]
   },
   {
     "id": 72937,
@@ -52854,7 +53104,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9963598847389221,
     "pred_evidence": []
   },
   {
@@ -53509,9 +53759,18 @@
         2
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.6849762797355652,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.5654239058494568,
+    "pred_evidence": [
+      [
+        "Jamie_Lee_Curtis",
+        1
+      ],
+      [
+        "Jamie_Lee_Curtis",
+        2
+      ]
+    ]
   },
   {
     "id": 75311,
@@ -58269,8 +58528,8 @@
         17
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.999464213848114,
     "pred_evidence": []
   },
   {
@@ -58511,8 +58770,8 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.819588840007782,
     "pred_evidence": []
   },
   {
@@ -58958,14 +59217,9 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.9730458855628967,
-    "pred_evidence": [
-      [
-        "James,_Viscount_Severn",
-        0
-      ]
-    ]
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9884161949157715,
+    "pred_evidence": []
   },
   {
     "id": 81698,
@@ -60759,9 +61013,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9831085801124573,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9818819165229797,
+    "pred_evidence": [
+      [
+        "Buffy_the_Vampire_Slayer",
+        0
+      ]
+    ]
   },
   {
     "id": 84710,
@@ -62568,7 +62827,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.8051316738128662,
+    "pred_probability": 0.9522010087966919,
     "pred_evidence": [
       [
         "Heath_Ledger",
@@ -62944,8 +63203,8 @@
     "claim": "The Premier League Asia Trophy is held biennially in Asia and is attended by many.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9989301562309265,
     "pred_evidence": []
   },
   {
@@ -63156,9 +63415,22 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9967687129974365,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8346466422080994,
+    "pred_evidence": [
+      [
+        "Bonaire",
+        0
+      ],
+      [
+        "Bonaire",
+        8
+      ],
+      [
+        "Bonaire",
+        9
+      ]
+    ]
   },
   {
     "id": 88006,
@@ -66640,9 +66912,14 @@
         4
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.9552633762359619,
+    "pred_evidence": [
+      [
+        "Anneliese_van_der_Pol",
+        0
+      ]
+    ]
   },
   {
     "id": 92449,
@@ -68145,9 +68422,26 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9964750409126282,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.959611713886261,
+    "pred_evidence": [
+      [
+        "Lana_Del_Rey",
+        5
+      ],
+      [
+        "Lana_Del_Rey",
+        6
+      ],
+      [
+        "Lana_Del_Rey",
+        11
+      ],
+      [
+        "Lana_Del_Rey",
+        15
+      ]
+    ]
   },
   {
     "id": 94019,
@@ -70945,8 +71239,13 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_probability": 0.8325366973876953,
+    "pred_evidence": [
+      [
+        "Anneliese_van_der_Pol",
+        0
+      ]
+    ]
   },
   {
     "id": 98274,
@@ -71645,7 +71944,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.4860808849334717,
     "pred_evidence": []
   },
   {
@@ -71894,9 +72193,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9891617298126221,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.95814049243927,
+    "pred_evidence": [
+      [
+        "A_Good_Day_to_Die_Hard",
+        1
+      ]
+    ]
   },
   {
     "id": 99911,
@@ -72189,8 +72493,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9985948204994202,
-    "pred_evidence": []
+    "pred_probability": 0.6931806802749634,
+    "pred_evidence": [
+      [
+        "Stephen_King",
+        2
+      ]
+    ]
   },
   {
     "id": 100487,
@@ -72206,9 +72515,14 @@
         3
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9708827137947083,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.9713698029518127,
+    "pred_evidence": [
+      [
+        "Estonia",
+        1
+      ]
+    ]
   },
   {
     "id": 100490,
@@ -72865,9 +73179,14 @@
         10
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.746677815914154,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.5433798432350159,
+    "pred_evidence": [
+      [
+        "Ronaldinho",
+        10
+      ]
+    ]
   },
   {
     "id": 101638,
@@ -73064,9 +73383,14 @@
         7
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9969809651374817,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.7800931334495544,
+    "pred_evidence": [
+      [
+        "Daenerys_Targaryen",
+        5
+      ]
+    ]
   },
   {
     "id": 101845,
@@ -74123,11 +74447,15 @@
       ]
     ],
     "pred_label": "REFUTES",
-    "pred_probability": 0.9930732846260071,
+    "pred_probability": 0.9890137314796448,
     "pred_evidence": [
       [
-        "Phoenix,_Arizona",
-        0
+        "Arizona",
+        3
+      ],
+      [
+        "Phoenix",
+        5
       ]
     ]
   },
@@ -74928,9 +75256,14 @@
         3
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9922978281974792,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8818953633308411,
+    "pred_evidence": [
+      [
+        "Lorelai_Gilmore",
+        3
+      ]
+    ]
   },
   {
     "id": 104221,
@@ -75190,9 +75523,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9963988065719604,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9138622879981995,
+    "pred_evidence": [
+      [
+        "Stormzy",
+        2
+      ]
+    ]
   },
   {
     "id": 104703,
@@ -75674,9 +76012,14 @@
     "claim": "Ragtime is the first film role of Samuel L. Jackson.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9374414682388306,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9037030339241028,
+    "pred_evidence": [
+      [
+        "Samuel_L._Jackson",
+        6
+      ]
+    ]
   },
   {
     "id": 105383,
@@ -76391,8 +76734,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9878563284873962,
-    "pred_evidence": []
+    "pred_probability": 0.97801673412323,
+    "pred_evidence": [
+      [
+        "Massachusetts",
+        3
+      ]
+    ]
   },
   {
     "id": 106526,
@@ -76470,8 +76818,13 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9993228912353516,
-    "pred_evidence": []
+    "pred_probability": 0.9965654015541077,
+    "pred_evidence": [
+      [
+        "Stanley_Park",
+        16
+      ]
+    ]
   },
   {
     "id": 106732,
@@ -76893,9 +77246,14 @@
         19
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9978439807891846,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.5418137311935425,
+    "pred_evidence": [
+      [
+        "Joni_Mitchell",
+        20
+      ]
+    ]
   },
   {
     "id": 107124,
@@ -77238,9 +77596,14 @@
     "claim": "Five major windstorms have hit Stanley Park in the past 100 years.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9995237588882446,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.707060694694519,
+    "pred_evidence": [
+      [
+        "Stanley_Park",
+        16
+      ]
+    ]
   },
   {
     "id": 107583,
@@ -78117,7 +78480,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.994476854801178,
     "pred_evidence": []
   },
   {
@@ -79734,9 +80097,22 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9444886445999146,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9854825735092163,
+    "pred_evidence": [
+      [
+        "Ellen_DeGeneres",
+        9
+      ],
+      [
+        "The_Ellen_Show",
+        0
+      ],
+      [
+        "The_Ellen_Show",
+        7
+      ]
+    ]
   },
   {
     "id": 111030,
@@ -80200,9 +80576,18 @@
     "claim": "Nate Diaz competed in California for Strikeforce.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9934086799621582,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9873910546302795,
+    "pred_evidence": [
+      [
+        "Nate_Diaz",
+        2
+      ],
+      [
+        "Nate_Diaz",
+        3
+      ]
+    ]
   },
   {
     "id": 111772,
@@ -81050,9 +81435,14 @@
         11
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9957481026649475,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9696844220161438,
+    "pred_evidence": [
+      [
+        "Brie_Larson",
+        11
+      ]
+    ]
   },
   {
     "id": 112933,
@@ -81577,9 +81967,14 @@
         11
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9983559250831604,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.9900830388069153,
+    "pred_evidence": [
+      [
+        "Uganda",
+        11
+      ]
+    ]
   },
   {
     "id": 113686,
@@ -83646,8 +84041,8 @@
     "claim": "2 Hearts was the first commercial single since Minogue was diagnosed with lung cancer.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9956146478652954,
     "pred_evidence": []
   },
   {
@@ -83747,9 +84142,14 @@
         16
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9986339211463928,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8189085721969604,
+    "pred_evidence": [
+      [
+        "Prague",
+        16
+      ]
+    ]
   },
   {
     "id": 117176,
@@ -84223,9 +84623,18 @@
         2
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.998735249042511,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9658041596412659,
+    "pred_evidence": [
+      [
+        "Anna_Nicole_Smith",
+        0
+      ],
+      [
+        "Anna_Nicole_Smith",
+        2
+      ]
+    ]
   },
   {
     "id": 117998,
@@ -84480,9 +84889,38 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.993909478187561,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9269166588783264,
+    "pred_evidence": [
+      [
+        "Barbados",
+        0
+      ],
+      [
+        "Barbados",
+        3
+      ],
+      [
+        "Barbados",
+        6
+      ],
+      [
+        "Barbados",
+        9
+      ],
+      [
+        "Barbados",
+        13
+      ],
+      [
+        "Barbados",
+        15
+      ],
+      [
+        "Barbados",
+        17
+      ]
+    ]
   },
   {
     "id": 118217,
@@ -84612,9 +85050,14 @@
         5
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.990871250629425,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.6508769989013672,
+    "pred_evidence": [
+      [
+        "Arizona",
+        5
+      ]
+    ]
   },
   {
     "id": 118444,
@@ -84724,9 +85167,14 @@
         0
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.8422974348068237,
+    "pred_evidence": [
+      [
+        "Meghan_Markle",
+        0
+      ]
+    ]
   },
   {
     "id": 118651,
@@ -85285,9 +85733,14 @@
         5
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9915902018547058,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.5023029446601868,
+    "pred_evidence": [
+      [
+        "Jamie_Lee_Curtis",
+        1
+      ]
+    ]
   },
   {
     "id": 119493,
@@ -85530,9 +85983,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.5126045942306519,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9948529601097107,
+    "pred_evidence": [
+      [
+        "Daenerys_Targaryen",
+        0
+      ]
+    ]
   },
   {
     "id": 119867,
@@ -86083,9 +86541,14 @@
         6
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8560559749603271,
+    "pred_evidence": [
+      [
+        "Sands_Hotel_and_Casino",
+        0
+      ]
+    ]
   },
   {
     "id": 120785,
@@ -86537,8 +87000,13 @@
       ]
     ],
     "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_probability": 0.9868810176849365,
+    "pred_evidence": [
+      [
+        "Buffy_the_Vampire_Slayer",
+        0
+      ]
+    ]
   },
   {
     "id": 121683,
@@ -89527,8 +89995,8 @@
         1
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "REFUTES",
+    "pred_probability": 0.9888302683830261,
     "pred_evidence": []
   },
   {
@@ -91459,8 +91927,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9978836178779602,
-    "pred_evidence": []
+    "pred_probability": 0.9184697866439819,
+    "pred_evidence": [
+      [
+        "New_England_Patriots",
+        16
+      ]
+    ]
   },
   {
     "id": 127973,
@@ -93270,9 +93743,18 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9853727221488953,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9324888586997986,
+    "pred_evidence": [
+      [
+        "Mariah_Carey",
+        0
+      ],
+      [
+        "Touch_My_Body",
+        0
+      ]
+    ]
   },
   {
     "id": 129820,
@@ -93459,9 +93941,18 @@
         7
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.9975730776786804,
-    "pred_evidence": []
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.43640947341918945,
+    "pred_evidence": [
+      [
+        "California",
+        21
+      ],
+      [
+        "California",
+        24
+      ]
+    ]
   },
   {
     "id": 130108,
@@ -93568,9 +94059,14 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9820729494094849,
+    "pred_evidence": [
+      [
+        "Buffy_the_Vampire_Slayer",
+        0
+      ]
+    ]
   },
   {
     "id": 130301,
@@ -94710,7 +95206,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9435456991195679,
+    "pred_probability": 0.9531493186950684,
     "pred_evidence": [
       [
         "Kareem_Abdul-Jabbar",
@@ -95449,9 +95945,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9971898198127747,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9787131547927856,
+    "pred_evidence": [
+      [
+        "Touch_My_Body",
+        0
+      ]
+    ]
   },
   {
     "id": 133241,
@@ -96796,8 +97297,13 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9970600008964539,
-    "pred_evidence": []
+    "pred_probability": 0.4589555561542511,
+    "pred_evidence": [
+      [
+        "Dark_matter",
+        0
+      ]
+    ]
   },
   {
     "id": 135055,
@@ -96838,11 +97344,31 @@
       ]
     ],
     "pred_label": "REFUTES",
-    "pred_probability": 0.9863529205322266,
+    "pred_probability": 0.6289092302322388,
     "pred_evidence": [
       [
-        "Phoenix,_Arizona",
+        "Arizona",
         0
+      ],
+      [
+        "Arizona",
+        2
+      ],
+      [
+        "Arizona",
+        9
+      ],
+      [
+        "Arizona",
+        12
+      ],
+      [
+        "Arizona",
+        21
+      ],
+      [
+        "Arizona",
+        22
       ]
     ]
   },
@@ -97258,9 +97784,18 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9949595928192139,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.9745615720748901,
+    "pred_evidence": [
+      [
+        "Jenny_McCarthy",
+        1
+      ],
+      [
+        "Playboy",
+        2
+      ]
+    ]
   },
   {
     "id": 135627,
@@ -98867,9 +99402,22 @@
     "claim": "The Ellen Show slandered Ellen DeGeneres.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.8771935701370239,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9531140923500061,
+    "pred_evidence": [
+      [
+        "The_Ellen_Show",
+        0
+      ],
+      [
+        "The_Ellen_Show",
+        1
+      ],
+      [
+        "The_Ellen_Show",
+        4
+      ]
+    ]
   },
   {
     "id": 138691,
@@ -99285,9 +99833,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9940460920333862,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8604444265365601,
+    "pred_evidence": [
+      [
+        "Zoroastrianism",
+        2
+      ]
+    ]
   },
   {
     "id": 139348,
@@ -99911,8 +100464,17 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9989238381385803,
-    "pred_evidence": []
+    "pred_probability": 0.8628431558609009,
+    "pred_evidence": [
+      [
+        "Jenny_McCarthy",
+        1
+      ],
+      [
+        "Playboy",
+        2
+      ]
+    ]
   },
   {
     "id": 140051,
@@ -100578,8 +101140,8 @@
         15
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9979779124259949,
     "pred_evidence": []
   },
   {
@@ -101939,9 +102501,14 @@
         8
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.9844081997871399,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8441258668899536,
+    "pred_evidence": [
+      [
+        "Henry_Cavill",
+        2
+      ]
+    ]
   },
   {
     "id": 142943,
@@ -102655,8 +103222,13 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9896228313446045,
-    "pred_evidence": []
+    "pred_probability": 0.5901098847389221,
+    "pred_evidence": [
+      [
+        "Uganda",
+        1
+      ]
+    ]
   },
   {
     "id": 143788,
@@ -104177,9 +104749,14 @@
     "claim": "San Francisco Bay Area contains many international airports.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9984095692634583,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9715328216552734,
+    "pred_evidence": [
+      [
+        "San_Francisco_Bay_Area",
+        3
+      ]
+    ]
   },
   {
     "id": 146348,
@@ -104303,8 +104880,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.999077558517456,
-    "pred_evidence": []
+    "pred_probability": 0.47568008303642273,
+    "pred_evidence": [
+      [
+        "LinkedIn",
+        14
+      ]
+    ]
   },
   {
     "id": 146462,
@@ -104504,9 +105086,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9960610270500183,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9233376979827881,
+    "pred_evidence": [
+      [
+        "The_Quiet",
+        0
+      ]
+    ]
   },
   {
     "id": 146593,
@@ -105066,9 +105653,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9974048733711243,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9881844520568848,
+    "pred_evidence": [
+      [
+        "Gray_Matters",
+        0
+      ]
+    ]
   },
   {
     "id": 147781,
@@ -106472,9 +107064,38 @@
         12
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.9212339520454407,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8020700812339783,
+    "pred_evidence": [
+      [
+        "Bermuda",
+        0
+      ],
+      [
+        "Bermuda",
+        6
+      ],
+      [
+        "Bermuda",
+        11
+      ],
+      [
+        "Bermuda",
+        18
+      ],
+      [
+        "Bermuda",
+        19
+      ],
+      [
+        "Bermuda",
+        23
+      ],
+      [
+        "Bermuda",
+        27
+      ]
+    ]
   },
   {
     "id": 149950,
@@ -106637,9 +107258,14 @@
     "claim": "Issa Rae was removed from Awkward Black Girl.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9984863996505737,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.6165514588356018,
+    "pred_evidence": [
+      [
+        "Awkward_Black_Girl",
+        0
+      ]
+    ]
   },
   {
     "id": 150316,
@@ -107550,8 +108176,13 @@
       ]
     ],
     "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_probability": 0.994443953037262,
+    "pred_evidence": [
+      [
+        "Camp_Flog_Gnaw",
+        0
+      ]
+    ]
   },
   {
     "id": 151498,
@@ -109593,14 +110224,9 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.9909512996673584,
-    "pred_evidence": [
-      [
-        "James,_Viscount_Severn",
-        0
-      ]
-    ]
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9967572093009949,
+    "pred_evidence": []
   },
   {
     "id": 154940,
@@ -109724,9 +110350,18 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9837223887443542,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9822184443473816,
+    "pred_evidence": [
+      [
+        "Jamie_Babbit",
+        1
+      ],
+      [
+        "The_Quiet",
+        0
+      ]
+    ]
   },
   {
     "id": 155035,
@@ -109776,7 +110411,7 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9680604934692383,
+    "pred_probability": 0.9496403336524963,
     "pred_evidence": [
       [
         "Birmingham",
@@ -110166,9 +110801,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9717051386833191,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8957955241203308,
+    "pred_evidence": [
+      [
+        "Dissociative_identity_disorder",
+        0
+      ]
+    ]
   },
   {
     "id": 155860,
@@ -113097,9 +113737,14 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.977092981338501,
+    "pred_evidence": [
+      [
+        "Buffy_the_Vampire_Slayer",
+        0
+      ]
+    ]
   },
   {
     "id": 160595,
@@ -114868,9 +115513,26 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9931208491325378,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9911580681800842,
+    "pred_evidence": [
+      [
+        "Dave_Grohl",
+        2
+      ],
+      [
+        "Dave_Grohl",
+        5
+      ],
+      [
+        "Dave_Grohl",
+        9
+      ],
+      [
+        "Probot",
+        0
+      ]
+    ]
   },
   {
     "id": 162657,
@@ -115644,7 +116306,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9277236461639404,
+    "pred_probability": 0.9014744162559509,
     "pred_evidence": [
       [
         "Ukrainian_Soviet_Socialist_Republic",
@@ -116999,9 +117661,14 @@
         17
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9994044303894043,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9812309145927429,
+    "pred_evidence": [
+      [
+        "Hezbollah",
+        17
+      ]
+    ]
   },
   {
     "id": 164894,
@@ -118040,8 +118707,8 @@
         14
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9986346364021301,
     "pred_evidence": []
   },
   {
@@ -118688,7 +119355,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9786143898963928,
+    "pred_probability": 0.9772524237632751,
     "pred_evidence": [
       [
         "Boeing_767",
@@ -121788,9 +122455,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9789344668388367,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.7599745392799377,
+    "pred_evidence": [
+      [
+        "An_Education",
+        0
+      ]
+    ]
   },
   {
     "id": 173931,
@@ -122314,7 +122986,7 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9278963804244995,
     "pred_evidence": []
   },
   {
@@ -122665,8 +123337,8 @@
     "claim": "Death Note is a Japanese television drama series based on an acclaimed manga series that was illustrated by Takeshi Obata.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9854446053504944,
     "pred_evidence": []
   },
   {
@@ -122697,8 +123369,8 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9827499389648438,
     "pred_evidence": []
   },
   {
@@ -124988,9 +125660,14 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9646749496459961,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9368250370025635,
+    "pred_evidence": [
+      [
+        "The_Good_German",
+        1
+      ]
+    ]
   },
   {
     "id": 179090,
@@ -126926,13 +127603,8 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.4971598982810974,
-    "pred_evidence": [
-      [
-        "Simi_Valley,_California",
-        13
-      ]
-    ]
+    "pred_probability": 0.997715950012207,
+    "pred_evidence": []
   },
   {
     "id": 183405,
@@ -127022,13 +127694,8 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.5165942311286926,
-    "pred_evidence": [
-      [
-        "Simi_Valley,_California",
-        13
-      ]
-    ]
+    "pred_probability": 0.9953808784484863,
+    "pred_evidence": []
   },
   {
     "id": 183416,
@@ -127087,13 +127754,8 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.7655960917472839,
-    "pred_evidence": [
-      [
-        "Simi_Valley,_California",
-        13
-      ]
-    ]
+    "pred_probability": 0.9972237348556519,
+    "pred_evidence": []
   },
   {
     "id": 183420,
@@ -127119,14 +127781,9 @@
         13
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.5635970234870911,
-    "pred_evidence": [
-      [
-        "Simi_Valley,_California",
-        13
-      ]
-    ]
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9977228045463562,
+    "pred_evidence": []
   },
   {
     "id": 183447,
@@ -131119,9 +131776,14 @@
         4
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9945334196090698,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.97380131483078,
+    "pred_evidence": [
+      [
+        "Terrence_Howard",
+        4
+      ]
+    ]
   },
   {
     "id": 190085,
@@ -131133,9 +131795,14 @@
         4
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9938581585884094,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.6940093040466309,
+    "pred_evidence": [
+      [
+        "Terrence_Howard",
+        4
+      ]
+    ]
   },
   {
     "id": 190089,
@@ -132391,8 +133058,13 @@
       ]
     ],
     "pred_label": "REFUTES",
-    "pred_probability": 0.9980505704879761,
-    "pred_evidence": []
+    "pred_probability": 0.5051720142364502,
+    "pred_evidence": [
+      [
+        "Paris",
+        19
+      ]
+    ]
   },
   {
     "id": 192580,
@@ -133961,9 +134633,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9989446997642517,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.4623710811138153,
+    "pred_evidence": [
+      [
+        "Mike_Friedrich",
+        0
+      ]
+    ]
   },
   {
     "id": 194234,
@@ -136037,8 +136714,17 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9934600591659546,
-    "pred_evidence": []
+    "pred_probability": 0.531707763671875,
+    "pred_evidence": [
+      [
+        "30_Rock",
+        17
+      ],
+      [
+        "Jon_Hamm",
+        14
+      ]
+    ]
   },
   {
     "id": 196162,
@@ -137273,9 +137959,14 @@
         8
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9893937110900879,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9343428611755371,
+    "pred_evidence": [
+      [
+        "Lois_Lane",
+        8
+      ]
+    ]
   },
   {
     "id": 198901,
@@ -137287,9 +137978,14 @@
         8
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9983155727386475,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.5566889047622681,
+    "pred_evidence": [
+      [
+        "Lois_Lane",
+        8
+      ]
+    ]
   },
   {
     "id": 199257,
@@ -137493,7 +138189,7 @@
       ]
     ],
     "pred_label": "SUPPORTS",
-    "pred_probability": 0.9364097118377686,
+    "pred_probability": 0.9457806348800659,
     "pred_evidence": [
       [
         "Andrea_Pirlo",
@@ -137664,8 +138360,8 @@
     "claim": "Sweet Home Alabama is a rock song that was written in reply to two songs from Neil Young's album Harvest.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9177882075309753,
     "pred_evidence": []
   },
   {
@@ -137719,8 +138415,8 @@
         0
       ]
     ],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9467511177062988,
     "pred_evidence": []
   },
   {
@@ -139862,7 +140558,7 @@
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.3333,
+    "pred_probability": 0.9975612163543701,
     "pred_evidence": []
   },
   {
@@ -139949,9 +140645,14 @@
     "claim": "Tyler Perry works as a filmmaker.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "REFUTES",
-    "pred_probability": 0.3333,
-    "pred_evidence": []
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.6598230004310608,
+    "pred_evidence": [
+      [
+        "Tyler_Perry",
+        0
+      ]
+    ]
   },
   {
     "id": 204993,
@@ -142113,9 +142814,14 @@
         0
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9927698969841003,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8581478595733643,
+    "pred_evidence": [
+      [
+        "The_Marshall_Mathers_LP_2",
+        0
+      ]
+    ]
   },
   {
     "id": 208899,
@@ -142371,9 +143077,14 @@
         14
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9891648888587952,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.9519755840301514,
+    "pred_evidence": [
+      [
+        "Eminem",
+        8
+      ]
+    ]
   },
   {
     "id": 208917,
@@ -143508,8 +144219,8 @@
     "claim": "See.SZA.Run is influenced by Jay-Z and Lil Kim.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.99647456407547,
     "pred_evidence": []
   },
   {
@@ -146017,8 +146728,8 @@
         1
       ]
     ],
-    "pred_label": "SUPPORTS",
-    "pred_probability": 0.3333,
+    "pred_label": "NOT ENOUGH INFO",
+    "pred_probability": 0.9963730573654175,
     "pred_evidence": []
   },
   {
@@ -147572,9 +148283,14 @@
     "claim": "The Church of Jesus Christ of Latter-day Saints has a book called the Doctrine and Covenants, more commonly known as the \"Word of Wisdom.\"",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.957994818687439,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.7519240975379944,
+    "pred_evidence": [
+      [
+        "Doctrine_and_Covenants",
+        1
+      ]
+    ]
   },
   {
     "id": 220466,
@@ -147686,9 +148402,14 @@
         4
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9922896027565002,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.8211994171142578,
+    "pred_evidence": [
+      [
+        "Group_of_15",
+        4
+      ]
+    ]
   },
   {
     "id": 220960,
@@ -147773,9 +148494,14 @@
     "claim": "Guyana was a founding member of the Group of 15.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9902616143226624,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.37638038396835327,
+    "pred_evidence": [
+      [
+        "Group_of_15",
+        4
+      ]
+    ]
   },
   {
     "id": 220974,
@@ -147787,9 +148513,18 @@
         4
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9873582124710083,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8691020011901855,
+    "pred_evidence": [
+      [
+        "Group_of_15",
+        0
+      ],
+      [
+        "Group_of_15",
+        4
+      ]
+    ]
   },
   {
     "id": 220975,
@@ -147810,9 +148545,14 @@
     "claim": "Peru represented the Group of 15 in 2011.",
     "gold_label": "NOT ENOUGH INFO",
     "gold_evidence": [],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9982219338417053,
-    "pred_evidence": []
+    "pred_label": "REFUTES",
+    "pred_probability": 0.8803125023841858,
+    "pred_evidence": [
+      [
+        "Group_of_15",
+        4
+      ]
+    ]
   },
   {
     "id": 220977,
@@ -150758,9 +151498,22 @@
         1
       ]
     ],
-    "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.984931230545044,
-    "pred_evidence": []
+    "pred_label": "SUPPORTS",
+    "pred_probability": 0.8378645181655884,
+    "pred_evidence": [
+      [
+        "The_Tonight_Show",
+        19
+      ],
+      [
+        "The_Tonight_Show",
+        28
+      ],
+      [
+        "The_Tonight_Show",
+        30
+      ]
+    ]
   },
   {
     "id": 224191,
@@ -150883,8 +151636,13 @@
       ]
     ],
     "pred_label": "NOT ENOUGH INFO",
-    "pred_probability": 0.9935131669044495,
-    "pred_evidence": []
+    "pred_probability": 0.5328004360198975,
+    "pred_evidence": [
+      [
+        "Ellen_DeGeneres",
+        1
+      ]
+    ]
   },
   {
     "id": 224552,

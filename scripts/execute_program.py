@@ -55,9 +55,12 @@ class Program_Execute:
         return_var = return_var.strip()
 
         # get parameter of search function
-        pattern = re.compile(f'Search_pages\(\"(.*)\"\)', re.S)
-        matching = re.findall(pattern, command)
-        texts = matching if len(matching) > 0 else tmp
+        matching = re.search(r'Search_pages\((.*?)\)', command)
+        if matching:
+            arguments = matching.group(1).split(', ')
+            texts = [arg.strip('"') for arg in arguments]
+        else:
+            texts = tmp
 
         # replace variable
         for var_name, var_value in variable_map.items():
@@ -158,11 +161,7 @@ class Program_Execute:
                     return_var, claim, evidence_dict, flag = self.parse_verify_command(command, variable_map, logger)
                     evidence = " ".join(evidence_dict['evidence_texts'])
                     if flag:
-                        if len(evidence.split()) + len(claim.split()) > self.max_deberta_tokens:
-                            evidence_len = self.max_deberta_tokens - len(claim.split())
-                            evidence = " ".join(evidence.split()[:evidence_len])
-                        
-                        input_ids = self.tokenizer(claim, evidence, return_tensors="pt").to(self.device)
+                        input_ids = self.tokenizer(claim, evidence, return_tensors="pt", truncation=True).to(self.device)
                         output = self.model(input_ids['input_ids'])
                         prediction = torch.softmax(output["logits"][0], -1)
                         prob, pred = torch.max(prediction, dim=-1)
@@ -180,13 +179,10 @@ class Program_Execute:
                     evidences = []
         if variable_map['claim'] and evidence_dict:
             try:
+                claim = variable_map['claim']
                 evidence = " ".join(evidence_dict['evidence_texts'])
                 
-                if len(evidence.split()) + len(claim.split()) > self.max_deberta_tokens:
-                    evidence_len = self.max_deberta_tokens - len(claim.split())
-                    evidence = " ".join(evidence.split()[:evidence_len])
-                
-                input_ids = self.tokenizer(claim, evidence, return_tensors="pt").to(self.device)
+                input_ids = self.tokenizer(claim, evidence, return_tensors="pt", truncation=True).to(self.device)
                 output = self.model(input_ids['input_ids'])
                 prediction = torch.softmax(output["logits"][0], -1)
                 prob, pred = torch.max(prediction, dim=-1)
@@ -227,10 +223,10 @@ class Program_Execute:
         results = []
 
         # for each claim
-        # id_list = [305, 637, 910]
+        # id_list = [2359, 2374, 2389, 4328, 4737]
         for inst in tqdm(dataset):
             # if inst['id'] not in id_list:
-                # continue
+            #     continue
             programs = inst['predicted_program']
             target_labels.append(inst['label'])
 

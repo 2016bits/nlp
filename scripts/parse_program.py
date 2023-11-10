@@ -5,14 +5,10 @@ import re
 from tqdm import tqdm
 
 from utils import log
-from search_module import Search_Wiki, Search_Tfidf
 
-class Program_Execute:
-    def __init__(self, args):
-        self.device = args.device
-
-        self.tfidf = Search_Tfidf(args.db_path, args.max_page, args.max_sent, args.tfidf_model)
-        self.wiki = Search_Wiki(args.db_path, args.db_table, args.num_retrieved)
+class Program_Parser:
+    def __init__(self):
+        self.results = []
     
     # parse command to get command type
     def get_command_type(self, command):
@@ -65,9 +61,8 @@ class Program_Execute:
 
         return key_words
 
-    # parse program to execute
+    # parse program
     def parse_program(self, program):
-        # map variable to value
         claim = None
         document = None
         sentence = None
@@ -89,10 +84,8 @@ class Program_Execute:
                 if command[-1] != ')':
                     command += ')'
 
-                text = self.parse_search_command(command)
-                wikipages = self.wiki.search_wikipages(text)
-                document = [doc for doc in wikipages]
-
+                document = self.parse_search_command(command)
+                
             # find relevant evidences
             elif cmd_type == "FIND":
                 # complete ) and "
@@ -109,22 +102,21 @@ class Program_Execute:
 
         return document, sentence
     
-    def execute_program(self, logger, dataset):
+    def parse(self, logger, dataset):
         logger.info("start parsing programs...")
 
-        results = []
         for inst in tqdm(dataset):
             for program in inst['predicted_program']:
                 document, sentence = self.parse_program(program)
-                results.append({
+                self.results.append({
                     'id': inst['id'],
                     'claim': inst['claim'],
                     'gold_label': inst['label'],
                     'gold_evidence': inst['evidence'],
-                    'searched_document': document,
+                    'parsed_title': document,
                     'parsed_sentence': sentence
                 })
-        return results
+        return self.results
 
 
 def main(args):
@@ -142,12 +134,12 @@ def main(args):
     
     # load model
     logger.info("loading model......")
-    program_execute = Program_Execute(args)
-    results = program_execute.execute_program(logger, dataset)
+    program_parser = Program_Parser()
+    results = program_parser.parse(logger, dataset)
 
-    # finish prediction
-    logger.info("Search finished...")
-    out_path = args.output_path + args.dataset + "_" + args.mode + "_search_results.json"
+    # finish parsing
+    logger.info("Parser finished...")
+    out_path = args.output_path + args.dataset + "_" + args.mode + "_parse_results.json"
     with open(out_path, 'w') as f:
         f.write(json.dumps(results, indent=2))
 
@@ -156,31 +148,11 @@ if __name__ == '__main__':
      # data arguments
     parser.add_argument('--program_path', type=str, default='./results/programs/')
     parser.add_argument('--program_file', type=str, default='_N1_aquilacode-7b-nv_programs_with_evidence_new.json')
-    parser.add_argument('--output_path', type=str, default='./results/ablation/')
+    parser.add_argument('--output_path', type=str, default='./results/parse/')
     parser.add_argument('--dataset', type=str, default="FEVER")
     parser.add_argument('--log_path', type=str, default='./logs/')
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'dev'])
 
-    # tfidf arguments
-    parser.add_argument('--max_page', type=int, default=3)
-    parser.add_argument('--max_sent', type=int, default=5)
-    parser.add_argument('--tfidf_model', type=str, default='./data/Wikipedia/data/tfidf.npz')
-    # wikipedia arguments
-    parser.add_argument('--db_path', type=str, default='./data/Wikipedia/data/wikipedia.db')
-    parser.add_argument('--db_table', type=str, default='documents')
-
-    # training arguments
-    parser.add_argument('--num_retrieved', type=int, default=5)
-
-    parser.add_argument('--gpu', type=int, default=0)
-    parser.add_argument('--device', type=str, default="cuda:0")
-
     args = parser.parse_args()
 
-    if torch.cuda.is_available() and args.gpu >= 0:
-        torch.cuda.set_device(int(args.gpu))
-        args.device = "cuda:{}".format(args.gpu)
-    else:
-        args.device = "cpu"
-    
     main(args)

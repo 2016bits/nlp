@@ -1,8 +1,9 @@
-import re
+from allennlp.predictors import Predictor
 
-s = "2_Hearts_-LRB-Kylie_Minogue_song-RRB-"
+predictor = Predictor.from_path("/data/yangjun/tools/elmo-constituency-parser-2018.03.14.tar.gz")
+# predictor = Predictor.from_path(
+#     "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo-constituency-parser-2018.03.14.tar.gz")
 
-# 使用正则表达式去除-LRB-和-RRB-之间的所有元素
-s_cleaned = re.sub(r'_-LRB-.*?-RRB-', '', s)
-
-print(s_cleaned)
+claim = "The New Jersey Turnpike has zero shoulders."
+tokens = predictor.predict(claim)
+print(tokens)
