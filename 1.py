@@ -1,9 +1,10 @@
-from allennlp.predictors import Predictor
+from unicodedata import normalize
 
-predictor = Predictor.from_path("/data/yangjun/tools/elmo-constituency-parser-2018.03.14.tar.gz")
-# predictor = Predictor.from_path(
-#     "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo-constituency-parser-2018.03.14.tar.gz")
+# 原始字符串
+page = "héllò"
 
-claim = "The New Jersey Turnpike has zero shoulders."
-tokens = predictor.predict(claim)
-print(tokens)
+# 使用 NFD 形式进行规范化
+normalized_page = normalize("NFD", page)
+
+# 输出结果
+print(normalized_page)
