@@ -95,3 +95,22 @@ class Search_Wiki:
             'evidence_ids': evidence_ids,
             'evidence_texts': evidence_texts
         }
+
+class Search_wikipage:
+    """根据文档标题从Wikipedia中获取相应页面"""
+    def __init__(self, db_path, db_table):
+        self.db_table = db_table
+        self.conn = sqlite3.connect(db_path)
+        self.c = self.conn.cursor()
+    
+    def select_wikipage(self, titles):
+        results = {}
+        titles = [title.replace(' ', '_') for title in titles]
+
+        # retrieve database to get abstract
+        sql = """select * from {} where id in ({seq})""".format(self.db_table, seq=','.join(['?'] * len(titles)))
+        cursor = self.c.execute(sql, titles)
+        for row in cursor:
+            # key: id, value: lines
+            results[row[0]] = row[2]
+        return results

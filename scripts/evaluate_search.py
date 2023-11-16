@@ -4,17 +4,20 @@ import ast
 
 from utils import log
 
-# def get_document(evidence_list):
-#     documents = []
-#     for evidence in evidence_list:
-#         doc_list = []
-#         for doc, _ in evidence:
-#             if doc not in doc_list:
-#                 doc_list.append(doc)
-#         if doc_list not in documents:
-#             documents.append(doc_list)
-#     return documents
 def get_document(evidence_list):
+    # evidence format: [[[doc, _]]]
+    documents = []
+    for evidence in evidence_list:
+        doc_list = []
+        for doc, _ in evidence:
+            if doc not in doc_list:
+                doc_list.append(doc)
+        if doc_list not in documents:
+            documents.append(doc_list)
+    return documents
+
+def get_raw_document(evidence_list):
+    # evidence format: [[[_, _, doc, sentence_index]]]
     documents = []
     for evidence in evidence_list:
         doc_list = []
@@ -142,42 +145,43 @@ def evaluate_on_dpr_keyword(dataset):
     print("count: {}".format(count))
     return match_num, pred_num, target_num, acc_num, total_num
 
-# def evaluate_on_mediawiki(dataset):
-#     match_num = 0
-#     pred_num = 0
-#     target_num = 0
+def evaluate_mediawiki_on_keyword(dataset):
+    match_num = 0
+    pred_num = 0
+    target_num = 0
 
-#     acc_num = 0
-#     total_num = 0
+    acc_num = 0
+    total_num = 0
 
-#     for inst in dataset:
-#         try:
-#             evidence = inst['gold_evidence']
-#             gold_doc = get_document(evidence)
-#             pred_doc = inst['predicted_pages']
+    for inst in dataset:
+        try:
+            evidence = inst['gold_evidence']
+            gold_doc = get_document(evidence)
+            pred_doc = inst['predicted_pages']
             
-#             if inst['gold_label'] != 'NOT ENOUGH INFO':
-#                 total_num += 1
+            if inst['gold_label'] != 'NOT ENOUGH INFO':
+                total_num += 1
 
-#                 # 预测的evidence只要匹配一组完整的ground_truth evidence即认为证据预测正确
-#                 for doc_list in gold_doc:
-#                     if equal(doc_list, pred_doc):
-#                         acc_num += 1
-#                         break
+                # 预测的evidence只要匹配一组完整的ground_truth evidence即认为证据预测正确
+                for doc_list in gold_doc:
+                    if equal(doc_list, pred_doc):
+                        acc_num += 1
+                        break
 
-#                 gold_doc_list = [doc for doc_list in gold_doc for doc in doc_list]
-#                 gold_doc_list = list(set(gold_doc_list))
-#                 pred_num += len(pred_doc)
-#                 target_num += len(gold_doc_list)
+                gold_doc_list = [doc for doc_list in gold_doc for doc in doc_list]
+                gold_doc_list = list(set(gold_doc_list))
+                pred_num += len(pred_doc)
+                target_num += len(gold_doc_list)
 
-#                 for gold in gold_doc_list:
-#                     for pred in pred_doc:
-#                         if gold == pred:
-#                             match_num += 1
-#         except:
-#             print("claim: {}".format(inst['claim']))
-#     return match_num, pred_num, target_num, acc_num, total_num
-def evaluate_on_mediawiki(dataset):
+                for gold in gold_doc_list:
+                    for pred in pred_doc:
+                        if gold == pred:
+                            match_num += 1
+        except:
+            print("claim: {}".format(inst['claim']))
+    return match_num, pred_num, target_num, acc_num, total_num
+
+def evaluate_mediawiki_on_claim(dataset):
     match_num = 0
     pred_num = 0
     target_num = 0
@@ -237,7 +241,10 @@ def main(args):
         with open(data_path, "r") as f:
             for line in f.readlines():
                 dataset.append(json.loads(line.strip()))
-        match_num, pred_num, target_num, acc_num, total_num = evaluate_on_mediawiki(dataset)
+        if "claim" in data_path:
+            match_num, pred_num, target_num, acc_num, total_num = evaluate_mediawiki_on_claim(dataset)
+        elif "keyword" in data_path:
+            match_num, pred_num, target_num, acc_num, total_num = evaluate_mediawiki_on_keyword(dataset)
 
     precision = float(match_num) / float(pred_num + 1e-6)
     recall = float(match_num) / float(target_num + 1e-6)

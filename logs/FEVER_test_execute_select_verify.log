@@ -1,0 +1,19 @@
+[2023-11-15 21:30:20,197][execute_select_verify.py][line:98][INFO] Namespace(cache_dir='./MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli', dataset='FEVER', db_path='./data/Wikipedia/data/wikipedia.db', db_table='documents', device='cuda:4', gpu=4, in_path='./results/parse/', log_path='./logs/', mode='test', model_name='MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli', num_retrieved=5, out_path='./results/fact_checking/', search_method='mediawiki', top_doc=3)
+[2023-11-15 21:30:20,197][execute_select_verify.py][line:101][INFO] load data......
+[2023-11-15 21:30:20,302][execute_select_verify.py][line:106][INFO] loading model......
+[2023-11-15 21:30:20,302][execute_select_verify.py][line:16][INFO] Loading model MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli...
+[2023-11-15 21:30:41,567][execute_select_verify.py][line:20][INFO] Model MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli loaded.
+[2023-11-15 21:37:20,638][execute_select_verify.py][line:38][INFO]                  precision    recall  f1-score   support
+
+        REFUTES     0.0783    0.0375    0.0507      3333
+       SUPPORTS     0.2664    0.5989    0.3688      3333
+NOT ENOUGH INFO     0.1374    0.0375    0.0589      3333
+
+       accuracy                         0.2246      9999
+      macro avg     0.1607    0.2246    0.1595      9999
+   weighted avg     0.1607    0.2246    0.1595      9999
+
+[2023-11-15 21:37:20,698][execute_select_verify.py][line:39][INFO] [[ 125 2488  720]
+ [1272 1996   65]
+ [ 200 3008  125]]
+[2023-11-15 21:37:20,701][execute_select_verify.py][line:111][INFO] prediction finished...

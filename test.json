@@ -1,0 +1,1091 @@
+[
+  {
+    "id": 150448,
+    "claim": "Roman Atwood is a content creator.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Roman_Atwood",
+          1,
+          "He is best known for his vlogs , where he posts updates about his life on a daily basis ."
+        ]
+      ],
+      [
+        [
+          "Roman_Atwood",
+          3,
+          "He also has another YouTube channel called `` RomanAtwood '' , where he posts pranks ."
+        ]
+      ]
+    ],
+    "hop": 1
+  },
+  {
+    "id": 214861,
+    "claim": "History of art includes architecture, dance, sculpture, music, painting, poetry literature, theatre, narrative, film, photography and graphic arts.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "History_of_art",
+          2,
+          "The subsequent expansion of the list of principal arts in the 20th century reached to nine : architecture , dance , sculpture , music , painting , poetry -LRB- described broadly as a form of literature with aesthetic purpose or function , which also includes the distinct genres of theatre and narrative -RRB- , film , photography and graphic arts .\tarchitecture\tarchitecture\tdance\tdance\tsculpture\tsculpture\tmusic\tmusic\tpainting\tpainting\tpoetry\tpoetry\tliterature\tliterature\ttheatre\ttheatre\tnarrative\tnarrative\tfilm\tfilm\tphotography\tphotography\tgraphic arts\tgraphic arts"
+        ]
+      ]
+    ],
+    "hop": 1
+  },
+  {
+    "id": 156709,
+    "claim": "Adrienne Bailon is an accountant.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "Adrienne_Bailon",
+          0,
+          "Adrienne Eliza Houghton -LRB- n\u00e9e Bailon ; born October 24 , 1983 -RRB- is an American singer-songwriter , recording artist , actress , dancer and television personality .\tn\u00e9e\tName at birth\tsinger-songwriter\tsinger-songwriter"
+        ]
+      ]
+    ],
+    "hop": 1
+  },
+  {
+    "id": 33078,
+    "claim": "The Boston Celtics play their home games at TD Garden.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Boston_Celtics",
+          3,
+          "The Celtics play their home games at the TD Garden , which they share with the National Hockey League -LRB- NHL -RRB- 's Boston Bruins .\tTD Garden\tTD Garden\tNational Hockey League\tNational Hockey League\tBoston Bruins\tBoston Bruins"
+        ]
+      ]
+    ],
+    "hop": 1
+  },
+  {
+    "id": 6744,
+    "claim": "The Ten Commandments is an epic film.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "The_Ten_Commandments_-LRB-1956_film-RRB-",
+          0,
+          "The Ten Commandments is a 1956 American biblical epic film produced , directed , and narrated by Cecil B. DeMille , shot in VistaVision -LRB- color by Technicolor -RRB- , and released by Paramount Pictures .\tCecil B. DeMille\tCecil B. DeMille\tParamount Pictures\tParamount Pictures\tbiblical\tBible\tepic film\tepic film\tVistaVision\tVistaVision\tTechnicolor\tTechnicolor\tTen Commandments\tTen Commandments"
+        ]
+      ],
+      [
+        [
+          "The_Ten_Commandments_-LRB-1956_film-RRB-",
+          20,
+          "The film was listed as the tenth best film in the epic genre ."
+        ]
+      ]
+    ],
+    "hop": 1
+  },
+  {
+    "id": 75397,
+    "claim": "Nikolaj Coster-Waldau worked with the Fox Broadcasting Company.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Nikolaj_Coster-Waldau",
+          7,
+          "He then played Detective John Amsterdam in the short-lived Fox television series New Amsterdam -LRB- 2008 -RRB- , as well as appearing as Frank Pike in the 2009 Fox television film Virtuality , originally intended as a pilot .\tFox television\tFox Broadcasting Company\tNew Amsterdam\tNew Amsterdam (TV series)\tVirtuality\tVirtuality (TV series)"
+        ],
+        [
+          "Fox_Broadcasting_Company",
+          0,
+          "The Fox Broadcasting Company -LRB- often shortened to Fox and stylized as FOX -RRB- is an American English language commercial broadcast television network that is owned by the Fox Entertainment Group subsidiary of 21st Century Fox .\tEnglish\tEnglish language\tFox Entertainment Group\tFox Entertainment Group\t21st Century Fox\t21st Century Fox\tAmerican\tUnited States\tEnglish language\tEnglish language\tcommercial\tcommercial broadcasting\tbroadcast\tterrestrial television\ttelevision network\ttelevision network"
+        ]
+      ]
+    ],
+    "hop": 2
+  },
+  {
+    "id": 129629,
+    "claim": "Homeland is an American television spy thriller based on the Israeli television series Prisoners of War.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Homeland_-LRB-TV_series-RRB-",
+          0,
+          "Homeland is an American spy thriller television series developed by Howard Gordon and Alex Gansa based on the Israeli series Prisoners of War -LRB- Original title \u05d7\u05d8\u05d5\u05e4\u05d9\u05dd Hatufim , literally `` Abductees '' -RRB- , which was created by Gideon Raff .\tPrisoners of War\tPrisoners of War (TV series)\tGideon Raff\tGideon Raff\tHoward Gordon\tHoward Gordon\tAlex Gansa\tAlex Gansa\tspy thriller\tespionage thriller"
+        ],
+        [
+          "Prisoners_of_War_-LRB-TV_series-RRB-",
+          0,
+          "Prisoners of War -LRB- original title in -RRB- is an Israeli television drama series made by Keshet and originally aired on Israel 's Channel 2 from March to May 2010 .\tIsrael\tIsrael\tChannel 2\tChannel 2 (Israel)\tIsraeli television\tIsraeli television\tdrama\tDramatic programming\tKeshet\tKeshet Broadcasting"
+        ]
+      ]
+    ],
+    "hop": 2
+  },
+  {
+    "id": 188923,
+    "claim": "Ryan Gosling has been to a country in Africa.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Ryan_Gosling",
+          17,
+          "He is a supporter of PETA , Invisible Children and the Enough Project and has traveled to Chad , Uganda and eastern Congo to raise awareness about conflicts in the regions .\tPETA\tPeople for the Ethical Treatment of Animals\tInvisible Children\tInvisible Children, Inc.\tEnough Project\tEnough Project\tChad\tChad\tUganda\tUganda\tCongo\tDemocratic Republic of the Congo"
+        ],
+        [
+          "Chad",
+          0,
+          "Chad -LRB- -LSB- t\u0283\u00e6d -RSB- \u062a\u0634\u0627\u062f ; Tchad -LSB- t\u0283a -LRB- d -RRB- -RSB- -RRB- , officially the Republic of Chad -LRB- ; `` Republic of the Chad '' -RRB- , is a landlocked country in Central Africa .\tlandlocked country\tlandlocked country\tCentral Africa\tCentral Africa"
+        ]
+      ]
+    ],
+    "hop": 2
+  },
+  {
+    "id": 15812,
+    "claim": "Peggy Sue Got Married is a Egyptian film released in 1986.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "Peggy_Sue_Got_Married",
+          0,
+          "Peggy Sue Got Married is a 1986 American comedy-drama film directed by Francis Ford Coppola starring Kathleen Turner as a woman on the verge of a divorce , who finds herself transported back to the days of her senior year in high school in 1960 .\tFrancis Ford Coppola\tFrancis Ford Coppola\tKathleen Turner\tKathleen Turner\tcomedy-drama\tcomedy-drama"
+        ],
+        [
+          "Francis_Ford_Coppola",
+          0,
+          "Francis Ford Coppola -LRB- -LSB- pron\u02c8ko\u028ap\u0259l\u0259 -RSB- born April 7 , 1939 -RRB- , also credited as Francis Coppola , is a semi-retired American film director , producer , and screenwriter .\tfilm director\tfilm director\tproducer\tFilm producer\tscreenwriter\tscreenwriter"
+        ]
+      ],
+      [
+        [
+          "Peggy_Sue_Got_Married",
+          0,
+          "Peggy Sue Got Married is a 1986 American comedy-drama film directed by Francis Ford Coppola starring Kathleen Turner as a woman on the verge of a divorce , who finds herself transported back to the days of her senior year in high school in 1960 .\tFrancis Ford Coppola\tFrancis Ford Coppola\tKathleen Turner\tKathleen Turner\tcomedy-drama\tcomedy-drama"
+        ]
+      ]
+    ],
+    "hop": 2
+  },
+  {
+    "id": 64557,
+    "claim": "Slovenia uses the euro.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Slovenia",
+          29,
+          "In 2004 , it entered NATO and the European Union ; in 2007 became the first formerly communist country to join the Eurozone ; and in 2010 joined the OECD , a global association of high-income developed countries .\tEuropean Union\tEuropean Union\tNATO\tNATO\tformerly communist\tPostcommunism\tEurozone\tEurozone\tOECD\tOrganisation for Economic Co-operation and Development"
+        ],
+        [
+          "Eurozone",
+          0,
+          "The eurozone , officially called the euro area , is a monetary union of 19 of the 28 European Union -LRB- EU -RRB- member states which have adopted the euro as their common currency and sole legal tender .\tmonetary union\tmonetary union\teuro\teuro\tlegal tender\tlegal tender\tEuropean Union\tEuropean Union"
+        ]
+      ]
+    ],
+    "hop": 2
+  },
+  {
+    "id": 28643,
+    "claim": "Lily James has been on TV.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Lily_James",
+          1,
+          "She played Lady Rose Aldridge in the ITV period drama Downton Abbey and the title role in the 2015 Disney film Cinderella .\tDownton Abbey\tDownton Abbey\tCinderella\tCinderella (2015 Disney film)\tITV\tITV (TV network)"
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          4,
+          "James began her professional acting career as Ethel Brown in the 2010 BBC production Just William .\tJust William\tJust William (2010 TV series)\tBBC\tBBC"
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          6,
+          "She began to appear in Hollywood films in 2012 , with roles in Wrath of the Titans and Fast Girls , and was seen in further television roles , including that of Countess Natasha Rostova in the 2016 BBC historical drama series War & Peace .\tWar & Peace\tWar & Peace (2016 TV series)\tWrath of the Titans\tWrath of the Titans\tFast Girls\tFast Girls (film)\tNatasha Rostova\tNatasha Rostova\tBBC\tBBC"
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          0,
+          "Lily Chloe Ninette Thomson -LRB- born 5 April 1989 -RRB- , known as Lily James , is an English actress ."
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          1,
+          "She played Lady Rose Aldridge in the ITV period drama Downton Abbey and the title role in the 2015 Disney film Cinderella .\tDownton Abbey\tDownton Abbey\tCinderella\tCinderella (2015 Disney film)\tITV\tITV (TV network)"
+        ],
+        [
+          "Downton_Abbey",
+          0,
+          "Downton Abbey is a historical period drama television series created by Julian Fellowes and co-produced by Carnival Films and Masterpiece .\tJulian Fellowes\tJulian Fellowes\tCarnival Films\tCarnival Films\thistorical period drama\thistorical period drama\tMasterpiece\tMasterpiece (TV series)"
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          4,
+          "James began her professional acting career as Ethel Brown in the 2010 BBC production Just William .\tJust William\tJust William (2010 TV series)\tBBC\tBBC"
+        ],
+        [
+          "Just_William_-LRB-2010_TV_series-RRB-",
+          0,
+          "Just William is a television series first broadcast on BBC One in December 2010 .\tBBC One\tBBC One\tJust William\tJust William (book series)"
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          6,
+          "She began to appear in Hollywood films in 2012 , with roles in Wrath of the Titans and Fast Girls , and was seen in further television roles , including that of Countess Natasha Rostova in the 2016 BBC historical drama series War & Peace .\tWar & Peace\tWar & Peace (2016 TV series)\tWrath of the Titans\tWrath of the Titans\tFast Girls\tFast Girls (film)\tNatasha Rostova\tNatasha Rostova\tBBC\tBBC"
+        ],
+        [
+          "War_&_Peace_-LRB-2016_TV_series-RRB-",
+          0,
+          "War & Peace is a British-American historical period drama television serial first broadcast on BBC One on 3 January 2016 .\tBBC\tBBC\tBBC One\tBBC One\thistorical period drama\thistorical period drama\ttelevision serial\tMiniseries"
+        ]
+      ],
+      [
+        [
+          "Lily_James",
+          4,
+          "James began her professional acting career as Ethel Brown in the 2010 BBC production Just William .\tJust William\tJust William (2010 TV series)\tBBC\tBBC"
+        ],
+        [
+          "BBC",
+          0,
+          "The British Broadcasting Corporation -LRB- BBC -RRB- is a British public service broadcaster headquartered at Broadcasting House in London .\tBroadcasting House\tBroadcasting House\tLondon\tLondon\tBroadcasting\tBroadcasting\tpublic service broadcaster\tpublic service broadcaster\tbroadcaster\tbroadcasting"
+        ],
+        [
+          "Just_William_-LRB-2010_TV_series-RRB-",
+          0,
+          "Just William is a television series first broadcast on BBC One in December 2010 .\tBBC One\tBBC One\tJust William\tJust William (book series)"
+        ]
+      ]
+    ],
+    "hop": 3
+  },
+  {
+    "id": 141654,
+    "claim": "There is a video game called Overwatch (video game).",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Overwatch_-LRB-video_game-RRB-",
+          0,
+          "Overwatch is a team-based online multiplayer first-person shooter video game developed and published by Blizzard Entertainment .\tBlizzard Entertainment\tBlizzard Entertainment\tonline\tOnline game\tmultiplayer\tmultiplayer\tfirst-person shooter\tfirst-person shooter\tvideo game\tvideo game"
+        ]
+      ],
+      [
+        [
+          "Overwatch_-LRB-video_game-RRB-",
+          1,
+          "It was released in May 2016 for Windows , PlayStation 4 , and Xbox One .\tPlayStation 4\tPlayStation 4\tXbox One\tXbox One\tWindows\tMicrosoft Windows"
+        ],
+        [
+          "PlayStation_4",
+          0,
+          "PlayStation 4 -LRB- PS4 -RRB- is a line of home video game consoles developed by Sony Interactive Entertainment .\tSony Interactive Entertainment\tSony Interactive Entertainment\tSony\tSony\tPlayStation\tPlayStation"
+        ],
+        [
+          "Xbox_One",
+          0,
+          "Xbox One is a line of home video game consoles developed by Microsoft .\tMicrosoft\tMicrosoft\tXbox\tXbox"
+        ]
+      ],
+      [
+        [
+          "Overwatch_-LRB-video_game-RRB-",
+          22,
+          "Considered one of the best games released in 2016 , the game received numerous accolades , including being awarded Game of the Year at The Game Awards , D.I.C.E. Awards , and Game Developers Choice Awards , as well as from numerous publications .\tThe Game Awards\tThe Game Awards 2016\tD.I.C.E. Awards\tAcademy of Interactive Arts & Sciences\tGame Developers Choice Awards\tGame Developers Choice Awards"
+        ]
+      ],
+      [
+        [
+          "Overwatch_-LRB-video_game-RRB-",
+          23,
+          "Since its release , Overwatch has become recognized as an eSport , where in addition to sponsoring tournaments , Blizzard has announced plans to help support professional league play starting in 2017 .\teSport\teSport"
+        ],
+        [
+          "ESports",
+          0,
+          "eSports -LRB- also known as electronic sports , esports , e-sports , competitive -LRB- video -RRB- gaming , professional -LRB- video -RRB- gaming , or pro gaming -RRB- are a form of competition that is facilitated by electronic systems , particularly video games ; the input of players and teams as well as the output of the eSports system are mediated by human-computer interfaces .\tprofessional\tprofessional sports"
+        ]
+      ]
+    ],
+    "hop": 3
+  },
+  {
+    "id": 39355,
+    "claim": "Louis Tomlinson appeared in a TV drama.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Louis_Tomlinson",
+          4,
+          "Tomlinson began his career as an actor , initially appearing in ITV drama Fat Friends as an extra .\tactor\tactor\tITV\tITV (TV network)\tFat Friends\tFat Friends"
+        ],
+        [
+          "Fat_Friends",
+          0,
+          "Fat Friends is a British drama that aired on ITV from 12 October , 2000 to 24 March , 2005 , consisting of 25 episodes over four seasons .\tITV\tITV (TV network)"
+        ],
+        [
+          "ITV_-LRB-TV_network-RRB-",
+          0,
+          "ITV is a commercial TV network in the United Kingdom .\tUnited Kingdom\tUnited Kingdom\tcommercial\tCommercial broadcasting\tTV network in the United Kingdom\tTelevision in the United Kingdom\tITV\tITV (TV channel)"
+        ]
+      ],
+      [
+        [
+          "Louis_Tomlinson",
+          5,
+          "He also went on to appear in another ITV drama film If I Had You and the BBC drama Waterloo Road .\tITV\tITV (TV network)\tIf I Had You\tIf I Had You (film)\tBBC\tBBC\tWaterloo Road\tWaterloo Road (TV series)"
+        ],
+        [
+          "If_I_Had_You_-LRB-TV_drama-RRB-",
+          0,
+          "If I Had You is a one-off British television crime drama , starring Sarah Parish , Poppy Miller , and Paul McGann .\tSarah Parish\tSarah Parish\tPoppy Miller\tPoppy Miller\tPaul McGann\tPaul McGann\ttelevision\ttelevision"
+        ]
+      ]
+    ],
+    "hop": 3
+  },
+  {
+    "id": 47008,
+    "claim": "Katherine Heigl appeared in a science fiction television series.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Katherine_Heigl",
+          3,
+          "From 1999 to 2002 , Heigl co-starred as Isabel Evans on the television series Roswell .\tIsabel Evans\tIsabel Evans\tRoswell\tRoswell (TV series)"
+        ],
+        [
+          "Roswell_-LRB-TV_series-RRB-",
+          0,
+          "Roswell is an American science fiction television series developed , produced , and co-written by Jason Katims .\tJason Katims\tJason Katims\tscience fiction\tscience fiction\ttelevision series\ttelevision series"
+        ]
+      ],
+      [
+        [
+          "Katherine_Heigl",
+          3,
+          "From 1999 to 2002 , Heigl co-starred as Isabel Evans on the television series Roswell .\tIsabel Evans\tIsabel Evans\tRoswell\tRoswell (TV series)"
+        ],
+        [
+          "Isabel_Evans",
+          0,
+          "Isabel Evans is a fictional character created by Melinda Metz for the young adults book series Roswell High and adapted by Jason Katims for the 1999-2002 American science fiction television series Roswell .\tRoswell\tRoswell (TV series)\tMelinda Metz\tMelinda Metz\tJason Katims\tJason Katims\tfictional character\tfictional character\tbook series\tbook series\tRoswell High\tRoswell High\tAmerican\tUnited States\tscience fiction\tscience fiction\ttelevision series\ttelevision series"
+        ],
+        [
+          "Roswell_-LRB-TV_series-RRB-",
+          0,
+          "Roswell is an American science fiction television series developed , produced , and co-written by Jason Katims .\tJason Katims\tJason Katims\tscience fiction\tscience fiction\ttelevision series\ttelevision series"
+        ]
+      ]
+    ],
+    "hop": 3
+  },
+  {
+    "id": 188949,
+    "claim": "Usain Bolt is incapable of competing in sports.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "Usain_Bolt",
+          1,
+          "He is the first person to hold both the 100 metres and 200 metres world records since fully automatic time became mandatory .\t100 metres\t100 metres\t200 metres\t200 metres\tfully automatic time\tfully automatic time"
+        ],
+        [
+          "100_metres",
+          0,
+          "The 100 metres , or 100-metre dash , is a sprint race in track and field competitions .\tsprint race\tsprint (running)\ttrack and field\ttrack and field"
+        ],
+        [
+          "200_metres",
+          0,
+          "The 200 metres -LRB- also spelled 200 meters -RRB- is a sprint running event .\tsprint\tSprint (running)"
+        ]
+      ],
+      [
+        [
+          "Usain_Bolt",
+          2,
+          "He also holds the world record as a part of the 4 \u00d7 100 metres relay .\t100 metres\t100 metres\tworld record\tList of world records in athletics\t4 \u00d7 100 metres relay\t4 \u00d7 100 metres relay at the World Championships in Athletics"
+        ],
+        [
+          "100_metres",
+          0,
+          "The 100 metres , or 100-metre dash , is a sprint race in track and field competitions .\tsprint race\tsprint (running)\ttrack and field\ttrack and field"
+        ],
+        [
+          "4\u00d7100_metres_relay_at_the_World_Championships_in_Athletics",
+          0,
+          "The 4 \u00d7 100 metres relay at the World Championships in Athletics has been contested by both men and women since the inaugural edition in 1983 .\tWorld Championships in Athletics\tWorld Championships in Athletics"
+        ]
+      ],
+      [
+        [
+          "Usain_Bolt",
+          7,
+          "An eight-time Olympic gold medalist , Bolt won the 100 m , 200 m and 4 \u00d7 100 m relay at three consecutive Olympic Games , although he subsequently lost one of the gold medals -LRB- as well as the world record set therein -RRB- nine years after the fact due to teammate Nesta Carter 's disqualification for doping offences .\tOlympic Games\tAthletics at the Summer Olympics\t100 m\t2015 World Championships in Athletics \u2013 Men's 100 metres\t200 m\t200 metres at the Olympics\tworld record\tList of world records in athletics\tOlympic gold medalist\tList of multiple Olympic gold medalists\tNesta Carter\tNesta Carter"
+        ]
+      ],
+      [
+        [
+          "Usain_Bolt",
+          9,
+          "Bolt is the only sprinter to win Olympic 100 m and 200 m titles at three consecutive olympics -LRB- 2008 , 2012 and 2016 -RRB- , a feat referred to as the `` triple double . ''\t100 m\t2015 World Championships in Athletics \u2013 Men's 100 metres\t200 m\t200 metres at the Olympics\tsprinter\tSprint (running)\tOlympic 100 m\t100 metres at the Olympics"
+        ]
+      ],
+      [
+        [
+          "Usain_Bolt",
+          12,
+          "An eleven-time World Champion , he won consecutive World Championship 100 m , 200 m and 4 \u00d7 100 metres relay gold medals from 2009 to 2015 , with the exception of a 100 m false start in 2011 .\t100 m\t2015 World Championships in Athletics \u2013 Men's 100 metres\t200 m\t200 metres at the Olympics\t100 metres\t100 metres\t4 \u00d7 100 metres relay\t4 \u00d7 100 metres relay at the World Championships in Athletics\tWorld Champion\tWorld Championships in Athletics\tfalse start\tfalse start"
+        ]
+      ],
+      [
+        [
+          "Usain_Bolt",
+          13,
+          "He is the most successful athlete of the World Championships and was the first athlete to win three titles in both the 100 m and 200 m at the competition .\tWorld Championships\tIAAF World Championships in Athletics\t100 m\t2015 World Championships in Athletics \u2013 Men's 100 metres\t200 m\t200 metres at the Olympics\tmost successful athlete\tIAAF World Championships in Athletics#Multiple medallist"
+        ]
+      ],
+      [
+        [
+          "Usain_Bolt",
+          23,
+          "His achievements as a sprinter have earned him the media nickname `` Lightning Bolt '' , and his awards include the IAAF World Athlete of the Year , Track & Field Athlete of the Year , and Laureus World Sportsman of the Year -LRB- four times -RRB- .\tsprinter\tSprint (running)\tIAAF World Athlete of the Year\tIAAF World Athlete of the Year\tTrack & Field Athlete of the Year\tTrack & Field Athlete of the Year\tLaureus World Sportsman of the Year\tLaureus World Sports Award for Sportsman of the Year"
+        ]
+      ]
+    ],
+    "hop": 3
+  },
+  {
+    "id": 27974,
+    "claim": "Seven Days in May stars an American.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Seven_Days_in_May",
+          1,
+          "Directed by John Frankenheimer , it stars Burt Lancaster , Kirk Douglas , Fredric March , and Ava Gardner .\tJohn Frankenheimer\tJohn Frankenheimer\tBurt Lancaster\tBurt Lancaster\tKirk Douglas\tKirk Douglas\tFredric March\tFredric March\tAva Gardner\tAva Gardner"
+        ],
+        [
+          "Kirk_Douglas",
+          0,
+          "Kirk Douglas -LRB- born Issur Danielovitch , December 9 , 1916 -RRB- is an American actor , producer , director , and author ."
+        ],
+        [
+          "Ava_Gardner",
+          0,
+          "Ava Lavinia Gardner -LRB- December 24 , 1922 -- January 25 , 1990 -RRB- was an American actress and singer ."
+        ],
+        [
+          "Burt_Lancaster",
+          0,
+          "Burton Stephen `` Burt '' Lancaster -LRB- November 2 , 1913 -- October 20 , 1994 -RRB- was an American film actor ."
+        ]
+      ]
+    ],
+    "hop": 4
+  },
+  {
+    "id": 70910,
+    "claim": "There are two television series Morena Baccarin was part of.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Morena_Baccarin",
+          1,
+          "She is known for portraying Inara Serra in the series Firefly and the follow-up film Serenity , Adria in the series Stargate SG-1 and the follow-up film Stargate : The Ark of Truth , Anna in the 2009 version of the series V , Vanessa in the superhero comedy film Deadpool , and Jessica Brody in the Showtime series Homeland -LRB- for which she received an Emmy nomination for Outstanding Supporting Actress in a Drama Series in 2013 -RRB- .\tInara Serra\tInara Serra\tFirefly\tFirefly (TV series)\tSerenity\tSerenity (film)\tAdria\tAdria (Stargate)\tStargate SG-Stargate SG-V\tV (2009 TV series)\tVanessa\tCopycat (Marvel Comics)\tDeadpool\tDeadpool (film)\tJessica Brody\tList of Homeland characters#Jessica Brody\tShowtime\tShowtime (TV channel)\tHomeland\tHomeland (TV series)\tEmmy\tEmmy award\tOutstanding Supporting Actress in a Drama Series\tPrimetime Emmy Award for Outstanding Supporting Actress in a Drama Series"
+        ],
+        [
+          "Homeland_-LRB-TV_series-RRB-",
+          0,
+          "Homeland is an American spy thriller television series developed by Howard Gordon and Alex Gansa based on the Israeli series Prisoners of War -LRB- Original title \u05d7\u05d8\u05d5\u05e4\u05d9\u05dd Hatufim , literally `` Abductees '' -RRB- , which was created by Gideon Raff .\tPrisoners of War\tPrisoners of War (TV series)\tGideon Raff\tGideon Raff\tHoward Gordon\tHoward Gordon\tAlex Gansa\tAlex Gansa\tspy thriller\tespionage thriller"
+        ],
+        [
+          "Ori_-LRB-Stargate-RRB-",
+          0,
+          "The Ori -LSB- \u02c8\u0252ra\u026a -RSB- are fictional characters in the science fiction television series , Stargate SG-1 .\tscience fiction television\tscience fiction on television\tStargate SG-1\tStargate SG-1"
+        ],
+        [
+          "Firefly_-LRB-TV_series-RRB-",
+          0,
+          "Firefly is an American space western drama television series created by writer and director Joss Whedon , under his Mutant Enemy Productions label .\tJoss Whedon\tJoss Whedon\tMutant Enemy Productions\tMutant Enemy Productions\tspace western\tspace western\tdrama\tDrama (modern genre)"
+        ]
+      ]
+    ],
+    "hop": 4
+  },
+  {
+    "id": 122575,
+    "claim": "Qatar borders London.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "Qatar",
+          1,
+          "Its sole land border is with Saudi Arabia to the south , with the rest of its territory surrounded by the Persian Gulf .\tSaudi Arabia\tSaudi Arabia"
+        ],
+        [
+          "London",
+          0,
+          "London -LSB- \u02c8l\u028cnd\u0259n -RSB- is the capital and most populous city of England and the United Kingdom .\tcapital\tCapital city\tEngland\tEngland\tUnited Kingdom\tUnited Kingdom"
+        ]
+      ],
+      [
+        [
+          "Qatar",
+          0,
+          "Qatar -LRB- -LSB- \u02c8k\u00e6t\u0251\u02d0r -RSB- , -LSB- k\u0259\u02c8t\u0251\u02d0r -RSB- \u0642\u0637\u0631 -LSB- \u02c8q\u0251t\u02e4\u0251r -RSB- Local vernacular pronunciation : -LSB- \u02c8\u0261\u026at\u02e4\u0251r -RSB- -RRB- , officially the State of Qatar , is a sovereign country located in Western Asia , occupying the small Qatar Peninsula on the northeastern coast of the Arabian Peninsula .\tArabian Peninsula\tArabian Peninsula\tsovereign\tSovereignty\tcountry\tcountry\tWestern Asia\tWestern Asia\tQatar Peninsula\tQatar Peninsula"
+        ],
+        [
+          "London",
+          0,
+          "London -LSB- \u02c8l\u028cnd\u0259n -RSB- is the capital and most populous city of England and the United Kingdom .\tcapital\tCapital city\tEngland\tEngland\tUnited Kingdom\tUnited Kingdom"
+        ],
+        [
+          "England",
+          0,
+          "England is a country that is part of the United Kingdom .\tcountry\tcountry\tpart\tCountries of the United Kingdom\tUnited Kingdom\tUnited Kingdom"
+        ],
+        [
+          "United_Kingdom",
+          0,
+          "The United Kingdom of Great Britain and Northern Ireland , commonly known as the United Kingdom -LRB- UK -RRB- or Britain , is a sovereign country in western Europe .\tGreat Britain\tGreat Britain\tNorthern Ireland\tNorthern Ireland\tsovereign country\tsovereign country\tIreland\tIreland\tKingdom of Great Britain\tKingdom of Great Britain"
+        ]
+      ]
+    ],
+    "hop": 4
+  },
+  {
+    "id": 94537,
+    "claim": "John McEnroe is known for his rivalry with a tennis player.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "John_McEnroe",
+          5,
+          "McEnroe is known for his shot-making artistry and volleying skills ; for his rivalries with Bj\u00f6rn Borg , Jimmy Connors and Ivan Lendl ; and for his confrontational on-court behavior , which frequently landed him in trouble with umpires and tennis authorities .\ttennis\ttennis\tBj\u00f6rn Borg\tBj\u00f6rn Borg\tJimmy Connors\tJimmy Connors\tIvan Lendl\tIvan Lendl"
+        ],
+        [
+          "Ivan_Lendl",
+          0,
+          "Ivan Lendl -LRB- -LSB- \u02c8\u026avan \u02c8l\u025bndl\u0329 -RSB- ; born March 7 , 1960 -RRB- is a former world No. 1 professional tennis player and is currently coaching current world No. 1 Andy Murray , alongside Jamie Delgado .\tAndy Murray\tAndy Murray\tworld No. 1\tList of ATP number 1 ranked players\tJamie Delgado\tJamie Delgado"
+        ],
+        [
+          "Bjo\u0308rn_Borg",
+          0,
+          "Bj\u00f6rn Rune Borg -LRB- -LSB- bj\u0153\u02d0\u0273 b\u0254rj -RSB- ; born 6 June 1956 -RRB- is a Swedish former world No. 1 tennis player widely considered to be one of the greatest in tennis history .\tSwedish\tSwedes\tworld No. 1\tList of ATP number 1 ranked singles players\ttennis player\ttennis player"
+        ],
+        [
+          "Jimmy_Connors",
+          0,
+          "James Scott Connors -LRB- born September 2 , 1952 -RRB- is an American former world No. 1 tennis player , often considered among the greatest in the history of the sport .\tworld No. 1\tList of ATP number 1 ranked singles players\ttennis\ttennis"
+        ]
+      ]
+    ],
+    "hop": 4
+  },
+  {
+    "id": 8089,
+    "claim": "Gennady Golovkin boxes.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Gennady_Golovkin",
+          0,
+          "Gennady Gennadyevich Golovkin -LRB- \u0413\u0435\u043d\u043d\u0430\u0434\u0438\u0439 \u0413\u0435\u043d\u043d\u0430\u0434\u044c\u0435\u0432\u0438\u0447 \u0413\u043e\u043b\u043e\u0432\u043a\u0438\u043d born 8 April 1982 -RRB- is a Kazakhstani professional boxer who currently holds the unified WBA -LRB- Super -RRB- , WBC , IBF , and IBO middleweight titles .\tprofessional boxer\tprofessional boxer\tWBC\tWorld Boxing Council\tIBF\tInternational Boxing Federation\tIBO\tInternational Boxing Organization\tmiddleweight\tmiddleweight"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          2,
+          "He is also ranked as the world 's third best boxer , pound for pound , by The Ring , fifth by BoxRec , and seventh by the Transnational Boxing Rankings Board .\tBoxRec\tBoxRec\tTransnational Boxing Rankings Board\tTransnational Boxing Rankings Board\tThe Ring\tThe Ring magazine Pound for Pound\tpound for pound\tpound for pound"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          6,
+          "He was elevated to WBA -LRB- Regular -RRB- champion in the same year , and in 2011 would win the vacant IBO middleweight title by defeating Lajuan Simon .\tIBO\tInternational Boxing Organization\tmiddleweight\tmiddleweight\tLajuan Simon\tLajuan Simon"
+        ],
+        [
+          "International_Boxing_Organization",
+          0,
+          "The International Boxing Organization -LRB- IBO -RRB- is a non-profit organization that sanctions professional boxing matches and awards world and regional championships .\tboxing\tboxing"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          8,
+          "Later that year he defeated Marco Antonio Rubio to add the WBC interim middleweight title to his collection , and defeated David Lemieux in 2015 to win the IBF middleweight title .\tWBC\tWorld Boxing Council\tIBF\tInternational Boxing Federation\tmiddleweight\tmiddleweight\tinterim\tinterim championship\tMarco Antonio Rubio\tMarco Antonio Rubio\tDavid Lemieux\tDavid Lemieux (boxer)"
+        ],
+        [
+          "International_Boxing_Federation",
+          0,
+          "The International Boxing Federation -LRB- IBF -RRB- is one of four major organizations recognized by the International Boxing Hall of Fame -LRB- IBHOF -RRB- which sanction world championship boxing bouts , alongside the World Boxing Association -LRB- WBA -RRB- , World Boxing Council -LRB- WBC -RRB- and World Boxing Organization -LRB- WBO -RRB- .\tInternational Boxing Hall of Fame\tInternational Boxing Hall of Fame\tboxing\tboxing\tWorld Boxing Association\tWorld Boxing Association\tWorld Boxing Council\tWorld Boxing Council\tWorld Boxing Organization\tWorld Boxing Organization"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          9,
+          "After Canelo \u00c1lvarez vacated his WBC middleweight title in 2016 , Golovkin was elevated to full champion and now holds world titles by three of the four major boxing sanctioning bodies .\tWBC\tWorld Boxing Council\tmiddleweight\tmiddleweight\tCanelo \u00c1lvarez\tCanelo \u00c1lvarez"
+        ],
+        [
+          "World_Boxing_Council",
+          0,
+          "The World Boxing Council -LRB- WBC -RRB- is one of four major organizations which sanction world championship boxing bouts , alongside the International Boxing Federation -LRB- IBF -RRB- , World Boxing Association -LRB- WBA -RRB- and World Boxing Organization -LRB- WBO -RRB- .\tboxing\tboxing\tInternational Boxing Federation\tInternational Boxing Federation\tWorld Boxing Association\tWorld Boxing Association\tWorld Boxing Organization\tWorld Boxing Organization"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          15,
+          "Golovkin is also said to have one of the best chins in modern boxing , having never been knocked down or knocked out in a total of 387 fights , neither as a professional nor amateur .\tchins\tchin (boxing)\tknocked down\tKnockdown (boxing)\tamateur\tamateur boxing"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          18,
+          "In his amateur career , Golovkin won a gold medal in the middleweight division at the 2003 World Championships .\tWorld Championships\tWorld Amateur Boxing Championships\tmiddleweight\tmiddleweight\tamateur\tamateur boxing\t2003 World Championships\t2003 World Amateur Boxing Championships"
+        ],
+        [
+          "2003_World_Amateur_Boxing_Championships",
+          0,
+          "The men 's 2003 World Amateur Boxing Championships were held in Bangkok , Thailand , from July 6 to July 13 .\tWorld Amateur Boxing Championships\tWorld Amateur Boxing Championships\tBangkok\tBangkok\tThailand\tThailand"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          1,
+          "As of May 2017 , he is ranked as the world 's best middleweight by BoxRec and the Transnational Boxing Rankings Board , and second best by The Ring .\tmiddleweight\tmiddleweight\tBoxRec\tBoxRec\tTransnational Boxing Rankings Board\tTransnational Boxing Rankings Board\tThe Ring\tThe Ring magazine Pound for Pound"
+        ],
+        [
+          "BoxRec",
+          0,
+          "BoxRec or boxrec.com is a website dedicated to holding updated records of professional boxers , both male and female .\twebsite\twebsite\tprofessional boxers\tboxing\tfemale\tList of female boxers"
+        ],
+        [
+          "The_Ring_magazine_Pound_for_Pound",
+          0,
+          "The Ring magazine Pound for Pound is the official list of the current pound for pound professional boxing rankings distributed by The Ring magazine .\tpound for pound\tpound for pound\tprofessional boxing\tprofessional boxing\tThe Ring\tThe Ring (magazine)"
+        ],
+        [
+          "Transnational_Boxing_Rankings_Board",
+          0,
+          "The Transnational Boxing Rankings Board -LRB- TBRB -RRB- is an all-volunteer initiative formed in October 2012 with the intention of providing professional boxing with authoritative top-ten rankings , identifying the singular world champion of every division by unbiased reasoning and common sense , and to insist on the sport 's reform .\tprofessional boxing\tprofessional boxing"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          5,
+          "Golovkin won his first major world championship , the WBA interim middleweight title , by defeating Milton N\u00fa\u00f1ez in 2010 .\tmiddleweight\tmiddleweight\tinterim\tinterim championship\tMilton N\u00fa\u00f1ez\tMilton N\u00fa\u00f1ez (boxer)"
+        ],
+        [
+          "Milton_Nu\u0301n\u0303ez_-LRB-boxer-RRB-",
+          1,
+          "Nunez 's biggest fight was against Gennady Golovkin for the interim WBA middleweight title .\tmiddleweight\tmiddleweight\tGennady Golovkin\tGennady Golovkin\tWBA\tWorld Boxing Association"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          8,
+          "Later that year he defeated Marco Antonio Rubio to add the WBC interim middleweight title to his collection , and defeated David Lemieux in 2015 to win the IBF middleweight title .\tWBC\tWorld Boxing Council\tIBF\tInternational Boxing Federation\tmiddleweight\tmiddleweight\tinterim\tinterim championship\tMarco Antonio Rubio\tMarco Antonio Rubio\tDavid Lemieux\tDavid Lemieux (boxer)"
+        ],
+        [
+          "International_Boxing_Federation",
+          0,
+          "The International Boxing Federation -LRB- IBF -RRB- is one of four major organizations recognized by the International Boxing Hall of Fame -LRB- IBHOF -RRB- which sanction world championship boxing bouts , alongside the World Boxing Association -LRB- WBA -RRB- , World Boxing Council -LRB- WBC -RRB- and World Boxing Organization -LRB- WBO -RRB- .\tInternational Boxing Hall of Fame\tInternational Boxing Hall of Fame\tboxing\tboxing\tWorld Boxing Association\tWorld Boxing Association\tWorld Boxing Council\tWorld Boxing Council\tWorld Boxing Organization\tWorld Boxing Organization"
+        ],
+        [
+          "World_Boxing_Council",
+          0,
+          "The World Boxing Council -LRB- WBC -RRB- is one of four major organizations which sanction world championship boxing bouts , alongside the International Boxing Federation -LRB- IBF -RRB- , World Boxing Association -LRB- WBA -RRB- and World Boxing Organization -LRB- WBO -RRB- .\tboxing\tboxing\tInternational Boxing Federation\tInternational Boxing Federation\tWorld Boxing Association\tWorld Boxing Association\tWorld Boxing Organization\tWorld Boxing Organization"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          18,
+          "In his amateur career , Golovkin won a gold medal in the middleweight division at the 2003 World Championships .\tWorld Championships\tWorld Amateur Boxing Championships\tmiddleweight\tmiddleweight\tamateur\tamateur boxing\t2003 World Championships\t2003 World Amateur Boxing Championships"
+        ],
+        [
+          "AIBA_World_Boxing_Championships",
+          0,
+          "The AIBA World Boxing Championships and the AIBA Women 's World Boxing Championships are biennial amateur boxing competitions organised by the International Boxing Association -LRB- AIBA -RRB- , which is the sport governing body .\tamateur boxing\tamateur boxing\tInternational Boxing Association\tInternational Boxing Association (amateur)\tsport governing body\tsport governing body"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          1,
+          "As of May 2017 , he is ranked as the world 's best middleweight by BoxRec and the Transnational Boxing Rankings Board , and second best by The Ring .\tmiddleweight\tmiddleweight\tBoxRec\tBoxRec\tTransnational Boxing Rankings Board\tTransnational Boxing Rankings Board\tThe Ring\tThe Ring magazine Pound for Pound"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          7,
+          "In 2014 , Golovkin was elevated to his current status of WBA -LRB- Super -RRB- champion and successfully defended both his titles against Daniel Geale .\tDaniel Geale\tDaniel Geale"
+        ],
+        [
+          "Daniel_Geale",
+          0,
+          "Daniel Geale -LRB- born 26 February 1981 -RRB- is an Australian professional boxer .\tprofessional boxer\tprofessional boxer"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          8,
+          "Later that year he defeated Marco Antonio Rubio to add the WBC interim middleweight title to his collection , and defeated David Lemieux in 2015 to win the IBF middleweight title .\tWBC\tWorld Boxing Council\tIBF\tInternational Boxing Federation\tmiddleweight\tmiddleweight\tinterim\tinterim championship\tMarco Antonio Rubio\tMarco Antonio Rubio\tDavid Lemieux\tDavid Lemieux (boxer)"
+        ],
+        [
+          "World_Boxing_Council",
+          0,
+          "The World Boxing Council -LRB- WBC -RRB- is one of four major organizations which sanction world championship boxing bouts , alongside the International Boxing Federation -LRB- IBF -RRB- , World Boxing Association -LRB- WBA -RRB- and World Boxing Organization -LRB- WBO -RRB- .\tboxing\tboxing\tInternational Boxing Federation\tInternational Boxing Federation\tWorld Boxing Association\tWorld Boxing Association\tWorld Boxing Organization\tWorld Boxing Organization"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          9,
+          "After Canelo \u00c1lvarez vacated his WBC middleweight title in 2016 , Golovkin was elevated to full champion and now holds world titles by three of the four major boxing sanctioning bodies .\tWBC\tWorld Boxing Council\tmiddleweight\tmiddleweight\tCanelo \u00c1lvarez\tCanelo \u00c1lvarez"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          14,
+          "In 2016 , he achieved his 17th title defense by knockout , which equalled the record set by Wilfredo G\u00f3mez in 1982 .\tknockout\tknockout\tWilfredo G\u00f3mez\tWilfredo G\u00f3mez"
+        ],
+        [
+          "Wilfredo_Go\u0301mez",
+          0,
+          "Wilfredo G\u00f3mez Rivera -LRB- -LSB- wil\u02c8f\u027ee\u00f0o \u02c8\u0263omes -RSB- ; born October 29 , 1956 -RRB- , sometimes referred to as Bazooka G\u00f3mez , is a Puerto Rican former professional boxer and three-time world champion .\tprofessional boxer\tprofessional boxer"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          5,
+          "Golovkin won his first major world championship , the WBA interim middleweight title , by defeating Milton N\u00fa\u00f1ez in 2010 .\tmiddleweight\tmiddleweight\tinterim\tinterim championship\tMilton N\u00fa\u00f1ez\tMilton N\u00fa\u00f1ez (boxer)"
+        ],
+        [
+          "Interim_championship",
+          0,
+          "An interim championship is an alternate title that is awarded by the four major sanctioning bodies of professional boxing -LRB- WBA , WBC , IBF , and WBO -RRB- , and in other combat sports such as kickboxing and mixed martial arts .\tprofessional boxing\tprofessional boxing\tWBA\tWorld Boxing Association\tWBC\tWorld Boxing Council\tIBF\tInternational Boxing Federation\tWBO\tWorld Boxing Organization\tkickboxing\tkickboxing\tmixed martial arts\tmixed martial arts"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          8,
+          "Later that year he defeated Marco Antonio Rubio to add the WBC interim middleweight title to his collection , and defeated David Lemieux in 2015 to win the IBF middleweight title .\tWBC\tWorld Boxing Council\tIBF\tInternational Boxing Federation\tmiddleweight\tmiddleweight\tinterim\tinterim championship\tMarco Antonio Rubio\tMarco Antonio Rubio\tDavid Lemieux\tDavid Lemieux (boxer)"
+        ],
+        [
+          "David_Lemieux_-LRB-boxer-RRB-",
+          0,
+          "David Lemieux -LRB- born December 22 , 1988 -RRB- is a Canadian professional boxer who held the IBF middleweight title in 2015 .\tprofessional boxer\tprofessional boxer\tIBF\tInternational Boxing Federation\tmiddleweight\tmiddleweight"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          12,
+          "A calculating pressure fighter , Golovkin is known for his powerful and precise punching , balance , and methodical movement .\tpressure fighter\tpressure fighter"
+        ],
+        [
+          "Boxing_styles_and_technique",
+          0,
+          "Throughout the history of gloved boxing styles , techniques and strategies have changed to varying degrees .\tboxing\tboxing"
+        ]
+      ],
+      [
+        [
+          "Gennady_Golovkin",
+          13,
+          "With a streak of 23 knockouts that spanned from 22 November 2008 to 18 March 2017 , he holds the highest knockout percentage -- 89.8 % -- in middleweight championship history .\tmiddleweight\tmiddleweight\tknockout\tknockout"
+        ],
+        [
+          "Knockout",
+          0,
+          "A knockout -LRB- abbreviated to KO or K.O. -RRB- is a fight-ending , winning criterion in several full-contact combat sports , such as boxing , kickboxing , muay thai , mixed martial arts , karate , some forms of taekwondo and other sports involving striking .\tfull-contact\tfull-contact\tboxing\tboxing\tkickboxing\tkickboxing\tmuay thai\tMuay Thai\tmixed martial arts\tmixed martial arts\tkarate\tkarate\ttaekwondo\tWorld Taekwondo Federation#Sparring\tstriking\tstrike (attack)"
+        ]
+      ]
+    ],
+    "hop": 4
+  },
+  {
+    "id": 165521,
+    "claim": "Ileana D'Cruz starred in a movie.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Ileana_D'Cruz",
+          4,
+          "She has appeared in hits such as Pokiri -LRB- 2006 -RRB- , Jalsa -LRB- 2008 -RRB- , Kick -LRB- 2009 -RRB- and Julayi -LRB- 2012 -RRB- , establishing herself as one of Telugu cinema 's leading actresses .\tTelugu cinema\tTelugu cinema\tPokiri\tPokiri (2006 film)\tJalsa\tJalsa\tKick\tKick (2009 film)\tJulayi\tJulayi"
+        ],
+        [
+          "Jalsa",
+          1,
+          "The film stars Pawan Kalyan , Ileana D'Cruz and Parvati Melton in pivotal roles .\tPawan Kalyan\tPawan Kalyan\tIleana D'Cruz\tIleana D'Cruz\tParvati Melton\tParvati Melton"
+        ],
+        [
+          "Julai",
+          1,
+          "The film stars Allu Arjun , Ileana D'Cruz and Rajendra Prasad in lead roles .\tAllu Arjun\tAllu Arjun\tIleana D'Cruz\tIleana D'Cruz\tRajendra Prasad\tGadde Rajendra Prasad"
+        ],
+        [
+          "Kick_-LRB-2009_film-RRB-",
+          1,
+          "It features Ravi Teja and Ileana D'Cruz in the lead roles .\tRavi Teja\tRavi Teja\tIleana D'Cruz\tIleana D'Cruz"
+        ],
+        [
+          "Pokiri",
+          2,
+          "The film stars Mahesh Babu and Ileana D'Cruz ; Prakash Raj , Nassar and Sayaji Shinde appear in prominent roles .\tMahesh Babu\tMahesh Babu\tIleana D'Cruz\tIleana D'Cruz\tPrakash Raj\tPrakash Raj\tNassar\tNassar\tSayaji Shinde\tSayaji Shinde"
+        ]
+      ]
+    ],
+    "hop": 5
+  },
+  {
+    "id": 44032,
+    "claim": "R. Kelly is incapable of being a musician.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "R._Kelly",
+          0,
+          "Robert Sylvester Kelly -LRB- born January 8 , 1967 -RRB- , known professionally as R. Kelly , is an American singer , songwriter , record producer , and former professional basketball player .\tbasketball\tbasketball"
+        ]
+      ],
+      [
+        [
+          "R._Kelly",
+          1,
+          "A native of Chicago , Illinois , Kelly began performing during the late 1980s and debuted in 1992 with the group Public Announcement .\tChicago\tChicago\tIllinois\tIllinois\tPublic Announcement\tPublic Announcement"
+        ],
+        [
+          "Public_Announcement",
+          1,
+          "They teamed with singer R. Kelly for their collaboration album Born into the 90 's -LRB- 1992 -RRB- .\tR. Kelly\tR. Kelly\tsinger\tsinger"
+        ]
+      ],
+      [
+        [
+          "R._Kelly",
+          2,
+          "In 1993 , Kelly went solo with the album 12 Play .\t12 Play\t12 Play"
+        ],
+        [
+          "12_Play",
+          0,
+          "12 Play is the debut studio album by American R&B and soul musician R. Kelly ; it was released on November 9 , 1993 , by Jive Records .\tR. Kelly\tR. Kelly\tR&B\tContemporary R&B\tsoul\tSoul music\tJive\tJive Records\tstudio album\tstudio album\tJive Records\tJive Records"
+        ]
+      ],
+      [
+        [
+          "R._Kelly",
+          3,
+          "He is known for a collection of major hit singles including `` Bump N ' Grind '' , `` Your Body 's Callin ' '' , `` I Believe I Can Fly '' , `` Gotham City '' , `` Ignition -LRB- Remix -RRB- '' , `` If I Could Turn Back the Hands of Time '' , `` The World 's Greatest '' , `` I 'm a Flirt -LRB- Remix -RRB- '' , and the hip-hopera `` Trapped in the Closet '' .\tTrapped in the Closet\tTrapped in the Closet\tI Believe I Can Fly\tI Believe I Can Fly\tGotham City\tGotham City (song)\tIf I Could Turn Back the Hands of Time\tIf I Could Turn Back the Hands of Time\thip-hopera\tRap opera"
+        ],
+        [
+          "Gotham_City_-LRB-song-RRB-",
+          0,
+          "`` Gotham City '' is a song by R&B singer R. Kelly based on the fictional city of the same name .\tR. Kelly\tR. Kelly\tR&B\tContemporary R&B\tcity of the same name\tGotham City"
+        ],
+        [
+          "If_I_Could_Turn_Back_the_Hands_of_Time",
+          0,
+          "`` If I Could Turn Back the Hands of Time '' is a song by R. Kelly , released as the fifth single from his 1998 album , R. .\tR. Kelly\tR. Kelly"
+        ],
+        [
+          "I_Believe_I_Can_Fly",
+          0,
+          "`` I Believe I Can Fly '' is a 1996 song written , produced and performed by American singer R. Kelly from the soundtrack to the 1996 film Space Jam .\tR. Kelly\tR. Kelly\tSpace Jam\tSpace Jam"
+        ],
+        [
+          "Trapped_in_the_Closet",
+          0,
+          "Trapped in the Closet is a rap opera by American R&B singer R. Kelly , which currently consists of 33 `` chapters '' released from 2005 to 2012 .\tR. Kelly\tR. Kelly\tTrapped in the Closet\tTrapped in the Closet (Chapter 1)\trap opera\trap opera\tR&B\tcontemporary R&B"
+        ]
+      ],
+      [
+        [
+          "R._Kelly",
+          14,
+          "The Recording Industry Association of America -LRB- RIAA -RRB- has recognized R. Kelly as one of the best-selling music artists in the United States with 40 million albums sold as well as only the fifth black artist to crack the top 50 of the same list .\tRecording Industry Association of America\tRecording Industry Association of America"
+        ]
+      ]
+    ],
+    "hop": 5
+  },
+  {
+    "id": 27819,
+    "claim": "Planet of the Apes was unable to shoot scenes in the United States.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "Planet_of_the_Apes_-LRB-1968_film-RRB-",
+          15,
+          "Filming took place between May 21 and August 10 , 1967 , in California , Utah and Arizona , with desert sequences shot in and around Lake Powell , Glen Canyon National Recreation Area .\tCalifornia\tCalifornia\tUtah\tUtah\tArizona\tArizona\tLake Powell\tLake Powell\tGlen Canyon National Recreation Area\tGlen Canyon National Recreation Area"
+        ]
+      ],
+      [
+        [
+          "Planet_of_the_Apes_-LRB-1968_film-RRB-",
+          15,
+          "Filming took place between May 21 and August 10 , 1967 , in California , Utah and Arizona , with desert sequences shot in and around Lake Powell , Glen Canyon National Recreation Area .\tCalifornia\tCalifornia\tUtah\tUtah\tArizona\tArizona\tLake Powell\tLake Powell\tGlen Canyon National Recreation Area\tGlen Canyon National Recreation Area"
+        ],
+        [
+          "California",
+          0,
+          "California -LRB- -LSB- k\u00e6l\u1d7b\u02c8f\u0254\u02d0rnj\u0259 , _ - ni.\u0259 -RSB- , -RRB- is the most populous state in the United States and the third most extensive by area .\tUnited States\tUnited States\tmost populous state\tList of U.S. states and territories by population\tthird most extensive\tList of U.S. states by area"
+        ],
+        [
+          "Glen_Canyon_National_Recreation_Area",
+          0,
+          "Glen Canyon National Recreation Area -LRB- shortened to Glen Canyon NRA or GCNRA -RRB- is a recreation and conservation unit of the National Park Service -LRB- USA -RRB- that encompasses the area around Lake Powell and lower Cataract Canyon in Utah and Arizona , covering 1,254,429 acres -LRB- 5,076 km2 -RRB- of mostly desert .\tUtah\tUtah\tUSA\tUnited States\tNational Park Service\tNational Park Service\tLake Powell\tLake Powell\tCataract Canyon\tCataract Canyon\tArizona\tArizona\tGlen Canyon\tGlen Canyon"
+        ],
+        [
+          "Lake_Powell",
+          0,
+          "Lake Powell is a reservoir on the Colorado River , straddling the border between Utah and Arizona -LRB- most of it , along with Rainbow Bridge , is in Utah -RRB- .\tUtah\tUtah\tArizona\tArizona\tColorado River\tColorado River (U.S.)\tRainbow Bridge\tRainbow Bridge National Monument"
+        ],
+        [
+          "Utah",
+          0,
+          "Utah -LRB- -LSB- \u02c8ju\u02d0t\u0254\u02d0 -RSB- or -LSB- \u02c8ju\u02d0t\u0251\u02d0 -RSB- -RRB- is a state in the western United States .\tstate\tU.S. state\twestern United States\twestern United States"
+        ]
+      ]
+    ],
+    "hop": 5
+  },
+  {
+    "id": 223871,
+    "claim": "Stone Temple Pilots had an original member that was born on August 23, 1966.",
+    "label": "REFUTES",
+    "evidence": [
+      [
+        [
+          "Stone_Temple_Pilots",
+          0,
+          "Stone Temple Pilots -LRB- sometimes abbreviated as STP -RRB- are an American rock band from San Diego , California , that originally consisted of Scott Weiland -LRB- lead vocals -RRB- , brothers Dean -LRB- guitar -RRB- and Robert DeLeo -LRB- bass , backing vocals -RRB- , and Eric Kretz -LRB- drums -RRB- .\tScott Weiland\tScott Weiland\tEric Kretz\tEric Kretz\tRobert DeLeo\tRobert DeLeo\trock\tRock music\tSan Diego\tSan Diego\tCalifornia\tCalifornia\tDean\tDean DeLeo"
+        ],
+        [
+          "Dean_DeLeo",
+          0,
+          "Dean DeLeo -LRB- born August 23 , 1961 in Montclair , New Jersey -RRB- is an American guitarist known for his work with rock band Stone Temple Pilots .\tStone Temple Pilots\tStone Temple Pilots\tguitarist\tguitarist"
+        ],
+        [
+          "Eric_Kretz",
+          0,
+          "Eric Kretz -LRB- born June 7 , 1966 -RRB- is an American musician and producer , best known as the drummer for the rock band Stone Temple Pilots .\tStone Temple Pilots\tStone Temple Pilots"
+        ],
+        [
+          "Robert_DeLeo",
+          0,
+          "Robert Emile DeLeo -LRB- born February 2 , 1966 -RRB- is an American bass player , songwriter , and backing vocalist for the rock band Stone Temple Pilots .\tStone Temple Pilots\tStone Temple Pilots\tbacking vocalist\tbacking vocalist"
+        ],
+        [
+          "Scott_Weiland",
+          0,
+          "Scott Richard Weiland -LRB- -LSB- \u02c8wa\u026al\u0259nd -RSB- born Scott Richard Kline ; October 27 , 1967 -- December 3 , 2015 -RRB- was an American musician , singer and songwriter ."
+        ]
+      ]
+    ],
+    "hop": 5
+  },
+  {
+    "id": 3818,
+    "claim": "Jessica Chastain was in a movie.",
+    "label": "SUPPORTS",
+    "evidence": [
+      [
+        [
+          "Jessica_Chastain",
+          8,
+          "Chastain made her film debut in the drama Jolene -LRB- 2008 -RRB- , and gained wide recognition in 2011 for starring roles in half a dozen films , including the dramas Take Shelter and The Tree of Life .\tJolene\tJolene (film)\tTake Shelter\tTake Shelter\tThe Tree of Life\tThe Tree of Life (film)"
+        ],
+        [
+          "Jolene_-LRB-film-RRB-",
+          1,
+          "It stars Jessica Chastain as the title character and is based on the short story `` Jolene : A Life '' by E. L. Doctorow , itself inspired by Dolly Parton 's song , `` Jolene '' .\tE. L. Doctorow\tE. L. Doctorow\tJessica Chastain\tJessica Chastain\tDolly Parton\tDolly Parton\tJolene\tJolene (song)"
+        ]
+      ],
+      [
+        [
+          "Jessica_Chastain",
+          12,
+          "Her highest-grossing releases came with the science fiction films Interstellar -LRB- 2014 -RRB- and The Martian -LRB- 2015 -RRB- , as she continued to draw praise for her performances in the dramas The Disappearance of Eleanor Rigby -LRB- 2013 -RRB- , A Most Violent Year -LRB- 2014 -RRB- , and Miss Sloane -LRB- 2016 -RRB- .\tInterstellar\tInterstellar (film)\tThe Martian\tThe Martian (film)\tThe Disappearance of Eleanor Rigby\tThe Disappearance of Eleanor Rigby\tA Most Violent Year\tA Most Violent Year\tMiss Sloane\tMiss Sloane"
+        ],
+        [
+          "Interstellar_-LRB-film-RRB-",
+          4,
+          "The film stars Matthew McConaughey , Anne Hathaway , Jessica Chastain , Bill Irwin , Casey Affleck , Ellen Burstyn , John Lithgow , and Michael Caine .\tMatthew McConaughey\tMatthew McConaughey\tAnne Hathaway\tAnne Hathaway\tJessica Chastain\tJessica Chastain\tBill Irwin\tBill Irwin\tEllen Burstyn\tEllen Burstyn\tMichael Caine\tMichael Caine\tCasey Affleck\tCasey Affleck\tJohn Lithgow\tJohn Lithgow"
+        ],
+        [
+          "Miss_Sloane",
+          1,
+          "The film stars Jessica Chastain , Mark Strong , Gugu Mbatha-Raw , Michael Stuhlbarg , Alison Pill , Jake Lacy , John Lithgow and Sam Waterston .\tJessica Chastain\tJessica Chastain\tMark Strong\tMark Strong\tGugu Mbatha-Raw\tGugu Mbatha-Raw\tMichael Stuhlbarg\tMichael Stuhlbarg\tAlison Pill\tAlison Pill\tJake Lacy\tJake Lacy\tJohn Lithgow\tJohn Lithgow\tSam Waterston\tSam Waterston"
+        ],
+        [
+          "The_Disappearance_of_Eleanor_Rigby",
+          1,
+          "The films star Jessica Chastain and James McAvoy , and are Benson 's first feature film project .\tJessica Chastain\tJessica Chastain\tJames McAvoy\tJames McAvoy"
+        ],
+        [
+          "The_Martian_-LRB-film-RRB-",
+          3,
+          "The film 's ensemble cast also features Jessica Chastain , Kristen Wiig , Jeff Daniels , Michael Pe\u00f1a , Kate Mara , Sean Bean , Sebastian Stan , Donald Glover , Aksel Hennie and Chiwetel Ejiofor .\tJessica Chastain\tJessica Chastain\tKristen Wiig\tKristen Wiig\tJeff Daniels\tJeff Daniels\tSean Bean\tSean Bean\tMichael Pe\u00f1a\tMichael Pe\u00f1a\tKate Mara\tKate Mara\tSebastian Stan\tSebastian Stan\tAksel Hennie\tAksel Hennie\tChiwetel Ejiofor\tChiwetel Ejiofor\tensemble cast\tensemble cast\tDonald Glover\tDonald Glover"
+        ]
+      ]
+    ],
+    "hop": 5
+  }
+]

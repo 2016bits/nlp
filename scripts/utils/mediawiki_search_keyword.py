@@ -127,7 +127,7 @@ def get_map_function(parallel, p=None):
 
 def main(args):
     in_file = args.in_file + args.dataset + "_" + args.mode + "_parse_results.json"
-    out_file = args.out_file + args.dataset + "_" + args.mode + "_bm25_search_keyword.json"
+    out_file = args.out_file + args.dataset + "_" + args.mode + "_mediawiki_search_keyword" + str(args.k_wiki) + ".jsonl"
 
     print("load model......")
     method = Doc_Retrieval(wikipage_dir=args.wikipage_dir, add_claim=args.add_claim, k_wiki_results=args.k_wiki)
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     parser.add_argument('--mode', type=str, default="test")
     parser.add_argument('--out_file', type=str, default="./results/search/", help="path to save output dataset")
 
-    parser.add_argument('--k_wiki', type=int, default=3, help="first k pages for wiki search")
+    parser.add_argument('--k_wiki', type=int, default=5, help="first k pages for wiki search")
     parser.add_argument('--parallel', type=bool, default=True)
     parser.add_argument('--add_claim', type=bool, default=True)
     args = parser.parse_args()

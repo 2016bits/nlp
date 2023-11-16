@@ -1,0 +1,4 @@
+[2023-11-15 21:20:44,176][evaluate_search.py][line:224][INFO] loading data......
+[2023-11-15 21:20:44,458][evaluate_search.py][line:254][INFO] pred_num: 13243, target_num: 7937, match_num: 5824
+[2023-11-15 21:20:44,458][evaluate_search.py][line:255][INFO] precision: 0.4398, recall: 0.7338, f1: 0.55
+[2023-11-15 21:20:44,458][evaluate_search.py][line:256][INFO] acc_num: 5342, total_num: 6666, acc: 0.8014
