@@ -6,7 +6,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from sklearn.metrics import classification_report, confusion_matrix
 
 from utils import log
-from search_module import Search_wikipage, Search_Wiki
+from search_module import Search_wikipage, Select_sentence
 
 class Program_Execute:
     def __init__(self, args, logger):
@@ -20,7 +20,7 @@ class Program_Execute:
         logger.info(f"Model {self.model_name} loaded.")
 
         self.WikiPage = Search_wikipage(args.db_path, args.db_table)
-        self.wiki = Search_Wiki(args.db_path, args.db_table, args.num_retrieved)
+        self.SelectModel = Select_sentence(self.tokenizer, self.model, self.device)
     
     def evaluate(self, predictions, ground_truth, logger, num_of_classes=2):
         if num_of_classes == 2:
@@ -50,7 +50,7 @@ class Program_Execute:
             wiki_pages = self.WikiPage.select_wikipage(inst['parsed_title'])
 
             # get evidence
-            evidence_dict = self.wiki.find_evidences(wiki_pages, inst['parsed_sentence'])
+            evidence_dict = self.SelectModel.select_sentence(inst['claim'], wiki_pages, inst['parsed_sentence'])
 
             # verify
             evidence = " ".join(evidence_dict['evidence_texts'])
