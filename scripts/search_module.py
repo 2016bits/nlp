@@ -146,21 +146,37 @@ class Select_sentence:
         for title, page in pages.items():
             sentences = page.split('\n')
             for sent in sentences:
-                for word in key_words:
-                    if sent.lower().find(word.lower()) != -1:
-                        # find keyword in the sentence
-                        sent_chunck = sent.split('\t')
-                        sent_id = eval(sent_chunck[0])
-                        if len(sent_chunck) > 1 and len(sent_chunck[1]) > 0:
-                            sent_text = sent_chunck[1]
-                            score = self.calculate_sentence_score(claim, sent_text)
-                            sent_list.append({
-                                'id': [title, sent_id],
-                                'text': sent_text,
-                                'score': score
-                            })
+                if sent and sent[0].isdigit:
+                    # find keyword in the sentence
+                    sent_chunck = sent.split('\t')
+                    sent_id = eval(sent_chunck[0])
+                    if len(sent_chunck) > 1 and len(sent_chunck[1]) > 0:
+                        sent_text = sent_chunck[1]
+                        score = self.calculate_sentence_score(claim, sent_text)
+                        sent_list.append({
+                            'id': [title, sent_id],
+                            'text': sent_text,
+                            'score': score
+                        })
                             
-                            break
+        # for title, page in pages.items():
+        #     sentences = page.split('\n')
+        #     for sent in sentences:
+        #         for word in key_words:
+        #             if sent.lower().find(word.lower()) != -1:
+        #                 # find keyword in the sentence
+        #                 sent_chunck = sent.split('\t')
+        #                 sent_id = eval(sent_chunck[0])
+        #                 if len(sent_chunck) > 1 and len(sent_chunck[1]) > 0:
+        #                     sent_text = sent_chunck[1]
+        #                     score = self.calculate_sentence_score(claim, sent_text)
+        #                     sent_list.append({
+        #                         'id': [title, sent_id],
+        #                         'text': sent_text,
+        #                         'score': score
+        #                     })
+                            
+        #                     break
                 
         # 对sent_list按照score值进行排序
         sorted_list = sorted(sent_list, key=lambda x: x['score'], reverse=True)
