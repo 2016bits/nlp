@@ -1,0 +1,2 @@
+python scripts/process_select.py --infile ./SelectData/all_dev.json --outfile ./SelectData/dev_pair
+python scripts/process_select.py --infile ./SelectData/all_train.json --outfile ./SelectData/train_pair

@@ -2,16 +2,24 @@ import argparse
 import json
 import torch
 from tqdm import tqdm
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, BertTokenizer, BertModel
 from sklearn.metrics import classification_report, confusion_matrix
 
 from utils import log
-from search_module import Search_wikipage, Select_sentence
+from search_module import Search_wikipage, inference_model, Select_Bert
+# from search_module import Search_wikipage, Select_sentence
 
 class Program_Execute:
     def __init__(self, args, logger):
         self.model_name = args.model_name
         self.device = args.device
+
+        logger.info("Loading select model...")
+        select_tokenizer = BertTokenizer.from_pretrained(args.select_model_cache_dir, do_lower_case=False)
+        bert_model = BertModel.from_pretrained(args.cache_dir).to(args.device)
+        select_model = inference_model(bert_model, args).to(args.device)
+        select_model.load_state_dict(torch.load(args.select_checkpoint)['model'])
+        select_model.eval()
 
         logger.info(f"Loading model {self.model_name}...")
         self.tokenizer = AutoTokenizer.from_pretrained(args.model_name, cache_dir=args.cache_dir)
@@ -20,7 +28,8 @@ class Program_Execute:
         logger.info(f"Model {self.model_name} loaded.")
 
         self.WikiPage = Search_wikipage(args.db_path, args.db_table)
-        self.SelectModel = Select_sentence(self.tokenizer, self.model, self.device)
+        # self.SelectModel = Select_sentence(self.tokenizer, self.model, self.device)
+        self.SelectModel = Select_Bert(select_tokenizer, select_model, args.device, args.topk)
     
     def evaluate(self, predictions, ground_truth, logger, num_of_classes=2):
         if num_of_classes == 2:
@@ -128,6 +137,18 @@ if __name__ == '__main__':
     parser.add_argument('--db_table', type=str, default='documents')
 
     # model arguments
+    # select model
+    parser.add_argument('--select_model_cache_dir', default="./bert-base-uncased")
+    parser.add_argument('--select_checkpoint', default="./models/bert.best.pt")
+    parser.add_argument("--bert_hidden_dim", default=768, type=int, help="Total batch size for training.")
+    parser.add_argument('--dropout', type=float, default=0.6, help='Dropout.')
+    parser.add_argument("--max_len", default=120, type=int,
+                        help="The maximum total input sequence length after WordPiece tokenization. Sequences "
+                             "longer than this will be truncated, and sequences shorter than this will be padded.")
+    parser.add_argument("--num_labels", type=int, default=3)
+    parser.add_argument('--topk', type=int, default=5)
+
+    # verify model
     # parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli")
     # parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli')
     parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli")
@@ -135,8 +156,8 @@ if __name__ == '__main__':
     # training arguments
     parser.add_argument('--num_retrieved', type=int, default=5)
 
-    parser.add_argument('--gpu', type=int, default=1)
-    parser.add_argument('--device', type=str, default="cuda:1")
+    parser.add_argument('--gpu', type=int, default=2)
+    parser.add_argument('--device', type=str, default="cuda:2")
 
     args = parser.parse_args()
 

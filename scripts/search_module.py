@@ -1,5 +1,6 @@
 import sqlite3
 import torch
+import torch.nn as nn
 from drqa.retriever import DocDB, utils
 
 try:
@@ -181,6 +182,80 @@ class Select_sentence:
         # 对sent_list按照score值进行排序
         sorted_list = sorted(sent_list, key=lambda x: x['score'], reverse=True)
         for index in range(min(len(sorted_list), 5)):
+            evidence_ids.append(sorted_list[index]['id'])
+            evidence_texts.append(sorted_list[index]['text'])
+
+        # 对含有关键词的句子，使用encoder计算其与claim的语义相似性，选择top5作为最终的证据句子
+        return {
+            'evidence_ids': evidence_ids,
+            'evidence_texts': evidence_texts
+        }
+
+class inference_model(nn.Module):
+    def __init__(self, bert_model, args):
+        super(inference_model, self).__init__()
+        self.bert_hidden_dim = args.bert_hidden_dim
+        self.dropout = nn.Dropout(args.dropout)
+        self.max_len = args.max_len
+        self.num_labels = args.num_labels
+        self.pred_model = bert_model
+        #self.proj_hidden = nn.Linear(self.bert_hidden_dim, 128)
+        self.proj_match = nn.Linear(self.bert_hidden_dim, 1)
+
+
+    def forward(self, inp_tensor, msk_tensor, seg_tensor):
+        inputs = self.pred_model(inp_tensor, msk_tensor, seg_tensor)
+        inputs = self.dropout(inputs)
+        score = self.proj_match(inputs).squeeze(-1)
+        score = torch.tanh(score)
+        return score
+
+class Select_Bert:
+    def __init__(self, tokenizer, model, device, topk):
+        self.tokenizer = tokenizer
+        self.model = model
+        self.devide = device
+        self.topk = topk
+    
+    def calculate_sentence_score(self, text1, text2):
+        input_ids = self.tokenizer(text1, text2, return_tensors="pt", truncation=True).to(self.device)
+        output = self.model(input_ids['input_ids'])
+        prediction = torch.softmax(output["logits"][0], -1)
+        prob, _ = torch.max(prediction, dim=-1)
+        return prob
+    
+    def select_sentence(self, claim, pages):
+        if pages == {}:
+            return {
+                'evidence_ids': [],
+                'evidence_texts': []
+            }
+        
+        evidence_ids = []
+        evidence_texts = []
+
+        sent_list = []
+        for title, page in pages.items():
+            sentences = page.split('\n')
+            tmp_sent_list = []
+            for sent in sentences:
+                if sent and sent[0].isdigit:
+                    # find keyword in the sentence
+                    sent_chunck = sent.split('\t')
+                    sent_id = eval(sent_chunck[0])
+                    if len(sent_chunck) > 1 and len(sent_chunck[1]) > 0:
+                        sent_text = sent_chunck[1]
+                        score = self.calculate_sentence_score(claim, sent_text)
+                        tmp_sent_list.append({
+                            'id': [title, sent_id],
+                            'text': sent_text,
+                            'score': score
+                        })
+            sorted_tmp_list = sorted(tmp_sent_list, key=lambda x: x['score'], reverse=True)
+            sent_list += sorted_tmp_list[:self.topk]
+        
+        sorted_list = sorted(sent_list, key=lambda x: x['score'], reverse=True)
+        for index in range(min(len(sorted_list), self.topk)):
             evidence_ids.append(sorted_list[index]['id'])
             evidence_texts.append(sorted_list[index]['text'])
 

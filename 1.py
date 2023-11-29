@@ -1,23 +1,113 @@
 # Load model directly
 import torch
-from transformers import AutoTokenizer, T5ForConditionalGeneration
+import argparse
+from torch.autograd import Variable
+from transformers import BertTokenizer, BertForSequenceClassification, BertModel
+from search_module import inference_model
 
-tokenizer = AutoTokenizer.from_pretrained("castorini/monot5-large-msmarco-10k")
-model = T5ForConditionalGeneration.from_pretrained("castorini/monot5-large-msmarco-10k").to("cuda:0")
+def convert(tokenizer, sentence1, sentence2, max_len = 50):
+    # 格式化输入为模型所需格式（输入和输出格式一致）
+    tokens_a = tokenizer.tokenize(sentence1)
+    tokens_b = tokenizer.tokenize(sentence2)
+    tokens = ['[CLS]'] + tokens_a + ["[SEP]"]
+    segment_ids = [0] * len(tokens)
+    tokens += tokens_b + ["[SEP]"]
+    segment_ids += [1] * (len(tokens_b) + 1)
+    input_ids = tokenizer.convert_tokens_to_ids(tokens)
+    input_mask = [1] * len(input_ids)
 
-# 准备要比较的两个句子
-sentence1 = "This is the first sentence."
-sentence2 = "This sentence is number one."
+    padding = [0] * (max_len - len(input_ids))
 
-# 格式化输入为模型所需格式（输入和输出格式一致）
-inputs = tokenizer.encode(f"stsb sentence1: {sentence1} sentence2: {sentence2}", return_tensors="pt").to("cuda:0")
+    input_ids += padding
+    input_mask += padding
+    segment_ids += padding
 
-# 使用MonT5模型计算相关性分数
-with torch.no_grad():
-    outputs = model.generate(inputs)
+    return input_ids, input_mask, segment_ids
 
-# 将输出解码为字符串，并移除特殊token
-output_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-similarity_score = float(output_text)
+def fun(args):
+    tokenizer = BertTokenizer.from_pretrained(args.select_model_cache_dir, do_lower_case=False)
+    bert_model = BertModel.from_pretrained(args.select_model_cache_dir).to(args.device)
+    model = inference_model(bert_model, args).to(args.device)
+    model.load_state_dict(torch.load(args.select_checkpoint)['model'])
+    model.eval()
 
-print(f"Similarity score: {similarity_score}")
+    # 准备要比较的两个句子
+    sentence1 = "Saratoga is an American film from 1937."
+    sentence2 = "Saratoga is a 1937 American romantic comedy film written by Anita Loos and directed by Jack Conway ."
+    sentence3 = "The film stars Clark Gable and Jean Harlow in their sixth and final film collaboration , and features Lionel Barrymore , Frank Morgan , Walter Pidgeon , Hattie McDaniel , and Margaret Hamilton ."
+
+    id1, mask1, seg1 = convert(tokenizer, sentence1, sentence2)
+    id2, mask2, seg2 = convert(tokenizer, sentence1, sentence3)
+
+    inp_padding = list()
+    msk_padding = list()
+    seg_padding = list()
+    inp_padding.append(id1)
+    msk_padding.append(mask1)
+    seg_padding.append(seg1)
+    inp_padding.append(id2)
+    msk_padding.append(mask2)
+    seg_padding.append(seg2)
+
+    inp_tensor_input = Variable(
+        torch.LongTensor(inp_padding)).to(args.device)
+    msk_tensor_input = Variable(
+        torch.LongTensor(msk_padding)).to(args.device)
+    seg_tensor_input = Variable(
+        torch.LongTensor(seg_padding)).to(args.device)
+
+    probs = model(
+        inp_tensor_input, msk_tensor_input, seg_tensor_input)
+
+    print(f"Similarity score: {probs}")
+
+def fun1(args):
+    tokenizer = BertTokenizer.from_pretrained(args.select_model_cache_dir, do_lower_case=False)
+    bert_model = BertForSequenceClassification.from_pretrained(args.select_model_cache_dir).to(args.device)
+    model = inference_model(bert_model, args).to(args.device)
+
+    sentence1 = "Saratoga is an American film from 1937."
+    sentence2 = "Saratoga is a 1937 American romantic comedy film written by Anita Loos and directed by Jack Conway ."
+    sentence3 = "The film stars Clark Gable and Jean Harlow in their sixth and final film collaboration , and features Lionel Barrymore , Frank Morgan , Walter Pidgeon , Hattie McDaniel , and Margaret Hamilton ."
+
+    id1, mask1, seg1 = convert(tokenizer, sentence1, sentence2)
+    id2, mask2, seg2 = convert(tokenizer, sentence1, sentence3)
+
+    inp_padding = list()
+    msk_padding = list()
+    seg_padding = list()
+    inp_padding.append(id1)
+    msk_padding.append(mask1)
+    seg_padding.append(seg1)
+    inp_padding.append(id2)
+    msk_padding.append(mask2)
+    seg_padding.append(seg2)
+
+    inp_tensor_input = Variable(
+        torch.LongTensor(inp_padding)).to(args.device)
+    msk_tensor_input = Variable(
+        torch.LongTensor(msk_padding)).to(args.device)
+    seg_tensor_input = Variable(
+        torch.LongTensor(seg_padding)).to(args.device)
+
+    probs = model(inp_tensor_input, msk_tensor_input, seg_tensor_input)
+    print(probs)
+
+def fun2(args):
+    pass
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--select_model_cache_dir', default="./bert-base-uncased")
+    parser.add_argument('--select_checkpoint', default="./models/bert.best.pt")
+    parser.add_argument("--bert_hidden_dim", default=768, type=int, help="Total batch size for training.")
+    parser.add_argument('--dropout', type=float, default=0.6, help='Dropout.')
+    parser.add_argument("--max_len", default=120, type=int,
+                        help="The maximum total input sequence length after WordPiece tokenization. Sequences "
+                             "longer than this will be truncated, and sequences shorter than this will be padded.")
+    parser.add_argument("--num_labels", type=int, default=3)
+    parser.add_argument('--topk', type=int, default=5)
+    parser.add_argument('--device', type=str, default="cuda:2")
+
+    args = parser.parse_args()
+    fun1(args)
