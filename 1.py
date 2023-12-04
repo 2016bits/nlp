@@ -3,7 +3,7 @@ import torch
 import argparse
 from torch.autograd import Variable
 from transformers import BertTokenizer, BertForSequenceClassification, BertModel
-from search_module import inference_model
+# from search_module import inference_model
 
 def convert(tokenizer, sentence1, sentence2, max_len = 50):
     # 格式化输入为模型所需格式（输入和输出格式一致）
@@ -94,7 +94,29 @@ def fun1(args):
     print(probs)
 
 def fun2(args):
-    pass
+
+    # 加载预训练的BERT模型和分词器
+    model = BertModel.from_pretrained('./bert-base-uncased')
+    tokenizer = BertTokenizer.from_pretrained('./bert-base-uncased')
+
+    # 输入文本
+    text = "Saratoga is an American film from 1937."
+
+    # 使用分词器对文本进行编码
+    inputs = tokenizer(text, return_tensors='pt', padding=True, truncation=True, max_length=20)
+    import pdb
+    pdb.set_trace()
+
+    # 获取BERT模型的输出
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    # 获取CLS标记对应的隐藏状态作为句子向量表示
+    sentence_vector = outputs.last_hidden_state[:, 0, :]  # [CLS] 标记对应的隐藏状态
+
+    # 输出句子向量的维度
+    print(sentence_vector.shape)  # 应该是 (1, hidden_size)，其中 hidden_size 是BERT模型的隐藏状态维度
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -110,4 +132,4 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, default="cuda:2")
 
     args = parser.parse_args()
-    fun1(args)
+    fun2(args)

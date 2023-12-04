@@ -16,9 +16,10 @@ class Program_Execute:
 
         logger.info("Loading select model...")
         select_tokenizer = BertTokenizer.from_pretrained(args.select_model_cache_dir, do_lower_case=False)
-        bert_model = BertModel.from_pretrained(args.cache_dir).to(args.device)
-        select_model = inference_model(bert_model, args).to(args.device)
-        select_model.load_state_dict(torch.load(args.select_checkpoint)['model'])
+        bert_model = BertModel.from_pretrained(args.select_model_cache_dir).to(args.device)
+        select_model = inference_model(bert_model, args)
+        select_model.load_state_dict(torch.load(args.select_checkpoint, map_location=args.device)['model'])
+        select_model = select_model.to(args.device)
         select_model.eval()
 
         logger.info(f"Loading model {self.model_name}...")
@@ -29,7 +30,8 @@ class Program_Execute:
 
         self.WikiPage = Search_wikipage(args.db_path, args.db_table)
         # self.SelectModel = Select_sentence(self.tokenizer, self.model, self.device)
-        self.SelectModel = Select_Bert(select_tokenizer, select_model, args.device, args.topk)
+        self.SelectModel = Select_Bert(select_tokenizer, select_model, args.device, args.topk, args.max_len)
+        torch.cuda.empty_cache()
     
     def evaluate(self, predictions, ground_truth, logger, num_of_classes=2):
         if num_of_classes == 2:
@@ -139,7 +141,7 @@ if __name__ == '__main__':
     # model arguments
     # select model
     parser.add_argument('--select_model_cache_dir', default="./bert-base-uncased")
-    parser.add_argument('--select_checkpoint', default="./models/bert.best.pt")
+    parser.add_argument('--select_checkpoint', default="./models/bert_4096_best.pt")
     parser.add_argument("--bert_hidden_dim", default=768, type=int, help="Total batch size for training.")
     parser.add_argument('--dropout', type=float, default=0.6, help='Dropout.')
     parser.add_argument("--max_len", default=120, type=int,
@@ -156,8 +158,8 @@ if __name__ == '__main__':
     # training arguments
     parser.add_argument('--num_retrieved', type=int, default=5)
 
-    parser.add_argument('--gpu', type=int, default=2)
-    parser.add_argument('--device', type=str, default="cuda:2")
+    parser.add_argument('--gpu', type=int, default=0)
+    parser.add_argument('--device', type=str, default="cuda:0")
 
     args = parser.parse_args()
 

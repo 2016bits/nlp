@@ -196,35 +196,44 @@ class inference_model(nn.Module):
         super(inference_model, self).__init__()
         self.bert_hidden_dim = args.bert_hidden_dim
         self.dropout = nn.Dropout(args.dropout)
-        self.max_len = args.max_len
-        self.num_labels = args.num_labels
         self.pred_model = bert_model
-        #self.proj_hidden = nn.Linear(self.bert_hidden_dim, 128)
         self.proj_match = nn.Linear(self.bert_hidden_dim, 1)
 
+    def forward(self, input_ids, query_mask, query_seg):
+        batch_size = input_ids.size(0)
+        seq_len = input_ids.size(1)
+        input_ids = input_ids.view(-1, input_ids.size(-1))
+        query_mask = query_mask.view(-1, query_mask.size(-1))
+        query_seg = query_seg.view(-1, query_seg.size(-1))
+        with torch.no_grad():
+            outputs = self.pred_model(input_ids, attention_mask=query_mask, token_type_ids=query_seg)
 
-    def forward(self, inp_tensor, msk_tensor, seg_tensor):
-        inputs = self.pred_model(inp_tensor, msk_tensor, seg_tensor)
-        inputs = self.dropout(inputs)
-        score = self.proj_match(inputs).squeeze(-1)
-        score = torch.tanh(score)
+        # 获取CLS标记对应的隐藏状态作为句子向量表示
+        sentence_vector = outputs.last_hidden_state[:, 0, :].view(batch_size, seq_len, -1)
+        dropout_vertor = self.dropout(sentence_vector)
+        proj_vector = self.proj_match(dropout_vertor).squeeze(-1)
+        score = torch.tanh(proj_vector)
         return score
 
 class Select_Bert:
-    def __init__(self, tokenizer, model, device, topk):
+    def __init__(self, tokenizer, model, device, topk, max_len):
         self.tokenizer = tokenizer
         self.model = model
-        self.devide = device
+        self.device = device
         self.topk = topk
+        self.max_len = max_len
     
     def calculate_sentence_score(self, text1, text2):
-        input_ids = self.tokenizer(text1, text2, return_tensors="pt", truncation=True).to(self.device)
-        output = self.model(input_ids['input_ids'])
-        prediction = torch.softmax(output["logits"][0], -1)
-        prob, _ = torch.max(prediction, dim=-1)
+        text = "[CLS] {} [SEP] {}".format(text1, text2)
+        tensor = self.tokenizer(text, return_tensors='pt', padding='max_length', truncation=True, max_length=self.max_len)
+        inp_padding = torch.stack([tensor['input_ids']]).to(self.device)
+        msk_padding = torch.stack([tensor['attention_mask']]).to(self.device)
+        seg_padding = torch.stack([tensor['token_type_ids']]).to(self.device)
+        output = self.model(inp_padding, msk_padding, seg_padding)
+        prob = output[0][0].item()
         return prob
     
-    def select_sentence(self, claim, pages):
+    def select_sentence(self, claim, pages, keywords):
         if pages == {}:
             return {
                 'evidence_ids': [],
