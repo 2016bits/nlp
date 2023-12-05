@@ -116,10 +116,13 @@ class DataLoaderTest(object):
         self.evi_num = args.evi_num
         self.threshold = args.threshold
         self.data_path = data_path
-        inputs, ids, evi_list = self.read_file(data_path)
+        inputs, ids, claims, labels, gold_evidences, pred_evidences = self.read_file(data_path)
         self.inputs = inputs
         self.ids = ids
-        self.evi_list = evi_list
+        self.claims = claims
+        self.labels = labels
+        self.gold_evidences = gold_evidences
+        self.pred_evidences = pred_evidences
 
         self.total_num = len(inputs)
         self.total_step = np.ceil(self.total_num * 1.0 / batch_size)
@@ -144,20 +147,28 @@ class DataLoaderTest(object):
         return title
 
     def read_file(self, data_path):
-        inputs = list()
-        ids = list()
-        evi_list = list()
+        inputs = []
+        ids = []
+        claims = []
+        labels = []
+        gold_evidences = []
+        pred_evidences = []
         with open(data_path) as fin:
             for step, line in enumerate(fin):
                 instance = json.loads(line.strip())
                 claim = instance['claim']
+                label = instance['label']
                 id = instance['id']
-                for evidence in instance['evidence']:
+                gold_evi = instance['gold_evidence']
+                processed_claim = self.process_sent(claim)
+                for evidence in instance['pred_evidence']:
                     ids.append(id)
-                    inputs.append([self.process_sent(claim), self.process_sent(evidence[2])])
-                    evi_list.append(evidence)
-        return inputs, ids, evi_list
-
+                    claims.append(claim)
+                    labels.append(label)
+                    gold_evidences.append(gold_evi)
+                    pred_evidences.append(evidence)
+                    inputs.append([processed_claim, self.process_sent(evidence[2])])
+        return inputs, ids, claims, labels, gold_evidences, pred_evidences
 
     def shuffle(self):
         np.random.shuffle(self.examples)
@@ -176,7 +187,10 @@ class DataLoaderTest(object):
         if self.step < self.total_step:
             inputs = self.inputs[self.step * self.batch_size : (self.step+1)*self.batch_size]
             ids = self.ids[self.step * self.batch_size: (self.step + 1) * self.batch_size]
-            evi_list = self.evi_list[self.step * self.batch_size: (self.step + 1) * self.batch_size]
+            claims = self.claims[self.step * self.batch_size: (self.step + 1) * self.batch_size]
+            labels = self.labels[self.step * self.batch_size: (self.step + 1) * self.batch_size]
+            pred_evidences = self.pred_evidences[self.step * self.batch_size: (self.step + 1) * self.batch_size]
+            gold_evidences = self.gold_evidences[self.step * self.batch_size: (self.step + 1) * self.batch_size]
             
             inp_pos, msk_pos, seg_pos = text2tensor(inputs, self.tokenizer, self.max_len)
 
@@ -185,7 +199,7 @@ class DataLoaderTest(object):
             seg_tensor_pos = Variable(torch.LongTensor(seg_pos)).to(self.device)
 
             self.step += 1
-            return inp_tensor_pos, msk_tensor_pos, seg_tensor_pos, ids, evi_list
+            return inp_tensor_pos, msk_tensor_pos, seg_tensor_pos, ids, claims, labels, gold_evidences, pred_evidences
         else:
             self.step = 0
             raise StopIteration()

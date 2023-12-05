@@ -1,36 +1,50 @@
-import os
 import argparse
 import torch
 import json
 from tqdm import tqdm
-from torch.autograd import Variable
 from transformers import BertTokenizer, BertModel
 
+# import select
 from select.models import inference_model
 from utils import log
 from select.data_loader import DataLoaderTest
 
 
-def save_to_file(all_predict, outpath):
-    with open(outpath, "w") as out:
-        for key, values in all_predict.items():
-            sorted_values = sorted(values, key=lambda x:x[-1], reverse=True)
-            data = json.dumps({"id": key, "evidence": sorted_values[:5]})
-            out.write(data + "\n")
+def save_to_file(results, out_path, topk):
+    sorted_results = []
+    for key, value in results.items():
+        claim = value['claim']
+        label = value['label']
+        gold_evidence = value['gold_evidence']
+        sorted_pred = sorted(value['pred_evidence'], key=lambda x:x[-1], reverse=True)
+        sorted_results.append({
+            'id': key,
+            'claim': claim,
+            'gold_label': label,
+            'gold_evidence': gold_evidence,
+            'pred_evidence': sorted_pred[:topk]
+        })
+    with open(out_path, 'w') as f:
+        f.write(json.dumps(sorted_results, indent=2))
 
 def eval_model(model, validset_reader):
     model.eval()
-    all_predict = dict()
-    for inp_tensor, msk_tensor, seg_tensor, ids, evi_list in validset_reader:
+    results = {}
+    for inp_tensor, msk_tensor, seg_tensor, ids, claims, labels, gold_evidences, pred_evidences in tqdm(validset_reader):
         probs = model(inp_tensor, msk_tensor, seg_tensor)
         probs = probs.tolist()
-        assert len(probs) == len(evi_list)
+        assert len(probs) == len(ids) and len(probs) == len(claims) and len(probs) == len(gold_evidences) and len(probs) == len(pred_evidences)
         for i in range(len(probs)):
-            if ids[i] not in all_predict:
-                all_predict[ids[i]] = []
+            if ids[i] not in results:
+                results[ids[i]] = {
+                    'claim': claims[i],
+                    'label': labels[i],
+                    'gold_evidence': gold_evidences[i],
+                    'pred_evidence': []
+                }
             #if probs[i][1] >= probs[i][0]:
-            all_predict[ids[i]].append(evi_list[i] + [probs[i]])
-    return all_predict
+            results[ids[i]]['pred_evidence'].append(pred_evidences[i] + [probs[i]])
+    return results
 
 def main(args):
     log_path = args.log_path + args.dataset + "_test_select_contrastive.log"
@@ -50,16 +64,16 @@ def main(args):
     logger.info('Start eval!')
     save_path = args.outdir + "select_bert_contrastive.json"
     predict_dict = eval_model(model, validset_reader)
-    save_to_file(predict_dict, save_path)
+    save_to_file(predict_dict, save_path, args.evi_num)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--test_path', type=str, default="./data/FEVER/processed/test.json")
+    parser.add_argument('--test_path', type=str, default="./results/select/test_data.json")
     parser.add_argument('--outdir', type=str, default="./results/select/", help='path to output directory')
     parser.add_argument('--log_path', type=str, default="./logs/")
     parser.add_argument('--dataset', type=str, default="FEVER")
     
-    parser.add_argument("--batch_size", default=4096, type=int, help="Total batch size for training.")
+    parser.add_argument("--batch_size", default=1024, type=int, help="Total batch size for training.")
     parser.add_argument('--bert_pretrain', type=str, default="./bert-base-uncased")
     parser.add_argument('--checkpoint', type=str, default="./models/bert_4096_best.pt")
     parser.add_argument('--dropout', type=float, default=0.6, help='Dropout.')
