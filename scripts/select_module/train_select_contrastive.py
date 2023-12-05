@@ -7,8 +7,8 @@ from transformers import BertTokenizer, BertModel
 from tqdm import tqdm
 
 from utils import log
-from select.data_loader import DataLoader
-from select.models import inference_model
+from select_module.data_loader import DataLoader
+from select_module.models import inference_model
 
 def correct_prediction(prob_pos, prob_neg):
     correct = 0.0

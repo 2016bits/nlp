@@ -5,9 +5,9 @@ from tqdm import tqdm
 from transformers import BertTokenizer, BertModel
 
 # import select
-from select.models import inference_model
+from select_module.models import inference_model
 from utils import log
-from select.data_loader import DataLoaderTest
+from select_module.data_loader import DataLoaderTest
 
 
 def save_to_file(results, out_path, topk):
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     parser.add_argument('--log_path', type=str, default="./logs/")
     parser.add_argument('--dataset', type=str, default="FEVER")
     
-    parser.add_argument("--batch_size", default=1024, type=int, help="Total batch size for training.")
+    parser.add_argument("--batch_size", default=2048, type=int, help="Total batch size for training.")
     parser.add_argument('--bert_pretrain', type=str, default="./bert-base-uncased")
     parser.add_argument('--checkpoint', type=str, default="./models/bert_4096_best.pt")
     parser.add_argument('--dropout', type=float, default=0.6, help='Dropout.')
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser.add_argument("--max_len", default=120, type=int,
                         help="The maximum total input sequence length after WordPiece tokenization. Sequences "
                              "longer than this will be truncated, and sequences shorter than this will be padded.")
-    parser.add_argument('--gpu', type=int, default=1)
+    parser.add_argument('--gpu', type=int, default=4)
     parser.add_argument('--device', type=str, default="cuda:1")
 
     args = parser.parse_args()

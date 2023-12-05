@@ -31,7 +31,7 @@ class WikiPage:
                         line_id = eval(line_chunk[0])
                         line_text = line_chunk[1]
                         evidence.append([title, line_id, line_text])
-            results.append(evidence)
+            results += evidence
         return results
 
 def main(args):

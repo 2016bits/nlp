@@ -2,6 +2,7 @@ import torch
 import re
 import json
 import numpy as np
+from tqdm import tqdm
 from torch.autograd import Variable
 
 def text2tensor(text_list, tokenizer, max_len):
@@ -154,20 +155,21 @@ class DataLoaderTest(object):
         gold_evidences = []
         pred_evidences = []
         with open(data_path) as fin:
-            for step, line in enumerate(fin):
-                instance = json.loads(line.strip())
-                claim = instance['claim']
-                label = instance['label']
-                id = instance['id']
-                gold_evi = instance['gold_evidence']
-                processed_claim = self.process_sent(claim)
-                for evidence in instance['pred_evidence']:
-                    ids.append(id)
-                    claims.append(claim)
-                    labels.append(label)
-                    gold_evidences.append(gold_evi)
-                    pred_evidences.append(evidence)
-                    inputs.append([processed_claim, self.process_sent(evidence[2])])
+            dataset = json.load(fin)
+
+        for instance in tqdm(dataset):
+            claim = instance['claim']
+            label = instance['label']
+            id = instance['id']
+            gold_evi = instance['gold_evidence']
+            processed_claim = self.process_sent(claim)
+            for evidence in instance['pred_evidence']:
+                ids.append(id)
+                claims.append(claim)
+                labels.append(label)
+                gold_evidences.append(gold_evi)
+                pred_evidences.append(evidence)
+                inputs.append([processed_claim, self.process_sent(evidence[2])])
         return inputs, ids, claims, labels, gold_evidences, pred_evidences
 
     def shuffle(self):
