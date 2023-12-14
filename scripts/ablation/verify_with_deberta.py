@@ -34,7 +34,7 @@ class Verify:
         self.tokenizer = AutoTokenizer.from_pretrained(args.model_name, cache_dir=args.cache_dir)
         logger.info("load tokenizer successfully...")
 
-        self.model = AutoModelForSequenceClassification.from_pretrained(args.model_name, cache_dir=args.cache_dir).to(args.device)
+        self.model = AutoModelForSequenceClassification.from_pretrained(args.model_name, cache_dir=args.checkpoint).to(args.device)
         logger.info("load model successfully...")
 
     def convert_evidence(self, evidence_list):
@@ -76,8 +76,8 @@ class Verify:
         
         for inst in tqdm(datasets):
             claim = inst['claim']
-            evidence = self.convert_evidence(inst['evidence'])
-            target = inst['label']
+            evidence = self.convert_evidence(inst['pred_evidence'])
+            target = inst['gold_label']
             targets.append(target)
 
             if len(evidence.split()) > self.max_deberta_tokens:
@@ -99,9 +99,10 @@ class Verify:
             results.append({
                 'id': inst['id'],
                 'claim': inst['claim'],
-                'label': inst['label'],
-                'prediction': pred_label,
-                'probability': prob.item()
+                'gold_label': inst['gold_label'],
+                'pred_label': pred_label,
+                'gold_evidence': inst['gold_evidence'],
+                'pred_evidence': inst['pred_evidence']
             })
 
         # evaluate
@@ -110,7 +111,7 @@ class Verify:
         return results
 
 def main(args):
-    log_path = args.log_path + args.dataset_name + '_verify_with_DeBERTa_large.log'
+    log_path = args.log_path + args.dataset_name + '_verify_with_finetuned_DeBERTa_large.log'
 
     # init logger
     logger = log.get_logger(log_path)
@@ -118,8 +119,8 @@ def main(args):
 
     # load data
     logger.info("loading data......")
-    data_path = args.data_path + args.dataset_name + "/processed/" + args.mode + ".json"
-    with open(data_path, 'r') as f:
+    # data_path = args.data_path + args.dataset_name + "/processed/" + args.mode + ".json"
+    with open(args.data_path, 'r') as f:
         dataset = json.load(f)
     
     # load model
@@ -128,7 +129,7 @@ def main(args):
     outputs = model.verify(logger, dataset)
 
     # save outputs
-    save_path = args.save_path + args.dataset_name + "_test_verify_with_DeBERTa_large_results.json"
+    save_path = args.save_path + args.dataset_name + "_test_verify_with_finetuned_DeBERTa_large_results.json"
     with open(save_path, 'w') as f:
         json.dump(outputs, f, indent=2, ensure_ascii=False)
     logger.info("Finished!")
@@ -138,12 +139,12 @@ if __name__ == "__main__":
     # data
     parser.add_argument('--log_path', type=str, default='./logs/')
     # parser.add_argument('--data_path', type=str, default='./data/')
-    parser.add_argument('--data_path', type=str, default='./data/')
+    parser.add_argument('--data_path', type=str, default='./results/select/dev_results.json')
     parser.add_argument('--dataset_name', type=str, default='FEVER', choices=['SCIFACT'])
     parser.add_argument('--save_path', type=str, default='./results/ablation/')
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'dev', 'test'])
 
-    parser.add_argument('--gpu', type=int, default=0)
+    parser.add_argument('--gpu', type=int, default=5)
     parser.add_argument('--device', type=str, default="cuda:0")
 
     # wikipedia arguments
@@ -156,7 +157,7 @@ if __name__ == "__main__":
     # parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli')
     parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli")
     parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli')
-    parser.add_argument('--model_path', type=str, default='./model/finetuned_t5_FEVER_100shot_train_data.pth')
+    parser.add_argument('--checkpoint', type=str, default='./models/deberta_verify.pth')
     
     args = parser.parse_args()
 

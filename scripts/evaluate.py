@@ -4,6 +4,12 @@ import numpy as np
 from sklearn.metrics import classification_report, confusion_matrix
 from utils import log
 
+def is_matched(gold_list, pred_list):
+    for gold in gold_list:
+        if gold not in pred_list:
+            return False
+    return True
+
 def is_strictly_correct(inst, max_evidence=None):
     if inst['pred_label'].upper() != inst['gold_label'].upper():
         return False
@@ -16,9 +22,9 @@ def is_strictly_correct(inst, max_evidence=None):
             max_evidence = len(inst['pred_evidence'])
         
         for evidence in inst['gold_evidence']:
-            if evidence not in inst['pred_evidence']:
-                return False
-        return True
+            if is_matched(evidence, inst['pred_evidence']):
+                return True
+        return False
 
 def evaluate_with_evidence(results, logger, max_evidence=5):
     correct = 0
@@ -81,7 +87,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--max_evidence', type=int, default=5)
-    parser.add_argument('--result_path', type=str, default='./results/fact_checking/FEVER_test_results.json')
+    parser.add_argument('--result_path', '-f', type=str, default='./results/fact_checking/FEVER_test_results.json')
     parser.add_argument('--log_path', type=str, default='./logs/FEVER_test_result_with_evidence.log')
     # parser.add_argument('--result_path', type=str, default='./outputs/execute/2023-07-31_20:43:38/results/fact_checking/FEVER_test_results.json')
     # parser.add_argument('--log_path', type=str, default='./logs/FEVER_test_result_with_evidence2.log')
