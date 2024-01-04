@@ -193,9 +193,9 @@ def main(args):
                 'pred_label': data['pred_label']
             })
             
-    save_path = args.save_path + args.dataset_name + "_test_verify_with_finetuned_DeBERTa_large_results2.json"
+    save_path = args.save_path + args.dataset_name + "_test_verify_bever_with_finetuned_DeBERTa_large_results2.json"
     with open(save_path, 'w') as f:
-        json.dump(save_results, f, indent=2, ensure_ascii=False)
+        json.dump(outputs, f, indent=2, ensure_ascii=False)
     logger.info("Finished!")
 
     # convert predictions and gold for calculating fever score
@@ -206,13 +206,19 @@ if __name__ == "__main__":
     # data
     parser.add_argument('--log_path', type=str, default='./logs/')
     # parser.add_argument('--data_path', type=str, default='./data/')
-    parser.add_argument('--data_path', type=str, default='./data/FEVER/SelectData/bert_eval.json')
-    parser.add_argument('--gold_data_path', type=str, default='./data/FEVER/SelectData/dev_eval.json')
+
+    # KenerGAT得到的selected_evidence数据
+    # parser.add_argument('--data_path', type=str, default='./data/FEVER/SelectData/bert_eval.json')
+
+    # BEVER得到的selected_evidence数据
+    parser.add_argument('--data_path', type=str, default='data/FEVER/BeverData/dev_selected_evidence.jsonl')
+
+    parser.add_argument('--gold_data_path', type=str, default='./data/FEVER/SelectData/dev_eval.jsonl')
     parser.add_argument('--dataset_name', type=str, default='FEVER', choices=['SCIFACT'])
     parser.add_argument('--save_path', type=str, default='./results/ablation/')
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'dev', 'test'])
 
-    parser.add_argument('--gpu', type=int, default=2)
+    parser.add_argument('--gpu', type=int, default=1)
     parser.add_argument('--device', type=str, default="cuda:0")
 
     # wikipedia arguments
@@ -220,7 +226,7 @@ if __name__ == "__main__":
     parser.add_argument('--db_table', type=str, default='documents')
 
     # model
-    parser.add_argument('--batch_size', type=int, default=8)
+    parser.add_argument('--batch_size', type=int, default=4)
     parser.add_argument('--max_len', type=int, default=512)
     # parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli")
     # parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli')

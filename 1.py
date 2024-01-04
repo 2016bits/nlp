@@ -1,6 +1,7 @@
 # Load model directly
 import torch
 import argparse
+import json
 from torch.autograd import Variable
 from transformers import BertTokenizer, BertForSequenceClassification, BertModel
 # from search_module import inference_model
@@ -117,9 +118,17 @@ def fun2(args):
     # 输出句子向量的维度
     print(sentence_vector.shape)  # 应该是 (1, hidden_size)，其中 hidden_size 是BERT模型的隐藏状态维度
 
+def fun3(args):
+    # target num: 135450
+    with open(args.in_path, 'r') as f:
+        str = f.read()
+        dataset = json.loads(str)
+    print(len(dataset))
+    print(dataset[0])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--in_path', type=str, default="data/FEVER/SelectData/all_train.json")
     parser.add_argument('--select_model_cache_dir', default="./bert-base-uncased")
     parser.add_argument('--select_checkpoint', default="./models/bert.best.pt")
     parser.add_argument("--bert_hidden_dim", default=768, type=int, help="Total batch size for training.")
@@ -132,4 +141,4 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, default="cuda:2")
 
     args = parser.parse_args()
-    fun2(args)
+    fun3(args)

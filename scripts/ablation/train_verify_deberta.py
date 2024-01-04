@@ -58,7 +58,8 @@ def eval_model(model, validset_reader):
     return dev_accuracy
 
 def train_model(model, args, trainset_reader, validset_reader, logger):
-    save_path = args.outdir + '/deberta_verify2.pth'
+    # save_path = args.outdir + '/deberta_verify2.pth'
+    save_path = args.outdir + '/deberta_verify_bever.pth'
     best_acc = 0.0
     running_loss = 0.0
     
@@ -93,7 +94,11 @@ def train_model(model, args, trainset_reader, validset_reader, logger):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--in_path', help='train path', default="./results/select/train_results.json")
+    # parser.add_argument('--in_path', help='train path', default="./results/select/train_results.json")
+
+    # BEVER得到的selected_evidence数据
+    parser.add_argument('--in_path', type=str, default="data/FEVER/BeverData/deberta_train.json")
+
     parser.add_argument('--log_path', type=str, default="./logs/")
     parser.add_argument('--dataset', type=str, default="FEVER")
     parser.add_argument('--outdir', help='path to output directory', default="./models")
@@ -145,8 +150,17 @@ if __name__ == "__main__":
 
     tokenizer = AutoTokenizer.from_pretrained(args.cache_dir, do_lower_case=False)
     logger.info("loading dataset")
+
+    # 读取jsonl文件
+    # dataset = []
+    # with open(args.in_path) as f:
+    #     for line in f:
+    #         dataset.append(json.loads(line.strip()))
+    
+    # 读取json文件
     with open(args.in_path) as f:
         dataset = json.load(f)
+
     dataset = dataset[:int(0.1*len(dataset))]
     logger.info("loading training set")
     trainset_reader = DataLoader(tokenizer, args, dataset[:int(0.8*len(dataset))], batch_size=args.train_batch_size)
