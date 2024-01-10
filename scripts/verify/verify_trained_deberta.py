@@ -193,7 +193,7 @@ def main(args):
                 'pred_label': data['pred_label']
             })
             
-    save_path = args.save_path + args.dataset_name + "_test_verify_bever_with_finetuned_DeBERTa_large_results2.json"
+    save_path = args.save_path + args.dataset_name + "_test_verify_bever_with_finetuned_DeBERTa_large_results.json"
     with open(save_path, 'w') as f:
         json.dump(outputs, f, indent=2, ensure_ascii=False)
     logger.info("Finished!")
@@ -218,7 +218,7 @@ if __name__ == "__main__":
     parser.add_argument('--save_path', type=str, default='./results/ablation/')
     parser.add_argument('--mode', type=str, default='test', choices=['train', 'dev', 'test'])
 
-    parser.add_argument('--gpu', type=int, default=1)
+    parser.add_argument('--gpu', type=int, default=0)
     parser.add_argument('--device', type=str, default="cuda:0")
 
     # wikipedia arguments
@@ -226,13 +226,13 @@ if __name__ == "__main__":
     parser.add_argument('--db_table', type=str, default='documents')
 
     # model
-    parser.add_argument('--batch_size', type=int, default=4)
+    parser.add_argument('--batch_size', type=int, default=8)
     parser.add_argument('--max_len', type=int, default=512)
     # parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli")
     # parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli')
     parser.add_argument('--model_name', type=str, default="MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli")
     parser.add_argument('--cache_dir', type=str, default='./MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli')
-    parser.add_argument('--checkpoint', type=str, default='./models/deberta_verify2.pth')
+    parser.add_argument('--checkpoint', type=str, default='./models/deberta_verify_bever.pth')
     
     args = parser.parse_args()
 
